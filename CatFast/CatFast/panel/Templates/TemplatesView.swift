@@ -32,7 +32,7 @@ class TemplatesView: CView {
 
         
         let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3 + 30), .horizontal)
-        let table = CCollection.init(frame: CGRect.init(x: 0, y: 100, width: Screen.width(), height:  Screen.width()/3 + 30), collectionViewLayout: flow)
+        let table = CCollection.init(frame: CGRect.init(x: 0, y: 0, width: Screen.width(), height:  Screen.width()/3 + 30), collectionViewLayout: flow)
         table.backgroundColor = Color.red()
         self.addSubview(table)
         
@@ -59,15 +59,7 @@ class TemplatesView: CView {
         super.init(coder: aDecoder)
     }
     
-    func show(){
     
-        let window = CWindow()
-        window.disappear = true
-        window.addSubview(self)
-        self.frame = CGRect.init(x: 0, y: Screen.height() - 200, width: Screen.width(),height: 200)
-    
-    
-    }
     
     
 }

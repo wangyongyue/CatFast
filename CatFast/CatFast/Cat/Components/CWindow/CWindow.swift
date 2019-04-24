@@ -11,21 +11,22 @@ import UIKit
 class CWindow: UIView {
 
     var disappear = false
-    static func addSubview(_ view: UIView,isDisappear:Bool) {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
         let window = UIApplication.shared.keyWindow
         if let w = window{
             
-            let sub = CWindow()
-            sub.backgroundColor = UIColor.darkGray
-            sub.alpha = 0.6
-            sub.frame = w.bounds
-            w.addSubview(sub)
             
-            sub.addSubview(view)
-            sub.disappear = isDisappear
+            self.backgroundColor = UIColor.clear
+//            self.alpha = 0.6 
+            self.frame = w.bounds
+            w.addSubview(self)
         }
-        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if self.disappear{
