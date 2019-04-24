@@ -1,14 +1,14 @@
 //
-//  NewVC.swift
+//  RviewsVC.swift
 //  CatFast
 //
-//  Created by wangyongyue on 2019/4/23.
+//  Created by apple on 2019/4/24.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class NewVC: CViewController {
+class RviewsVC: CViewController {
 
     var obArray = Observe()
     
@@ -22,29 +22,29 @@ class NewVC: CViewController {
         let table = CCollection.init(frame: CGRect.init(x: 0, y: 100, width: Screen.width(), height:  Screen.width()/3 + 30), collectionViewLayout: flow)
         table.backgroundColor = Color.red()
         self.view.addSubview(table)
-
+        
         table.v_array(ob: obArray)
         table.register([NewCell.classForCoder(),NewFirstCell.classForCoder(),NewLastCell.classForCoder()])
-
         
         
-        let m = Main()
+        
+        let m = Rviews()
         m.loadData(ob: self.obArray)
-
+        
         
         
         table.v_didSelect { (index) in
-
+            
             print(index)
             Router.push(PanelVC(), ["id":10], { (obj) in
                 print(obj)
             })
             
         }
-
+        
         table.v_didEvent { (model) in
-
-
+            
+            
         }
         
         
@@ -52,7 +52,7 @@ class NewVC: CViewController {
     
     
 }
-class Main:NSObject{
+class Rviews:NSObject{
     
     func loadData(ob:Observe?){
         

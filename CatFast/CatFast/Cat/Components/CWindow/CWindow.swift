@@ -17,7 +17,7 @@ class CWindow: UIView {
         if let w = window{
             
             let sub = CWindow()
-            sub.backgroundColor = UIColor.gray
+            sub.backgroundColor = UIColor.darkGray
             sub.alpha = 0.6
             sub.frame = w.bounds
             w.addSubview(sub)
@@ -34,4 +34,26 @@ class CWindow: UIView {
         }
     }
 
+}
+class Screen{
+    
+    static func width() -> CGFloat{
+        
+        return UIScreen.main.bounds.width
+    }
+    static func height() -> CGFloat{
+        
+        return UIScreen.main.bounds.height
+    }
+}
+extension UIView{
+    
+    func width() -> CGFloat{
+        
+        return self.bounds.width
+    }
+    func height() -> CGFloat{
+        
+        return self.bounds.height
+    }
 }

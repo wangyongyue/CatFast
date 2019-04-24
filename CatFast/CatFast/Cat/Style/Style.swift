@@ -79,9 +79,33 @@ class Style: NSObject {
         self.clearsOnBeginEditing = clearsOnBeginEditing
         return self
     }
-    
+    var image:UIImage?
+    func image(_ aimage:UIImage) -> Style{
+        self.image = aimage
+        return self
+    }
   
+    var selectedImage:UIImage?
+    func selectedImage(_ aimage:UIImage) -> Style{
+        self.selectedImage = aimage
+        return self
+    }
     
+    var selectedTextColor:UIColor?
+    func selectedTextColor(_ textColor:UIColor) -> Style{
+        self.selectedTextColor = textColor
+        return self
+    }
+    var text:String?
+    func text(_ text:String) -> Style{
+        self.text = text
+        return self
+    }
+    var selectedText:String?
+    func selectedText(_ text:String) -> Style{
+        self.selectedText = text
+        return self
+    }
   
 }
 
@@ -97,6 +121,7 @@ extension UIView{
             let new = self as! UILabel
             new.textColor = style.textColor
             new.font = style.font
+            new.text = style.text
             if let s1 = style.numberOfLines{
                 new.numberOfLines = s1
             }
@@ -110,6 +135,8 @@ extension UIView{
             new.textColor = style.textColor
             new.font = style.font
             new.placeholder = style.placeholder
+            new.text = style.text
+
             if let s1 = style.borderStyle{
                 new.borderStyle = s1
                 
@@ -129,16 +156,23 @@ extension UIView{
             let new = self as! UITextView
             new.textColor = style.textColor
             new.font = style.font
+            new.text = style.text
+
             if let s1 = style.textAlignment{
                 new.textAlignment = s1
                 
             }
             
         }else if self is UIButton{
-            let new = self as! UILabel
-            new.textColor = style.textColor
-            new.font = style.font
-            
+            let new = self as! UIButton
+            new.titleLabel?.font = style.font
+            new.setImage(style.image, for: .normal)
+            new.setImage(style.selectedImage, for: .selected)
+            new.setTitleColor(style.textColor, for: .normal)
+            new.setTitleColor(style.selectedTextColor, for: .selected)
+
+            new.setTitle(style.text, for: .normal)
+            new.setTitle(style.selectedText, for: .selected)
         }
         
         

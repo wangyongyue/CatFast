@@ -21,6 +21,10 @@ class CFlowLayout: UICollectionViewFlowLayout {
         super.init()
         self.itemSize = itemSize
         self.scrollDirection = scrollDirection
+        
+        self.minimumLineSpacing = 0
+        self.minimumInteritemSpacing = 0
+        self.sectionInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     

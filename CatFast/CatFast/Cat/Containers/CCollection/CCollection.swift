@@ -15,24 +15,22 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         
+
         self.backgroundColor = UIColor.clear
         self.delegate = self
         self.dataSource = self
         
         register(CCollection.templates)
 
-        
     }
-    init(_ flowLayout:CFlowLayout) {
-        self.init()
-        self.collectionViewLayout = flowLayout
-    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    override func numberOfItems(inSection section: Int) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let count = array?.count{
             return count
@@ -43,7 +41,7 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
         
         let model = array?[indexPath.row]
         if let m = model,let palm = model?.v_palm{
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: palm, for: indexPath) as! CollectionTemplate
+            let cell = self.dequeueReusableCell(withReuseIdentifier: palm, for: indexPath) as! CollectionTemplate
             cell.setModel(m)
             return cell
         }
@@ -53,11 +51,9 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
     
     func register(_ templates:Array<AnyClass>){
 
-        func register(_ templates:Array<AnyClass>){
-            for value in templates{
-                let className:String=NSStringFromClass(value).components(separatedBy: ".").last!
-                self.register(value, forCellWithReuseIdentifier: className)
-            }
+        for value in templates{
+            let className:String=NSStringFromClass(value).components(separatedBy: ".").last!
+            self.register(value, forCellWithReuseIdentifier: className)
         }
     }
    
