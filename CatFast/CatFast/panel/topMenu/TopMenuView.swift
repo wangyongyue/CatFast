@@ -19,17 +19,18 @@ class TopMenuView: CView {
         // Do any additional setup after loading the view.
         self.backgroundColor = UIColor.white
         
-        let flow = CFlowLayout.init(CGSize.init(width: 60, height: 30), .horizontal)
-        let table = CCollection.init(frame: CGRect.init(x: 0, y: 100, width: Screen.width(), height:  30), collectionViewLayout: flow)
-        table.backgroundColor = Color.red()
+        let flow = CFlowLayout.init(CGSize.init(width: 100, height: 50), .horizontal)
+        let table = CCollection.init( flow)
+        table.backgroundColor = Color.clear()
         self.addSubview(table)
+        table.snp.makeConstraints { (make) in
+            make.left.right.top.bottom.equalTo(0)
+        }
         
         table.v_array(ob: obArray)
         table.register([TopMenuCell.classForCoder()])
         
-        let m = TopMenu()
-        m.loadData(ob: self.obArray)
-        
+       
         table.v_index(ob: obIndex)
         
        
@@ -38,32 +39,6 @@ class TopMenuView: CView {
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    
-}
-class TopMenu:NSObject{
-    
-    func loadData(ob:Observe?){
-        
-        
-        var array = Array<Cat>()
-        for i in 1...6{
-            
-            let m = TopMenuCellModel()
-            m.name = "wyy\(i)"
-            array.append(m)
-            
-        }
-        
-        
-        ob?.v_array(true, v: { () -> Array<Cat>? in
-            
-            return array
-        })
-        
-        
-        
     }
     
     

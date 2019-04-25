@@ -17,12 +17,15 @@ class CWindow: UIView {
         let window = UIApplication.shared.keyWindow
         if let w = window{
             
-            
             self.backgroundColor = UIColor.clear
-//            self.alpha = 0.6 
             self.frame = w.bounds
             w.addSubview(self)
         }
+    }
+    convenience init(_ disappear:Bool,_ backColor:UIColor = UIColor.clear){
+        self.init()
+        self.disappear = disappear
+        self.backgroundColor = backColor
     }
     
     required init?(coder aDecoder: NSCoder) {

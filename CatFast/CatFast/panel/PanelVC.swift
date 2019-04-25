@@ -17,18 +17,12 @@ class PanelVC: CViewController {
         let button = CButton(style)
         self.view.addSubview(button)
         
-//        let t =  TemplatesView()
-        let t =  ComponentsView()
+        let t =  TemplatesView()
+//        let t =  ComponentsView()
 
         button.v_click {
-        
-                        
-            let window = CWindow()
-            window.disappear = true
-            
-            
-            window.addSubview(t)
-            t.frame = CGRect.init(x: 0, y: Screen.height() - 200, width: Screen.width(),height: 200)
+    
+            CWindow.init(true).addSubview(t)
             
         }
         

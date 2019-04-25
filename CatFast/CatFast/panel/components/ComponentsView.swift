@@ -11,19 +11,39 @@ import UIKit
 class ComponentsView: CView {
 
     var obArray = Observe()
-    
+    var menuArray = Observe()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         
         // Do any additional setup after loading the view.
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.clear
+        
+        self.frame = CGRect.init(x: 0, y: 0, width: Screen.width(), height: Screen.height())
+        
         
         
         let menu = TopMenuView()
-        menu.frame = CGRect.init(x: 0, y: 0, width: Screen.width(), height: 30)
         self.addSubview(menu)
         
+        menu.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0)
+            make.bottom.equalTo(-(Screen.height()/3 + 30))
+            make.height.equalTo(50)
+        }
+        menu.obArray.v_array(false) { () -> Array<Cat>? in
+            
+            var array = Array<Cat>()
+            for i in 1...6{
+                
+                let m = TopMenuCellModel()
+                m.name = "wyycom\(i)"
+                array.append(m)
+                
+            }
+            return array
+        }
         menu.obIndex.v_index { (index) in
             
             
@@ -39,9 +59,9 @@ class ComponentsView: CView {
         table.v_array(ob: obArray)
         table.register([Com001Cell.classForCoder()])
         table.snp.makeConstraints { (make) in
-            make.width.equalToSuperview()
-            make.center.equalToSuperview()
-            make.height.equalTo(200)
+            make.left.right.equalTo(0)
+            make.bottom.equalTo(0)
+            make.height.equalTo(Screen.height()/3 + 30)
         }
         
         let m = Components()

@@ -16,9 +16,13 @@ class TopMenuCell: CollectionTemplate {
     
         
         
-        let labelStyle = Style().x(0).y(100).width(60).height(30).text("test").textColor(Color.black()).backgroundColor(Color.white())
+        let labelStyle = Style().text("test").textColor(Color.black()).backgroundColor(Color.white())
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
+        
+        headerLabel.snp.makeConstraints { (make) in
+            make.left.right.top.bottom.equalTo(0)
+        }
         
         headerLabel.v_text(ob: holder.textOb)
         

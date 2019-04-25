@@ -16,12 +16,31 @@ class TemplatesView: CView {
     
         
         // Do any additional setup after loading the view.
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.clear
         
+        self.frame = CGRect.init(x: 0, y: 0, width: Screen.width(), height: Screen.height())
         
         let menu = TopMenuView()
-        menu.frame = CGRect.init(x: 0, y: 0, width: Screen.width(), height: 30)
         self.addSubview(menu)
+
+        menu.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0)
+            make.bottom.equalTo(-(Screen.height()/3 + 30))
+            make.height.equalTo(50)
+        }
+        menu.obArray.v_array(false) { () -> Array<Cat>? in
+            
+            var array = Array<Cat>()
+            for i in 1...6{
+                
+                let m = TopMenuCellModel()
+                m.name = "wyytem\(i)"
+                array.append(m)
+                
+            }
+            return array
+        }
+       
         
         menu.obIndex.v_index { (index) in
             
@@ -30,7 +49,7 @@ class TemplatesView: CView {
         }
 
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3 + 30), .vertical)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.height()/3), .vertical)
         let table = CCollection.init( flow)
         table.backgroundColor = Color.red()
         self.addSubview(table)
@@ -39,9 +58,9 @@ class TemplatesView: CView {
         table.register([Tem001Cell.classForCoder()])
 
         table.snp.makeConstraints { (make) in
-            make.width.equalToSuperview()
-            make.center.equalToSuperview()
-            make.height.equalTo(200)
+            make.left.right.equalTo(0)
+            make.bottom.equalTo(0)
+            make.height.equalTo(Screen.height()/3 + 30)
         }
         
         let m = Templates()
@@ -79,7 +98,6 @@ class Templates:NSObject{
             let m = Tem001CellModel()
             m.name = "wyy\(i)"
             array.append(m)
-            
             
         }
         
