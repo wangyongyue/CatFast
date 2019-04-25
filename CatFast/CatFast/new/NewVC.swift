@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class NewVC: CViewController {
 
     var obArray = Observe()
@@ -18,15 +18,19 @@ class NewVC: CViewController {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3 + 30), .horizontal)
-        let table = CCollection.init(frame: CGRect.init(x: 0, y: 100, width: Screen.width(), height:  Screen.width()/3 + 30), collectionViewLayout: flow)
+        let flow = CFlowLayout.init(CGSize.init(width: 200, height: 200), .horizontal)
+        let table = CCollection.init(flow)
         table.backgroundColor = Color.red()
         self.view.addSubview(table)
 
         table.v_array(ob: obArray)
         table.register([NewCell.classForCoder(),NewFirstCell.classForCoder(),NewLastCell.classForCoder()])
 
-        
+        table.snp.makeConstraints { (make) in
+            make.width.equalToSuperview()
+            make.center.equalToSuperview()
+            make.height.equalTo(200)
+        }
         
         let m = Main()
         m.loadData(ob: self.obArray)
@@ -36,6 +40,20 @@ class NewVC: CViewController {
         table.v_didSelect { (index) in
 
             print(index)
+            
+//            let className = "CatFast.PanelVC"
+//            if let classType = NSClassFromString(className) as? CViewController.Type {
+//
+//                let vc = classType.init()
+//                self.navigationController?.pushViewController(vc, animated: true)
+//
+//            }
+            
+            
+            
+            
+            
+            
             Router.push(PanelVC(), ["id":10], { (obj) in
                 print(obj)
             })
@@ -64,15 +82,18 @@ class Main:NSObject{
                 let m = NewFirstCellModel()
                 m.name = "wyy\(i)"
                 array.append(m)
+                
             }else if i == 6{
                 let m = NewLastCellModel()
                 m.name = "wyy\(i)"
                 array.append(m)
+                
             }else{
                 
                 let m = NewCellModel()
                 m.name = "wyy\(i)"
                 array.append(m)
+                
             }
             
             

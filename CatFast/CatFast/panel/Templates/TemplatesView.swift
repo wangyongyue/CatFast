@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class TemplatesView: CView {
 
     var obArray = Observe()
@@ -31,13 +30,19 @@ class TemplatesView: CView {
         }
 
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3 + 30), .horizontal)
-        let table = CCollection.init(frame: CGRect.init(x: 0, y: 0, width: Screen.width(), height:  Screen.width()/3 + 30), collectionViewLayout: flow)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3 + 30), .vertical)
+        let table = CCollection.init( flow)
         table.backgroundColor = Color.red()
         self.addSubview(table)
         
         table.v_array(ob: obArray)
-        table.register([NewCell.classForCoder(),NewFirstCell.classForCoder(),NewLastCell.classForCoder()])
+        table.register([Tem001Cell.classForCoder()])
+
+        table.snp.makeConstraints { (make) in
+            make.width.equalToSuperview()
+            make.center.equalToSuperview()
+            make.height.equalTo(200)
+        }
         
         let m = Templates()
         m.loadData(ob: self.obArray)
@@ -71,20 +76,9 @@ class Templates:NSObject{
         var array = Array<Cat>()
         for i in 1...6{
             
-            if i == 1{
-                let m = NewFirstCellModel()
-                m.name = "wyy\(i)"
-                array.append(m)
-            }else if i == 6{
-                let m = NewLastCellModel()
-                m.name = "wyy\(i)"
-                array.append(m)
-            }else{
-                
-                let m = NewCellModel()
-                m.name = "wyy\(i)"
-                array.append(m)
-            }
+            let m = Tem001CellModel()
+            m.name = "wyy\(i)"
+            array.append(m)
             
             
         }

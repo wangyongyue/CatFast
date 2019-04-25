@@ -31,13 +31,18 @@ class ComponentsView: CView {
         }
         
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3 + 30), .horizontal)
-        let table = CCollection.init(frame: CGRect.init(x: 0, y: 0, width: Screen.width(), height:  Screen.width()/3 + 30), collectionViewLayout: flow)
+        let flow = CCustomLayout.init( .vertical)
+        let table = CCollection.init( flow)
         table.backgroundColor = Color.red()
         self.addSubview(table)
         
         table.v_array(ob: obArray)
-        table.register([NewCell.classForCoder(),NewFirstCell.classForCoder(),NewLastCell.classForCoder()])
+        table.register([Com001Cell.classForCoder()])
+        table.snp.makeConstraints { (make) in
+            make.width.equalToSuperview()
+            make.center.equalToSuperview()
+            make.height.equalTo(200)
+        }
         
         let m = Components()
         m.loadData(ob: self.obArray)
@@ -69,10 +74,17 @@ class Components:NSObject{
         
         
         var array = Array<Cat>()
-        for i in 1...6{
+        for i in 0...5{
             
-            let m = NewCellModel()
+            let m = Com001CellModel()
             m.name = "wyy\(i)"
+            if i == 0 || i == 2 || i == 4{
+                m.rect = CGRect.init(x: 0, y: 100 * (i/2) , width: 100, height: 100)
+
+            }else{
+                m.rect = CGRect.init(x: 100, y: 100 * (i/2), width: 100, height: 100)
+
+            }
             array.append(m)
             
             

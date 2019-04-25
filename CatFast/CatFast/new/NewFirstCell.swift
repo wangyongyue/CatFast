@@ -13,16 +13,31 @@ class NewFirstCell: CollectionTemplate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let imgStyle = Style().x(0).y(0).width(Screen.width()/3 - 20).height(Screen.width()/3 - 20).backgroundColor(Color.white())
+        let imgStyle = Style().backgroundColor(Color.white())
         let headerImg = CImageView(imgStyle)
         self.contentView.addSubview(headerImg)
         
         
-        let labelStyle = Style().x(0).y(100).width(Screen.width()/3 - 20).height(30).text("test").textColor(Color.black())
+        let labelStyle = Style().text("test").textColor(Color.black())
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
     
+        headerImg.snp.makeConstraints { (make) in
+            make.top.equalTo(10)
+            make.left.equalTo(20)
+            make.right.equalTo(-0)
+            make.bottom.equalTo(-30)
+            
+        }
+        
+        headerLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
+            make.left.equalTo(20)
+            make.right.equalTo(-0)
+            make.height.equalTo(30)
+        }
+        
         
     }
     

@@ -16,6 +16,10 @@ class PanelVC: CViewController {
         let style = Style().text("添加").backgroundColor(Color.clear()).textColor(Color.red()).x(100).y(200).width(60).height(30)
         let button = CButton(style)
         self.view.addSubview(button)
+        
+//        let t =  TemplatesView()
+        let t =  ComponentsView()
+
         button.v_click {
         
                         
@@ -23,15 +27,8 @@ class PanelVC: CViewController {
             window.disappear = true
             
             
-//            let t =  TemplatesView()
-//            window.addSubview(t)
-//            t.frame = CGRect.init(x: 0, y: Screen.height() - 200, width: Screen.width(),height: 200)
-//            
-            
-            let t =  ComponentsView()
             window.addSubview(t)
             t.frame = CGRect.init(x: 0, y: Screen.height() - 200, width: Screen.width(),height: 200)
-            
             
         }
         

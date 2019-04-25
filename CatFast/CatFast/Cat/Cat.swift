@@ -11,6 +11,7 @@ import UIKit
 class Cat: NSObject {
     
     var v_palm:String?
+    var rect:CGRect?
     
 }
 

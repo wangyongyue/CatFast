@@ -23,6 +23,9 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
         register(CCollection.templates)
 
     }
+    convenience init(_ layout: UICollectionViewLayout) {
+        self.init(frame: CGRect.zero, collectionViewLayout: layout)
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -37,6 +40,7 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
         }
         return 0
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let model = array?[indexPath.row]
