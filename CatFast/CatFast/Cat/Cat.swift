@@ -11,7 +11,12 @@ import UIKit
 class Cat: NSObject {
     
     var v_palm:String?
-    var rect:CGRect?
+    override init() {
+        super.init()
+    }
+    required init(_ palm:String) {
+        v_palm = palm
+    }
     
 }
 

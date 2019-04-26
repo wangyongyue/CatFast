@@ -11,7 +11,7 @@ import UIKit
 class ComponentsView: CView {
 
     var obArray = Observe()
-    var menuArray = Observe()
+    var obIndex = Observe()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,7 +37,7 @@ class ComponentsView: CView {
             var array = Array<Cat>()
             for i in 1...6{
                 
-                let m = TopMenuCellModel()
+                let m = TopMenuCellModel("TopMenuCell")
                 m.name = "wyycom\(i)"
                 array.append(m)
                 
@@ -51,13 +51,27 @@ class ComponentsView: CView {
         }
         
         
-        let flow = CCustomLayout.init( .vertical)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3/2), .vertical)
         let table = CCollection.init( flow)
         table.backgroundColor = Color.red()
         self.addSubview(table)
         
         table.v_array(ob: obArray)
-        table.register([Com001Cell.classForCoder()])
+        
+        var classArray = Array<AnyClass>()
+        for i in 1...comNumber{
+            
+            let classType = ClassType.getCellClass("Com", i)
+            if let type = classType{
+                
+                classArray.append(type)
+
+            }
+        }
+        
+        table.register(classArray)
+        
+        
         table.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.bottom.equalTo(0)
@@ -67,24 +81,30 @@ class ComponentsView: CView {
         let m = Components()
         m.loadData(ob: self.obArray)
         
+        table.v_index(ob: obIndex)
         
-        table.v_didSelect { (index) in
-            
-            
-        }
+//        table.v_didSelect { (index) in
+//
+//
+//        }
+//
+//        table.v_didEvent { (model) in
+//
+//
+//        }
         
-        table.v_didEvent { (model) in
-            
-            
-        }
         
+    }
+    
+    func remove(){
+        
+        self.superview?.removeFromSuperview()
         
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
-    
+
     
     
 }
@@ -94,22 +114,17 @@ class Components:NSObject{
         
         
         var array = Array<Cat>()
-        for i in 0...5{
+        for i in 1...comNumber{
             
-            let m = Com001CellModel()
-            m.name = "wyy\(i)"
-            if i == 0 || i == 2 || i == 4{
-                m.rect = CGRect.init(x: 0, y: 100 * (i/2) , width: 100, height: 100)
-
-            }else{
-                m.rect = CGRect.init(x: 100, y: 100 * (i/2), width: 100, height: 100)
-
+            let m  = ClassType.getCatClass("Com", i)
+            if let a = m{
+                array.append(a)
             }
-            array.append(m)
-            
+//            let m = Com001CellModel()
+//            m.name = "wyy\(i)"
+//            array.append(m)
             
         }
-        
         
         ob?.v_array(true, v: { () -> Array<Cat>? in
             

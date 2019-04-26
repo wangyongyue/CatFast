@@ -58,10 +58,7 @@ class Tem001Cell: CollectionTemplate {
     
 }
 class Tem001CellModel: Cat {
-    override init() {
-        super.init()
-        v_palm = "Tem001Cell"
-    }
+    
     var name:String?
     var image:UIImage?
     

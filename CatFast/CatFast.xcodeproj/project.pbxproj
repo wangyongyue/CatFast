@@ -20,9 +20,38 @@
 		18BC334B2270642600E79547 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC334A2270642600E79547 /* TopMenuView.swift */; };
 		18BC334D2270644900E79547 /* TopMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC334C2270644900E79547 /* TopMenuCell.swift */; };
 		18BC33652271942500E79547 /* CCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33642271942500E79547 /* CCustomLayout.swift */; };
-		18BC33692271A60800E79547 /* Tem001VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33682271A60800E79547 /* Tem001VC.swift */; };
 		18BC336E2271B4A800E79547 /* Tem001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC336D2271B4A800E79547 /* Tem001Cell.swift */; };
 		18BC33712271B67D00E79547 /* Com001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33702271B67D00E79547 /* Com001Cell.swift */; };
+		18BC33752272D4E400E79547 /* Tem001Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33742272D4E400E79547 /* Tem001Layout.swift */; };
+		18BC33802272D64A00E79547 /* Tem002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC337F2272D64A00E79547 /* Tem002Cell.swift */; };
+		18BC33822272D68300E79547 /* Tem003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33812272D68300E79547 /* Tem003Cell.swift */; };
+		18BC33842272D6AB00E79547 /* Tem004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33832272D6AB00E79547 /* Tem004Cell.swift */; };
+		18BC33862272D6D100E79547 /* Tem005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33852272D6D100E79547 /* Tem005Cell.swift */; };
+		18BC33882272D6F000E79547 /* Tem006Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33872272D6F000E79547 /* Tem006Cell.swift */; };
+		18BC338A2272D70D00E79547 /* Tem007Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33892272D70D00E79547 /* Tem007Cell.swift */; };
+		18BC338C2272D72B00E79547 /* Tem008Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC338B2272D72B00E79547 /* Tem008Cell.swift */; };
+		18BC338E2272D78B00E79547 /* Tem009Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC338D2272D78B00E79547 /* Tem009Cell.swift */; };
+		18BC33902272D7C300E79547 /* Tem010Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC338F2272D7C300E79547 /* Tem010Cell.swift */; };
+		18BC33AD2272D9D900E79547 /* Tem010Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33AC2272D9D900E79547 /* Tem010Layout.swift */; };
+		18BC33AF2272DA0700E79547 /* Tem009Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33AE2272DA0700E79547 /* Tem009Layout.swift */; };
+		18BC33B12272DA1F00E79547 /* Tem008Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33B02272DA1F00E79547 /* Tem008Layout.swift */; };
+		18BC33B32272DA2D00E79547 /* Tem007Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33B22272DA2D00E79547 /* Tem007Layout.swift */; };
+		18BC33B52272DA3D00E79547 /* Tem006Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33B42272DA3D00E79547 /* Tem006Layout.swift */; };
+		18BC33B92272DA5E00E79547 /* Tem004Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33B82272DA5E00E79547 /* Tem004Layout.swift */; };
+		18BC33BB2272DA6D00E79547 /* Tem003Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33BA2272DA6D00E79547 /* Tem003Layout.swift */; };
+		18BC33BD2272DA7A00E79547 /* Tem002Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33BC2272DA7A00E79547 /* Tem002Layout.swift */; };
+		18BC33C82272E71D00E79547 /* Com002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33C72272E71D00E79547 /* Com002Cell.swift */; };
+		18BC33CA2272E74200E79547 /* Com003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33C92272E74200E79547 /* Com003Cell.swift */; };
+		18BC33CC2272E75E00E79547 /* Com004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33CB2272E75E00E79547 /* Com004Cell.swift */; };
+		18BC33CE2272E77F00E79547 /* Com005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33CD2272E77F00E79547 /* Com005Cell.swift */; };
+		18BC33D02272E7E500E79547 /* Com006Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33CF2272E7E500E79547 /* Com006Cell.swift */; };
+		18BC33D22272E7FB00E79547 /* Com007Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33D12272E7FB00E79547 /* Com007Cell.swift */; };
+		18BC33D42272E85B00E79547 /* Com008Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33D32272E85B00E79547 /* Com008Cell.swift */; };
+		18BC33D62272EB0D00E79547 /* Com009Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33D52272EB0D00E79547 /* Com009Cell.swift */; };
+		18BC33D82272EB2700E79547 /* Com010Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33D72272EB2700E79547 /* Com010Cell.swift */; };
+		18BC33DB2272FF6700E79547 /* ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DA2272FF6700E79547 /* ClassType.swift */; };
+		18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DC22730FAF00E79547 /* Tem005Layout.swift */; };
+		18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DF2273127800E79547 /* PanelAddCell.swift */; };
 		412E8D00D196F8076399662D /* Pods_CatFastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D1715C83E45CE1ACA33D87 /* Pods_CatFastTests.framework */; };
 		4549F0DA226F50AD00A57F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F0D9226F50AD00A57F6D /* AppDelegate.swift */; };
 		4549F0DC226F50AD00A57F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F0DB226F50AD00A57F6D /* ViewController.swift */; };
@@ -85,9 +114,38 @@
 		18BC334A2270642600E79547 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
 		18BC334C2270644900E79547 /* TopMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuCell.swift; sourceTree = "<group>"; };
 		18BC33642271942500E79547 /* CCustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCustomLayout.swift; sourceTree = "<group>"; };
-		18BC33682271A60800E79547 /* Tem001VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem001VC.swift; sourceTree = "<group>"; };
 		18BC336D2271B4A800E79547 /* Tem001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem001Cell.swift; sourceTree = "<group>"; };
 		18BC33702271B67D00E79547 /* Com001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com001Cell.swift; sourceTree = "<group>"; };
+		18BC33742272D4E400E79547 /* Tem001Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem001Layout.swift; sourceTree = "<group>"; };
+		18BC337F2272D64A00E79547 /* Tem002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem002Cell.swift; sourceTree = "<group>"; };
+		18BC33812272D68300E79547 /* Tem003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem003Cell.swift; sourceTree = "<group>"; };
+		18BC33832272D6AB00E79547 /* Tem004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem004Cell.swift; sourceTree = "<group>"; };
+		18BC33852272D6D100E79547 /* Tem005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem005Cell.swift; sourceTree = "<group>"; };
+		18BC33872272D6F000E79547 /* Tem006Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem006Cell.swift; sourceTree = "<group>"; };
+		18BC33892272D70D00E79547 /* Tem007Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem007Cell.swift; sourceTree = "<group>"; };
+		18BC338B2272D72B00E79547 /* Tem008Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem008Cell.swift; sourceTree = "<group>"; };
+		18BC338D2272D78B00E79547 /* Tem009Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem009Cell.swift; sourceTree = "<group>"; };
+		18BC338F2272D7C300E79547 /* Tem010Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem010Cell.swift; sourceTree = "<group>"; };
+		18BC33AC2272D9D900E79547 /* Tem010Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem010Layout.swift; sourceTree = "<group>"; };
+		18BC33AE2272DA0700E79547 /* Tem009Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem009Layout.swift; sourceTree = "<group>"; };
+		18BC33B02272DA1F00E79547 /* Tem008Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem008Layout.swift; sourceTree = "<group>"; };
+		18BC33B22272DA2D00E79547 /* Tem007Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem007Layout.swift; sourceTree = "<group>"; };
+		18BC33B42272DA3D00E79547 /* Tem006Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem006Layout.swift; sourceTree = "<group>"; };
+		18BC33B82272DA5E00E79547 /* Tem004Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem004Layout.swift; sourceTree = "<group>"; };
+		18BC33BA2272DA6D00E79547 /* Tem003Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem003Layout.swift; sourceTree = "<group>"; };
+		18BC33BC2272DA7A00E79547 /* Tem002Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem002Layout.swift; sourceTree = "<group>"; };
+		18BC33C72272E71D00E79547 /* Com002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com002Cell.swift; sourceTree = "<group>"; };
+		18BC33C92272E74200E79547 /* Com003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com003Cell.swift; sourceTree = "<group>"; };
+		18BC33CB2272E75E00E79547 /* Com004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com004Cell.swift; sourceTree = "<group>"; };
+		18BC33CD2272E77F00E79547 /* Com005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com005Cell.swift; sourceTree = "<group>"; };
+		18BC33CF2272E7E500E79547 /* Com006Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com006Cell.swift; sourceTree = "<group>"; };
+		18BC33D12272E7FB00E79547 /* Com007Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com007Cell.swift; sourceTree = "<group>"; };
+		18BC33D32272E85B00E79547 /* Com008Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com008Cell.swift; sourceTree = "<group>"; };
+		18BC33D52272EB0D00E79547 /* Com009Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com009Cell.swift; sourceTree = "<group>"; };
+		18BC33D72272EB2700E79547 /* Com010Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Com010Cell.swift; sourceTree = "<group>"; };
+		18BC33DA2272FF6700E79547 /* ClassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassType.swift; sourceTree = "<group>"; };
+		18BC33DC22730FAF00E79547 /* Tem005Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem005Layout.swift; sourceTree = "<group>"; };
+		18BC33DF2273127800E79547 /* PanelAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAddCell.swift; sourceTree = "<group>"; };
 		2C265EB20526D65E4BB80EC1 /* Pods-CatFastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFastTests.release.xcconfig"; path = "Target Support Files/Pods-CatFastTests/Pods-CatFastTests.release.xcconfig"; sourceTree = "<group>"; };
 		35D1715C83E45CE1ACA33D87 /* Pods_CatFastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatFastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F37C956F5540E45E0A3276 /* Pods-CatFastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFastUITests.debug.xcconfig"; path = "Target Support Files/Pods-CatFastUITests/Pods-CatFastUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				18BC332B226FFBD700E79547 /* PanelVC.swift */,
+				18BC33DE2273125800E79547 /* addCell */,
 				18BC3349227063FF00E79547 /* topMenu */,
 				18BC334122703C9600E79547 /* Templates */,
 				18BC334222703CA300E79547 /* components */,
@@ -173,6 +232,7 @@
 		18BC332F2270009000E79547 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				18BC33D92272FF5100E79547 /* classType */,
 				18BC33342270036D00E79547 /* color */,
 				18BC33332270036A00E79547 /* img */,
 				18BC3330227000A800E79547 /* navigation */,
@@ -235,6 +295,15 @@
 		18BC33662271A57D00E79547 /* tems */ = {
 			isa = PBXGroup;
 			children = (
+				18BC337E2272D5FA00E79547 /* Tem010 */,
+				18BC337D2272D5F200E79547 /* Tem009 */,
+				18BC337C2272D5EF00E79547 /* Tem008 */,
+				18BC337B2272D5E600E79547 /* Tem007 */,
+				18BC337A2272D5E300E79547 /* Tem006 */,
+				18BC33792272D5E000E79547 /* Tem005 */,
+				18BC33782272D5DD00E79547 /* Tem004 */,
+				18BC33772272D5DB00E79547 /* Tem003 */,
+				18BC33762272D5D800E79547 /* Tem002 */,
 				18BC336C2271B32000E79547 /* Tem001 */,
 			);
 			path = tems;
@@ -243,6 +312,15 @@
 		18BC33672271A58B00E79547 /* coms */ = {
 			isa = PBXGroup;
 			children = (
+				18BC33C62272DB6600E79547 /* Com010 */,
+				18BC33C52272DB6300E79547 /* Com009 */,
+				18BC33C42272DB5500E79547 /* Com008 */,
+				18BC33C32272DB5200E79547 /* Com007 */,
+				18BC33C22272DB5000E79547 /* Com006 */,
+				18BC33C12272DB4E00E79547 /* Com005 */,
+				18BC33C02272DB4C00E79547 /* Com004 */,
+				18BC33BF2272DB4A00E79547 /* Com003 */,
+				18BC33BE2272DB4700E79547 /* Com002 */,
 				18BC336F2271B65300E79547 /* Com001 */,
 			);
 			path = coms;
@@ -252,7 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				18BC336D2271B4A800E79547 /* Tem001Cell.swift */,
-				18BC33682271A60800E79547 /* Tem001VC.swift */,
+				18BC33742272D4E400E79547 /* Tem001Layout.swift */,
 			);
 			path = Tem001;
 			sourceTree = "<group>";
@@ -263,6 +341,175 @@
 				18BC33702271B67D00E79547 /* Com001Cell.swift */,
 			);
 			path = Com001;
+			sourceTree = "<group>";
+		};
+		18BC33762272D5D800E79547 /* Tem002 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC337F2272D64A00E79547 /* Tem002Cell.swift */,
+				18BC33BC2272DA7A00E79547 /* Tem002Layout.swift */,
+			);
+			path = Tem002;
+			sourceTree = "<group>";
+		};
+		18BC33772272D5DB00E79547 /* Tem003 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33812272D68300E79547 /* Tem003Cell.swift */,
+				18BC33BA2272DA6D00E79547 /* Tem003Layout.swift */,
+			);
+			path = Tem003;
+			sourceTree = "<group>";
+		};
+		18BC33782272D5DD00E79547 /* Tem004 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33832272D6AB00E79547 /* Tem004Cell.swift */,
+				18BC33B82272DA5E00E79547 /* Tem004Layout.swift */,
+			);
+			path = Tem004;
+			sourceTree = "<group>";
+		};
+		18BC33792272D5E000E79547 /* Tem005 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33852272D6D100E79547 /* Tem005Cell.swift */,
+				18BC33DC22730FAF00E79547 /* Tem005Layout.swift */,
+			);
+			path = Tem005;
+			sourceTree = "<group>";
+		};
+		18BC337A2272D5E300E79547 /* Tem006 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33872272D6F000E79547 /* Tem006Cell.swift */,
+				18BC33B42272DA3D00E79547 /* Tem006Layout.swift */,
+			);
+			path = Tem006;
+			sourceTree = "<group>";
+		};
+		18BC337B2272D5E600E79547 /* Tem007 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33892272D70D00E79547 /* Tem007Cell.swift */,
+				18BC33B22272DA2D00E79547 /* Tem007Layout.swift */,
+			);
+			path = Tem007;
+			sourceTree = "<group>";
+		};
+		18BC337C2272D5EF00E79547 /* Tem008 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC338B2272D72B00E79547 /* Tem008Cell.swift */,
+				18BC33B02272DA1F00E79547 /* Tem008Layout.swift */,
+			);
+			path = Tem008;
+			sourceTree = "<group>";
+		};
+		18BC337D2272D5F200E79547 /* Tem009 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC338D2272D78B00E79547 /* Tem009Cell.swift */,
+				18BC33AE2272DA0700E79547 /* Tem009Layout.swift */,
+			);
+			path = Tem009;
+			sourceTree = "<group>";
+		};
+		18BC337E2272D5FA00E79547 /* Tem010 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC338F2272D7C300E79547 /* Tem010Cell.swift */,
+				18BC33AC2272D9D900E79547 /* Tem010Layout.swift */,
+			);
+			path = Tem010;
+			sourceTree = "<group>";
+		};
+		18BC33BE2272DB4700E79547 /* Com002 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33C72272E71D00E79547 /* Com002Cell.swift */,
+			);
+			path = Com002;
+			sourceTree = "<group>";
+		};
+		18BC33BF2272DB4A00E79547 /* Com003 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33C92272E74200E79547 /* Com003Cell.swift */,
+			);
+			path = Com003;
+			sourceTree = "<group>";
+		};
+		18BC33C02272DB4C00E79547 /* Com004 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33CB2272E75E00E79547 /* Com004Cell.swift */,
+			);
+			path = Com004;
+			sourceTree = "<group>";
+		};
+		18BC33C12272DB4E00E79547 /* Com005 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33CD2272E77F00E79547 /* Com005Cell.swift */,
+			);
+			path = Com005;
+			sourceTree = "<group>";
+		};
+		18BC33C22272DB5000E79547 /* Com006 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33CF2272E7E500E79547 /* Com006Cell.swift */,
+			);
+			path = Com006;
+			sourceTree = "<group>";
+		};
+		18BC33C32272DB5200E79547 /* Com007 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33D12272E7FB00E79547 /* Com007Cell.swift */,
+			);
+			path = Com007;
+			sourceTree = "<group>";
+		};
+		18BC33C42272DB5500E79547 /* Com008 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33D32272E85B00E79547 /* Com008Cell.swift */,
+			);
+			path = Com008;
+			sourceTree = "<group>";
+		};
+		18BC33C52272DB6300E79547 /* Com009 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33D52272EB0D00E79547 /* Com009Cell.swift */,
+			);
+			path = Com009;
+			sourceTree = "<group>";
+		};
+		18BC33C62272DB6600E79547 /* Com010 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33D72272EB2700E79547 /* Com010Cell.swift */,
+			);
+			path = Com010;
+			sourceTree = "<group>";
+		};
+		18BC33D92272FF5100E79547 /* classType */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33DA2272FF6700E79547 /* ClassType.swift */,
+			);
+			path = classType;
+			sourceTree = "<group>";
+		};
+		18BC33DE2273125800E79547 /* addCell */ = {
+			isa = PBXGroup;
+			children = (
+				18BC33DF2273127800E79547 /* PanelAddCell.swift */,
+			);
+			path = addCell;
 			sourceTree = "<group>";
 		};
 		4549F0CD226F50AD00A57F6D = {
@@ -764,38 +1011,67 @@
 				4549F13B226F519B00A57F6D /* CFlowLayout.swift in Sources */,
 				4549F12F226F519B00A57F6D /* Observe.swift in Sources */,
 				18BC33462270635D00E79547 /* TemplatesView.swift in Sources */,
+				18BC33D22272E7FB00E79547 /* Com007Cell.swift in Sources */,
+				18BC33802272D64A00E79547 /* Tem002Cell.swift in Sources */,
 				4549F12E226F519B00A57F6D /* Cat.swift in Sources */,
 				4549F146226F5AE800A57F6D /* NewVC.swift in Sources */,
+				18BC33862272D6D100E79547 /* Tem005Cell.swift in Sources */,
+				18BC33882272D6F000E79547 /* Tem006Cell.swift in Sources */,
+				18BC33902272D7C300E79547 /* Tem010Cell.swift in Sources */,
 				18BC334B2270642600E79547 /* TopMenuView.swift in Sources */,
+				18BC338C2272D72B00E79547 /* Tem008Cell.swift in Sources */,
+				18BC33B92272DA5E00E79547 /* Tem004Layout.swift in Sources */,
 				4549F13C226F519B00A57F6D /* CCollection.swift in Sources */,
 				4549F13A226F519B00A57F6D /* TableTemplate.swift in Sources */,
 				18BC33652271942500E79547 /* CCustomLayout.swift in Sources */,
 				4549F137226F519B00A57F6D /* CViewController.swift in Sources */,
+				18BC33B12272DA1F00E79547 /* Tem008Layout.swift in Sources */,
 				4549F136226F519B00A57F6D /* CText.swift in Sources */,
+				18BC33AD2272D9D900E79547 /* Tem010Layout.swift in Sources */,
+				18BC33B32272DA2D00E79547 /* Tem007Layout.swift in Sources */,
 				18BC33712271B67D00E79547 /* Com001Cell.swift in Sources */,
 				4549F13D226F519B00A57F6D /* CTable.swift in Sources */,
 				18BC33482270636E00E79547 /* ComponentsView.swift in Sources */,
+				18BC33CA2272E74200E79547 /* Com003Cell.swift in Sources */,
 				18BC33362270039100E79547 /* Img.swift in Sources */,
 				18BC333C2270083F00E79547 /* NewCell.swift in Sources */,
 				4549F0DC226F50AD00A57F6D /* ViewController.swift in Sources */,
+				18BC33BB2272DA6D00E79547 /* Tem003Layout.swift in Sources */,
+				18BC33C82272E71D00E79547 /* Com002Cell.swift in Sources */,
+				18BC33D62272EB0D00E79547 /* Com009Cell.swift in Sources */,
 				4549F130226F519B00A57F6D /* CWindow.swift in Sources */,
 				4549F131226F519B00A57F6D /* CView.swift in Sources */,
+				18BC33BD2272DA7A00E79547 /* Tem002Layout.swift in Sources */,
+				18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */,
+				18BC33D02272E7E500E79547 /* Com006Cell.swift in Sources */,
 				4549F133226F519B00A57F6D /* CField.swift in Sources */,
+				18BC33CC2272E75E00E79547 /* Com004Cell.swift in Sources */,
+				18BC33842272D6AB00E79547 /* Tem004Cell.swift in Sources */,
 				4549F13E226F519B00A57F6D /* Router.swift in Sources */,
 				4549F139226F519B00A57F6D /* Holder.swift in Sources */,
 				18BC334D2270644900E79547 /* TopMenuCell.swift in Sources */,
 				18BC3332227000BC00E79547 /* CNavigationController.swift in Sources */,
+				18BC33CE2272E77F00E79547 /* Com005Cell.swift in Sources */,
 				18BC336E2271B4A800E79547 /* Tem001Cell.swift in Sources */,
+				18BC33D42272E85B00E79547 /* Com008Cell.swift in Sources */,
+				18BC338E2272D78B00E79547 /* Tem009Cell.swift in Sources */,
 				18BC33402270341400E79547 /* NewLastCell.swift in Sources */,
+				18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */,
+				18BC33B52272DA3D00E79547 /* Tem006Layout.swift in Sources */,
 				4549F12D226F519B00A57F6D /* Style.swift in Sources */,
+				18BC33D82272EB2700E79547 /* Com010Cell.swift in Sources */,
 				18BC33382270039D00E79547 /* Color.swift in Sources */,
 				4549F0DA226F50AD00A57F6D /* AppDelegate.swift in Sources */,
 				18BC332C226FFBD700E79547 /* PanelVC.swift in Sources */,
-				18BC33692271A60800E79547 /* Tem001VC.swift in Sources */,
+				18BC338A2272D70D00E79547 /* Tem007Cell.swift in Sources */,
 				4549F134226F519B00A57F6D /* CImageView.swift in Sources */,
+				18BC33752272D4E400E79547 /* Tem001Layout.swift in Sources */,
+				18BC33DB2272FF6700E79547 /* ClassType.swift in Sources */,
 				4549F138226F519B00A57F6D /* CollectionTemplate.swift in Sources */,
+				18BC33AF2272DA0700E79547 /* Tem009Layout.swift in Sources */,
 				18BC333E2270340900E79547 /* NewFirstCell.swift in Sources */,
 				4549F135226F519B00A57F6D /* CLabel.swift in Sources */,
+				18BC33822272D68300E79547 /* Tem003Cell.swift in Sources */,
 				4549F132226F519B00A57F6D /* CButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

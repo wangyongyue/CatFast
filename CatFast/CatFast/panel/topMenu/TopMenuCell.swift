@@ -39,10 +39,7 @@ class TopMenuCell: CollectionTemplate {
     }
 }
 class TopMenuCellModel: Cat {
-    override init() {
-        super.init()
-        v_palm = "TopMenuCell"
-    }
+    
     var name:String?
     var image:UIImage?
     

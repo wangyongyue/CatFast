@@ -21,10 +21,12 @@ class TopMenuView: CView {
         
         let flow = CFlowLayout.init(CGSize.init(width: 100, height: 50), .horizontal)
         let table = CCollection.init( flow)
+        table.bounces = false
         table.backgroundColor = Color.clear()
         self.addSubview(table)
         table.snp.makeConstraints { (make) in
-            make.left.right.top.bottom.equalTo(0)
+            make.left.right.top.equalTo(0)
+            make.bottom.equalTo(0)
         }
         
         table.v_array(ob: obArray)

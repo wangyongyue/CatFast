@@ -10,7 +10,7 @@ import UIKit
 class TemplatesView: CView {
 
     var obArray = Observe()
-
+    var obIndex = Observe()
     override init(frame: CGRect) {
         super.init(frame: frame)
     
@@ -33,7 +33,7 @@ class TemplatesView: CView {
             var array = Array<Cat>()
             for i in 1...6{
                 
-                let m = TopMenuCellModel()
+                let m = TopMenuCellModel("TopMenuCell")
                 m.name = "wyytem\(i)"
                 array.append(m)
                 
@@ -66,18 +66,21 @@ class TemplatesView: CView {
         let m = Templates()
         m.loadData(ob: self.obArray)
         
-        
-        table.v_didSelect { (index) in
-            
-            
-        }
-        
-        table.v_didEvent { (model) in
-            
-            
-        }
+        table.v_index(ob: obIndex)
         
         
+//        table.v_didSelect { (index) in
+//            
+//            self.obIndex.v_index?(index)
+//        }
+        
+       
+        
+    }
+    func remove(){
+        
+        self.superview?.removeFromSuperview()
+
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -95,7 +98,7 @@ class Templates:NSObject{
         var array = Array<Cat>()
         for i in 1...6{
             
-            let m = Tem001CellModel()
+            let m = Tem001CellModel("Tem001Cell")
             m.name = "wyy\(i)"
             array.append(m)
             

@@ -49,6 +49,14 @@ class Screen{
         
         return UIScreen.main.bounds.height
     }
+    static func top() -> CGFloat{
+        
+        return 64
+    }
+    static func bottom() -> CGFloat{
+        
+        return -49
+    }
 }
 extension UIView{
     

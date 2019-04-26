@@ -1,16 +1,15 @@
 //
-//  NewCell.swift
+//  Com002Cell.swift
 //  CatFast
 //
-//  Created by apple on 2019/4/24.
+//  Created by apple on 2019/4/26.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class NewCell: CollectionTemplate {
-    
-    var holder = NewCellHolder()
+class Com002Cell: CollectionTemplate {
+    var holder = Com002CellHolder()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -30,16 +29,16 @@ class NewCell: CollectionTemplate {
         
         headerImg.snp.makeConstraints { (make) in
             make.top.equalTo(10)
-            make.left.equalTo(20)
-            make.right.equalTo(-0)
+            make.left.equalTo(10)
+            make.right.equalTo(-10)
             make.bottom.equalTo(-30)
             
         }
         
         headerLabel.snp.makeConstraints { (make) in
             make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
-            make.left.equalTo(20)
-            make.right.equalTo(-0)
+            make.left.equalTo(10)
+            make.right.equalTo(-10)
             make.height.equalTo(30)
         }
         
@@ -56,22 +55,22 @@ class NewCell: CollectionTemplate {
     }
     
     
-   
+    
 }
-class NewCellModel: Cat {
+class Com002CellModel: Cat {
     
     var name:String?
     var image:UIImage?
-
+    
 }
-class NewCellHolder: Holder {
+class Com002CellHolder: Holder {
     var textOb = Observe()
     var imageOb = Observe()
     
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
-        if amodel is NewCellModel{
-            let a = amodel as! NewCellModel
+        if amodel is Com002CellModel{
+            let a = amodel as! Com002CellModel
             
             textOb.v_text { () -> String? in
                 

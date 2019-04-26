@@ -8,12 +8,30 @@
 
 import UIKit
 import SnapKit
+
+let appName = "CatFast."
+let temNumber = 10
+let layoutNumber = 10
+let comNumber = 10
+let dataNumber = 16
+
+
 class NewVC: CViewController {
 
     var obArray = Observe()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        CCollection.templates.append(PanelAddCell.classForCoder())
+        
+        
+        
+        
+        
+        
+        
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
@@ -36,7 +54,17 @@ class NewVC: CViewController {
         m.loadData(ob: self.obArray)
 
         
-        
+        let t =  TemplatesView()
+        t.obIndex.v_index { (index) in
+            
+            print(index)
+            Router.push(PanelVC(), ["id":10], { (obj) in
+                
+                print(obj)
+            })
+            t.remove()
+        }
+
         table.v_didSelect { (index) in
 
             print(index)
@@ -51,12 +79,11 @@ class NewVC: CViewController {
             
             
             
+            CWindow.init(true).addSubview(t)
+
             
             
-            
-            Router.push(PanelVC(), ["id":10], { (obj) in
-                print(obj)
-            })
+           
             
         }
 
@@ -79,18 +106,18 @@ class Main:NSObject{
         for i in 1...6{
             
             if i == 1{
-                let m = NewFirstCellModel()
+                let m = NewFirstCellModel("NewFirstCell")
                 m.name = "wyy\(i)"
                 array.append(m)
                 
             }else if i == 6{
-                let m = NewLastCellModel()
+                let m = NewLastCellModel("NewFirstCell")
                 m.name = "wyy\(i)"
                 array.append(m)
                 
             }else{
                 
-                let m = NewCellModel()
+                let m = NewCellModel("NewCell")
                 m.name = "wyy\(i)"
                 array.append(m)
                 

@@ -54,10 +54,7 @@ class NewLastCell: CollectionTemplate {
     }
 }
 class NewLastCellModel: Cat {
-    override init() {
-        super.init()
-        v_palm = "NewLastCell"
-    }
+   
     var name:String?
     var image:UIImage?
     

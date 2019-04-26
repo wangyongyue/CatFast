@@ -19,7 +19,9 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
         self.backgroundColor = UIColor.clear
         self.delegate = self
         self.dataSource = self
-        
+        self.alwaysBounceVertical = true
+        self.showsHorizontalScrollIndicator = false
+        self.isDirectionalLockEnabled = true
         register(CCollection.templates)
 
     }

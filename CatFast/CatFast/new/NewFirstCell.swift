@@ -52,10 +52,7 @@ class NewFirstCell: CollectionTemplate {
 }
 
 class NewFirstCellModel: Cat {
-    override init() {
-        super.init()
-        v_palm = "NewFirstCell"
-    }
+    
     var name:String?
     var image:UIImage?
     
