@@ -34,7 +34,8 @@ class Com001Cell: CollectionTemplate {
             make.bottom.equalTo(-30)
             
         }
-        
+        headerLabel.textAlignment = .center
+
         headerLabel.snp.makeConstraints { (make) in
             make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
             make.left.equalTo(10)

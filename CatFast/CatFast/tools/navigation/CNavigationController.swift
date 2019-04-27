@@ -18,7 +18,7 @@ class CNavigationController: UINavigationController ,UINavigationControllerDeleg
         
         //样式
         
-        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white,NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18)]
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.clear,NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18)]
         
         
     }

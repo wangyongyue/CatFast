@@ -52,6 +52,38 @@
 		18BC33DB2272FF6700E79547 /* ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DA2272FF6700E79547 /* ClassType.swift */; };
 		18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DC22730FAF00E79547 /* Tem005Layout.swift */; };
 		18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DF2273127800E79547 /* PanelAddCell.swift */; };
+		18BC3411227440B500E79547 /* PanelDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC3410227440B500E79547 /* PanelDefaultVC.swift */; };
+		18BC34142274431100E79547 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC34132274431100E79547 /* SectionsView.swift */; };
+		18BC3422227443F900E79547 /* Sec001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC3421227443F900E79547 /* Sec001Cell.swift */; };
+		18BC34242274440300E79547 /* Sec002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC34232274440300E79547 /* Sec002Cell.swift */; };
+		18BC34262274441000E79547 /* Sec003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC34252274441000E79547 /* Sec003Cell.swift */; };
+		18BC34282274441E00E79547 /* Sec004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC34272274441E00E79547 /* Sec004Cell.swift */; };
+		18BC342A2274442C00E79547 /* Sec005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC34292274442C00E79547 /* Sec005Cell.swift */; };
+		18BC343822744CB400E79547 /* Sec005NavigationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC343722744CB400E79547 /* Sec005NavigationLayout.swift */; };
+		18BC343A22744CD000E79547 /* Sec005TabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC343922744CD000E79547 /* Sec005TabBarLayout.swift */; };
+		18BC343E22744D0500E79547 /* Sec003NavigationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC343D22744D0500E79547 /* Sec003NavigationLayout.swift */; };
+		18BC344022744D1100E79547 /* Sec002NavigationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC343F22744D1100E79547 /* Sec002NavigationLayout.swift */; };
+		18BC344222744D1A00E79547 /* Sec001NavigationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC344122744D1A00E79547 /* Sec001NavigationLayout.swift */; };
+		18BC344422744D4800E79547 /* Sec004TabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC344322744D4800E79547 /* Sec004TabBarLayout.swift */; };
+		18BC344622744D5B00E79547 /* Sec004NavigationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC344522744D5B00E79547 /* Sec004NavigationLayout.swift */; };
+		18BC344822744D7200E79547 /* Sec003TabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC344722744D7200E79547 /* Sec003TabBarLayout.swift */; };
+		18BC344A22744D7D00E79547 /* Sec002TabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC344922744D7D00E79547 /* Sec002TabBarLayout.swift */; };
+		18BC344C22744D8900E79547 /* Sec001TabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC344B22744D8900E79547 /* Sec001TabBarLayout.swift */; };
+		18CC041D227470D8004291BD /* PanelNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC041C227470D8004291BD /* PanelNavigationView.swift */; };
+		18CC041F2274710C004291BD /* PanelTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC041E2274710C004291BD /* PanelTabBarView.swift */; };
+		18CC042222747220004291BD /* PanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC042122747220004291BD /* PanelContentView.swift */; };
+		18CC0426227479CC004291BD /* NavigationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0425227479CC004291BD /* NavigationsView.swift */; };
+		18CC0428227479DB004291BD /* TabBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0427227479DB004291BD /* TabBarsView.swift */; };
+		18CC042C22747AF0004291BD /* Nav001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC042B22747AF0004291BD /* Nav001Cell.swift */; };
+		18CC042E22747B02004291BD /* Tab001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC042D22747B02004291BD /* Tab001Cell.swift */; };
+		18CC043022747B2C004291BD /* Nav002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC042F22747B2C004291BD /* Nav002Cell.swift */; };
+		18CC043222747B35004291BD /* Nav003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043122747B35004291BD /* Nav003Cell.swift */; };
+		18CC043422747B41004291BD /* Nav004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043322747B41004291BD /* Nav004Cell.swift */; };
+		18CC043622747B4D004291BD /* Nav005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043522747B4D004291BD /* Nav005Cell.swift */; };
+		18CC043822747B5D004291BD /* Tab002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043722747B5D004291BD /* Tab002Cell.swift */; };
+		18CC043A22747B66004291BD /* Tab003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043922747B66004291BD /* Tab003Cell.swift */; };
+		18CC043C22747B71004291BD /* Tab004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043B22747B71004291BD /* Tab004Cell.swift */; };
+		18CC043E22747B82004291BD /* Tab005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC043D22747B82004291BD /* Tab005Cell.swift */; };
 		412E8D00D196F8076399662D /* Pods_CatFastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D1715C83E45CE1ACA33D87 /* Pods_CatFastTests.framework */; };
 		4549F0DA226F50AD00A57F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F0D9226F50AD00A57F6D /* AppDelegate.swift */; };
 		4549F0DC226F50AD00A57F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F0DB226F50AD00A57F6D /* ViewController.swift */; };
@@ -146,6 +178,38 @@
 		18BC33DA2272FF6700E79547 /* ClassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassType.swift; sourceTree = "<group>"; };
 		18BC33DC22730FAF00E79547 /* Tem005Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem005Layout.swift; sourceTree = "<group>"; };
 		18BC33DF2273127800E79547 /* PanelAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAddCell.swift; sourceTree = "<group>"; };
+		18BC3410227440B500E79547 /* PanelDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelDefaultVC.swift; sourceTree = "<group>"; };
+		18BC34132274431100E79547 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
+		18BC3421227443F900E79547 /* Sec001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec001Cell.swift; sourceTree = "<group>"; };
+		18BC34232274440300E79547 /* Sec002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec002Cell.swift; sourceTree = "<group>"; };
+		18BC34252274441000E79547 /* Sec003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec003Cell.swift; sourceTree = "<group>"; };
+		18BC34272274441E00E79547 /* Sec004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec004Cell.swift; sourceTree = "<group>"; };
+		18BC34292274442C00E79547 /* Sec005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec005Cell.swift; sourceTree = "<group>"; };
+		18BC343722744CB400E79547 /* Sec005NavigationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec005NavigationLayout.swift; sourceTree = "<group>"; };
+		18BC343922744CD000E79547 /* Sec005TabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec005TabBarLayout.swift; sourceTree = "<group>"; };
+		18BC343D22744D0500E79547 /* Sec003NavigationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec003NavigationLayout.swift; sourceTree = "<group>"; };
+		18BC343F22744D1100E79547 /* Sec002NavigationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec002NavigationLayout.swift; sourceTree = "<group>"; };
+		18BC344122744D1A00E79547 /* Sec001NavigationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec001NavigationLayout.swift; sourceTree = "<group>"; };
+		18BC344322744D4800E79547 /* Sec004TabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec004TabBarLayout.swift; sourceTree = "<group>"; };
+		18BC344522744D5B00E79547 /* Sec004NavigationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec004NavigationLayout.swift; sourceTree = "<group>"; };
+		18BC344722744D7200E79547 /* Sec003TabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec003TabBarLayout.swift; sourceTree = "<group>"; };
+		18BC344922744D7D00E79547 /* Sec002TabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec002TabBarLayout.swift; sourceTree = "<group>"; };
+		18BC344B22744D8900E79547 /* Sec001TabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec001TabBarLayout.swift; sourceTree = "<group>"; };
+		18CC041C227470D8004291BD /* PanelNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelNavigationView.swift; sourceTree = "<group>"; };
+		18CC041E2274710C004291BD /* PanelTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelTabBarView.swift; sourceTree = "<group>"; };
+		18CC042122747220004291BD /* PanelContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelContentView.swift; sourceTree = "<group>"; };
+		18CC0425227479CC004291BD /* NavigationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationsView.swift; sourceTree = "<group>"; };
+		18CC0427227479DB004291BD /* TabBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarsView.swift; sourceTree = "<group>"; };
+		18CC042B22747AF0004291BD /* Nav001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav001Cell.swift; sourceTree = "<group>"; };
+		18CC042D22747B02004291BD /* Tab001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab001Cell.swift; sourceTree = "<group>"; };
+		18CC042F22747B2C004291BD /* Nav002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav002Cell.swift; sourceTree = "<group>"; };
+		18CC043122747B35004291BD /* Nav003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav003Cell.swift; sourceTree = "<group>"; };
+		18CC043322747B41004291BD /* Nav004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav004Cell.swift; sourceTree = "<group>"; };
+		18CC043522747B4D004291BD /* Nav005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav005Cell.swift; sourceTree = "<group>"; };
+		18CC043722747B5D004291BD /* Tab002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab002Cell.swift; sourceTree = "<group>"; };
+		18CC043922747B66004291BD /* Tab003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab003Cell.swift; sourceTree = "<group>"; };
+		18CC043B22747B71004291BD /* Tab004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab004Cell.swift; sourceTree = "<group>"; };
+		18CC043D22747B82004291BD /* Tab005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab005Cell.swift; sourceTree = "<group>"; };
 		2C265EB20526D65E4BB80EC1 /* Pods-CatFastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFastTests.release.xcconfig"; path = "Target Support Files/Pods-CatFastTests/Pods-CatFastTests.release.xcconfig"; sourceTree = "<group>"; };
 		35D1715C83E45CE1ACA33D87 /* Pods_CatFastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatFastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F37C956F5540E45E0A3276 /* Pods-CatFastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFastUITests.debug.xcconfig"; path = "Target Support Files/Pods-CatFastUITests/Pods-CatFastUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,8 +285,15 @@
 			isa = PBXGroup;
 			children = (
 				18BC332B226FFBD700E79547 /* PanelVC.swift */,
+				18BC3410227440B500E79547 /* PanelDefaultVC.swift */,
+				18CC04202274720A004291BD /* PanelContentView */,
+				18CC041B227470A6004291BD /* PanelNavigationView */,
+				18CC041A227470A3004291BD /* PanelTabBarView */,
 				18BC33DE2273125800E79547 /* addCell */,
 				18BC3349227063FF00E79547 /* topMenu */,
+				18CC042422747989004291BD /* Navigations */,
+				18CC042322747987004291BD /* TabBars */,
+				18BC3412227442A300E79547 /* Sections */,
 				18BC334122703C9600E79547 /* Templates */,
 				18BC334222703CA300E79547 /* components */,
 			);
@@ -510,6 +581,144 @@
 				18BC33DF2273127800E79547 /* PanelAddCell.swift */,
 			);
 			path = addCell;
+			sourceTree = "<group>";
+		};
+		18BC3412227442A300E79547 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				18BC34132274431100E79547 /* SectionsView.swift */,
+				18BC34152274431900E79547 /* secs */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		18BC34152274431900E79547 /* secs */ = {
+			isa = PBXGroup;
+			children = (
+				18BC341A2274435800E79547 /* Secs005 */,
+				18BC34192274435400E79547 /* Secs004 */,
+				18BC34182274432A00E79547 /* Secs003 */,
+				18BC34172274432700E79547 /* Secs002 */,
+				18BC34162274432500E79547 /* Secs001 */,
+			);
+			path = secs;
+			sourceTree = "<group>";
+		};
+		18BC34162274432500E79547 /* Secs001 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC3421227443F900E79547 /* Sec001Cell.swift */,
+				18BC344122744D1A00E79547 /* Sec001NavigationLayout.swift */,
+				18BC344B22744D8900E79547 /* Sec001TabBarLayout.swift */,
+			);
+			path = Secs001;
+			sourceTree = "<group>";
+		};
+		18BC34172274432700E79547 /* Secs002 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC34232274440300E79547 /* Sec002Cell.swift */,
+				18BC343F22744D1100E79547 /* Sec002NavigationLayout.swift */,
+				18BC344922744D7D00E79547 /* Sec002TabBarLayout.swift */,
+			);
+			name = Secs002;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		18BC34182274432A00E79547 /* Secs003 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC34252274441000E79547 /* Sec003Cell.swift */,
+				18BC343D22744D0500E79547 /* Sec003NavigationLayout.swift */,
+				18BC344722744D7200E79547 /* Sec003TabBarLayout.swift */,
+			);
+			path = Secs003;
+			sourceTree = "<group>";
+		};
+		18BC34192274435400E79547 /* Secs004 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC34272274441E00E79547 /* Sec004Cell.swift */,
+				18BC344522744D5B00E79547 /* Sec004NavigationLayout.swift */,
+				18BC344322744D4800E79547 /* Sec004TabBarLayout.swift */,
+			);
+			path = Secs004;
+			sourceTree = "<group>";
+		};
+		18BC341A2274435800E79547 /* Secs005 */ = {
+			isa = PBXGroup;
+			children = (
+				18BC34292274442C00E79547 /* Sec005Cell.swift */,
+				18BC343722744CB400E79547 /* Sec005NavigationLayout.swift */,
+				18BC343922744CD000E79547 /* Sec005TabBarLayout.swift */,
+			);
+			path = Secs005;
+			sourceTree = "<group>";
+		};
+		18CC041A227470A3004291BD /* PanelTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				18CC041E2274710C004291BD /* PanelTabBarView.swift */,
+			);
+			path = PanelTabBarView;
+			sourceTree = "<group>";
+		};
+		18CC041B227470A6004291BD /* PanelNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				18CC041C227470D8004291BD /* PanelNavigationView.swift */,
+			);
+			path = PanelNavigationView;
+			sourceTree = "<group>";
+		};
+		18CC04202274720A004291BD /* PanelContentView */ = {
+			isa = PBXGroup;
+			children = (
+				18CC042122747220004291BD /* PanelContentView.swift */,
+			);
+			path = PanelContentView;
+			sourceTree = "<group>";
+		};
+		18CC042322747987004291BD /* TabBars */ = {
+			isa = PBXGroup;
+			children = (
+				18CC0427227479DB004291BD /* TabBarsView.swift */,
+				18CC042A22747AB7004291BD /* Tabs */,
+			);
+			path = TabBars;
+			sourceTree = "<group>";
+		};
+		18CC042422747989004291BD /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				18CC0425227479CC004291BD /* NavigationsView.swift */,
+				18CC042922747AB1004291BD /* Navs */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		18CC042922747AB1004291BD /* Navs */ = {
+			isa = PBXGroup;
+			children = (
+				18CC042B22747AF0004291BD /* Nav001Cell.swift */,
+				18CC042F22747B2C004291BD /* Nav002Cell.swift */,
+				18CC043122747B35004291BD /* Nav003Cell.swift */,
+				18CC043322747B41004291BD /* Nav004Cell.swift */,
+				18CC043522747B4D004291BD /* Nav005Cell.swift */,
+			);
+			path = Navs;
+			sourceTree = "<group>";
+		};
+		18CC042A22747AB7004291BD /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				18CC042D22747B02004291BD /* Tab001Cell.swift */,
+				18CC043722747B5D004291BD /* Tab002Cell.swift */,
+				18CC043922747B66004291BD /* Tab003Cell.swift */,
+				18CC043B22747B71004291BD /* Tab004Cell.swift */,
+				18CC043D22747B82004291BD /* Tab005Cell.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		4549F0CD226F50AD00A57F6D = {
@@ -1017,58 +1226,90 @@
 				4549F146226F5AE800A57F6D /* NewVC.swift in Sources */,
 				18BC33862272D6D100E79547 /* Tem005Cell.swift in Sources */,
 				18BC33882272D6F000E79547 /* Tem006Cell.swift in Sources */,
+				18CC043A22747B66004291BD /* Tab003Cell.swift in Sources */,
 				18BC33902272D7C300E79547 /* Tem010Cell.swift in Sources */,
 				18BC334B2270642600E79547 /* TopMenuView.swift in Sources */,
 				18BC338C2272D72B00E79547 /* Tem008Cell.swift in Sources */,
 				18BC33B92272DA5E00E79547 /* Tem004Layout.swift in Sources */,
 				4549F13C226F519B00A57F6D /* CCollection.swift in Sources */,
+				18CC0426227479CC004291BD /* NavigationsView.swift in Sources */,
 				4549F13A226F519B00A57F6D /* TableTemplate.swift in Sources */,
+				18CC041F2274710C004291BD /* PanelTabBarView.swift in Sources */,
+				18BC344A22744D7D00E79547 /* Sec002TabBarLayout.swift in Sources */,
 				18BC33652271942500E79547 /* CCustomLayout.swift in Sources */,
 				4549F137226F519B00A57F6D /* CViewController.swift in Sources */,
+				18CC043422747B41004291BD /* Nav004Cell.swift in Sources */,
 				18BC33B12272DA1F00E79547 /* Tem008Layout.swift in Sources */,
 				4549F136226F519B00A57F6D /* CText.swift in Sources */,
+				18BC344022744D1100E79547 /* Sec002NavigationLayout.swift in Sources */,
 				18BC33AD2272D9D900E79547 /* Tem010Layout.swift in Sources */,
 				18BC33B32272DA2D00E79547 /* Tem007Layout.swift in Sources */,
+				18CC043622747B4D004291BD /* Nav005Cell.swift in Sources */,
 				18BC33712271B67D00E79547 /* Com001Cell.swift in Sources */,
 				4549F13D226F519B00A57F6D /* CTable.swift in Sources */,
 				18BC33482270636E00E79547 /* ComponentsView.swift in Sources */,
+				18BC344222744D1A00E79547 /* Sec001NavigationLayout.swift in Sources */,
 				18BC33CA2272E74200E79547 /* Com003Cell.swift in Sources */,
 				18BC33362270039100E79547 /* Img.swift in Sources */,
+				18BC34142274431100E79547 /* SectionsView.swift in Sources */,
+				18BC343A22744CD000E79547 /* Sec005TabBarLayout.swift in Sources */,
 				18BC333C2270083F00E79547 /* NewCell.swift in Sources */,
+				18CC043E22747B82004291BD /* Tab005Cell.swift in Sources */,
+				18CC0428227479DB004291BD /* TabBarsView.swift in Sources */,
 				4549F0DC226F50AD00A57F6D /* ViewController.swift in Sources */,
+				18BC3422227443F900E79547 /* Sec001Cell.swift in Sources */,
 				18BC33BB2272DA6D00E79547 /* Tem003Layout.swift in Sources */,
 				18BC33C82272E71D00E79547 /* Com002Cell.swift in Sources */,
 				18BC33D62272EB0D00E79547 /* Com009Cell.swift in Sources */,
+				18BC344622744D5B00E79547 /* Sec004NavigationLayout.swift in Sources */,
 				4549F130226F519B00A57F6D /* CWindow.swift in Sources */,
+				18CC043022747B2C004291BD /* Nav002Cell.swift in Sources */,
 				4549F131226F519B00A57F6D /* CView.swift in Sources */,
+				18CC041D227470D8004291BD /* PanelNavigationView.swift in Sources */,
 				18BC33BD2272DA7A00E79547 /* Tem002Layout.swift in Sources */,
 				18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */,
+				18CC043222747B35004291BD /* Nav003Cell.swift in Sources */,
 				18BC33D02272E7E500E79547 /* Com006Cell.swift in Sources */,
 				4549F133226F519B00A57F6D /* CField.swift in Sources */,
 				18BC33CC2272E75E00E79547 /* Com004Cell.swift in Sources */,
+				18CC042C22747AF0004291BD /* Nav001Cell.swift in Sources */,
 				18BC33842272D6AB00E79547 /* Tem004Cell.swift in Sources */,
 				4549F13E226F519B00A57F6D /* Router.swift in Sources */,
 				4549F139226F519B00A57F6D /* Holder.swift in Sources */,
+				18BC34262274441000E79547 /* Sec003Cell.swift in Sources */,
 				18BC334D2270644900E79547 /* TopMenuCell.swift in Sources */,
 				18BC3332227000BC00E79547 /* CNavigationController.swift in Sources */,
+				18BC342A2274442C00E79547 /* Sec005Cell.swift in Sources */,
+				18BC3411227440B500E79547 /* PanelDefaultVC.swift in Sources */,
 				18BC33CE2272E77F00E79547 /* Com005Cell.swift in Sources */,
 				18BC336E2271B4A800E79547 /* Tem001Cell.swift in Sources */,
 				18BC33D42272E85B00E79547 /* Com008Cell.swift in Sources */,
 				18BC338E2272D78B00E79547 /* Tem009Cell.swift in Sources */,
+				18CC042222747220004291BD /* PanelContentView.swift in Sources */,
 				18BC33402270341400E79547 /* NewLastCell.swift in Sources */,
 				18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */,
 				18BC33B52272DA3D00E79547 /* Tem006Layout.swift in Sources */,
 				4549F12D226F519B00A57F6D /* Style.swift in Sources */,
 				18BC33D82272EB2700E79547 /* Com010Cell.swift in Sources */,
+				18CC043822747B5D004291BD /* Tab002Cell.swift in Sources */,
 				18BC33382270039D00E79547 /* Color.swift in Sources */,
+				18BC34282274441E00E79547 /* Sec004Cell.swift in Sources */,
 				4549F0DA226F50AD00A57F6D /* AppDelegate.swift in Sources */,
 				18BC332C226FFBD700E79547 /* PanelVC.swift in Sources */,
+				18BC343E22744D0500E79547 /* Sec003NavigationLayout.swift in Sources */,
+				18CC042E22747B02004291BD /* Tab001Cell.swift in Sources */,
 				18BC338A2272D70D00E79547 /* Tem007Cell.swift in Sources */,
 				4549F134226F519B00A57F6D /* CImageView.swift in Sources */,
 				18BC33752272D4E400E79547 /* Tem001Layout.swift in Sources */,
+				18BC34242274440300E79547 /* Sec002Cell.swift in Sources */,
+				18BC343822744CB400E79547 /* Sec005NavigationLayout.swift in Sources */,
 				18BC33DB2272FF6700E79547 /* ClassType.swift in Sources */,
+				18CC043C22747B71004291BD /* Tab004Cell.swift in Sources */,
 				4549F138226F519B00A57F6D /* CollectionTemplate.swift in Sources */,
 				18BC33AF2272DA0700E79547 /* Tem009Layout.swift in Sources */,
+				18BC344422744D4800E79547 /* Sec004TabBarLayout.swift in Sources */,
+				18BC344822744D7200E79547 /* Sec003TabBarLayout.swift in Sources */,
+				18BC344C22744D8900E79547 /* Sec001TabBarLayout.swift in Sources */,
 				18BC333E2270340900E79547 /* NewFirstCell.swift in Sources */,
 				4549F135226F519B00A57F6D /* CLabel.swift in Sources */,
 				18BC33822272D68300E79547 /* Tem003Cell.swift in Sources */,

@@ -11,8 +11,11 @@ import SnapKit
 
 let appName = "CatFast."
 let temNumber = 10
-let layoutNumber = 10
+let secNumber = 5
 let comNumber = 10
+let navNumber = 5
+let tabNumber = 5
+
 let dataNumber = 16
 
 
@@ -38,8 +41,9 @@ class NewVC: CViewController {
         
         let flow = CFlowLayout.init(CGSize.init(width: 200, height: 200), .horizontal)
         let table = CCollection.init(flow)
-        table.backgroundColor = Color.red()
         self.view.addSubview(table)
+        table.backgroundColor = Color.backGray()
+        table.bounces = false
 
         table.v_array(ob: obArray)
         table.register([NewCell.classForCoder(),NewFirstCell.classForCoder(),NewLastCell.classForCoder()])
@@ -53,14 +57,15 @@ class NewVC: CViewController {
         let m = Main()
         m.loadData(ob: self.obArray)
 
-        
-        let t =  TemplatesView()
+        let t =  SectionsView()
         t.obIndex.v_index { (index) in
             
             print(index)
+            
             Router.push(PanelVC(), ["id":10], { (obj) in
                 
                 print(obj)
+                
             })
             t.remove()
         }
@@ -76,14 +81,16 @@ class NewVC: CViewController {
 //                self.navigationController?.pushViewController(vc, animated: true)
 //
 //            }
-            
-            
-            
-            CWindow.init(true).addSubview(t)
+            let m = self.obArray.v_array?[index]
+            if m is NewCellModel{
+                
 
+            }else if m is NewLastCellModel{
+                
+                CWindow.init(true).addSubview(t)
+
+            }
             
-            
-           
             
         }
 
@@ -111,7 +118,7 @@ class Main:NSObject{
                 array.append(m)
                 
             }else if i == 6{
-                let m = NewLastCellModel("NewFirstCell")
+                let m = NewLastCellModel("NewLastCell")
                 m.name = "wyy\(i)"
                 array.append(m)
                 

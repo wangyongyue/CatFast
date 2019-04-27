@@ -20,6 +20,7 @@ class TopMenuCell: CollectionTemplate {
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
+        headerLabel.textAlignment = .center
         headerLabel.snp.makeConstraints { (make) in
             make.left.right.top.bottom.equalTo(0)
         }

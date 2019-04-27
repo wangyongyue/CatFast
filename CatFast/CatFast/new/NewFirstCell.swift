@@ -18,11 +18,12 @@ class NewFirstCell: CollectionTemplate {
         self.contentView.addSubview(headerImg)
         
         
-        let labelStyle = Style().text("test").textColor(Color.black())
+        let labelStyle = Style().text("").textColor(Color.black())
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
     
+        headerImg.backgroundColor = Color.clear()
         headerImg.snp.makeConstraints { (make) in
             make.top.equalTo(10)
             make.left.equalTo(20)
@@ -30,7 +31,7 @@ class NewFirstCell: CollectionTemplate {
             make.bottom.equalTo(-30)
             
         }
-        
+        headerLabel.backgroundColor = Color.clear()
         headerLabel.snp.makeConstraints { (make) in
             make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
             make.left.equalTo(20)

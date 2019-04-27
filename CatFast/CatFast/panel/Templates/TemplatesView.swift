@@ -34,7 +34,7 @@ class TemplatesView: CView {
             for i in 1...6{
                 
                 let m = TopMenuCellModel("TopMenuCell")
-                m.name = "wyytem\(i)"
+                m.name = "template\(i)"
                 array.append(m)
                 
             }
@@ -51,12 +51,30 @@ class TemplatesView: CView {
         
         let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.height()/3), .vertical)
         let table = CCollection.init( flow)
-        table.backgroundColor = Color.red()
         self.addSubview(table)
-        
-        table.v_array(ob: obArray)
-        table.register([Tem001Cell.classForCoder()])
+        table.backgroundColor = Color.backGray()
 
+        table.v_array(ob: obArray)
+
+        
+        var classArray = Array<AnyClass>()
+        for i in 1...temNumber{
+            
+            let classType = ClassType.getCellClass("Tem", i)
+            if let type = classType{
+                
+                classArray.append(type)
+                
+            }
+        }
+        
+        table.register(classArray)
+        
+        
+        
+        
+        
+        
         table.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.bottom.equalTo(0)
@@ -96,12 +114,13 @@ class Templates:NSObject{
         
         
         var array = Array<Cat>()
-        for i in 1...6{
+        for i in 1...temNumber{
             
-            let m = Tem001CellModel("Tem001Cell")
-            m.name = "wyy\(i)"
-            array.append(m)
-            
+            let m  = ClassType.getCatClass("Tem", i)
+            if let a = m{
+                array.append(a)
+            }
+          
         }
         
         

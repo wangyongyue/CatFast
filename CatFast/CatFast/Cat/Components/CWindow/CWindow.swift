@@ -50,12 +50,42 @@ class Screen{
         return UIScreen.main.bounds.height
     }
     static func top() -> CGFloat{
-        
-        return 64
+        let top = phoneH(iphone5: 64, iphone6: 64, iphoneS: 64, iphoneX: 64+24)
+
+        return top
     }
     static func bottom() -> CGFloat{
+        let top = phoneH(iphone5: -49, iphone6: -49, iphoneS: -49, iphoneX: -49 - 24)
+        return top
+    }
+   
+    static func bottomH() -> CGFloat{
+        let top = phoneH(iphone5: 49, iphone6: 49, iphoneS: 49, iphoneX: 49+24)
+        return top
         
-        return -49
+    }
+    
+    static func phoneH(iphone5:CGFloat,iphone6:CGFloat,iphoneS:CGFloat,iphoneX:CGFloat)-> CGFloat{
+        
+        let h = UIScreen.main.bounds.size.height
+        
+        if h == 568 {
+            return iphone5
+            
+        }else if h == 667 {
+            return iphone6
+            
+        }else if h == 736 {
+            return iphoneS
+            
+        }else if h == 812 {
+            return iphoneX
+            
+        }else {
+            return iphoneX
+            
+        }
+        
     }
 }
 extension UIView{
