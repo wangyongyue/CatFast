@@ -15,7 +15,7 @@ class PanelContentView: CView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        
+        setupContent()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,12 +34,6 @@ class PanelContentView: CView {
         table.backgroundColor = Color.backGray()
         table.v_array(ob: obArray)
         
-        
-        table.snp.makeConstraints { (make) in
-            make.left.right.top.bottom.equalTo(0)
-           
-        }
-        
         var classArray = Array<AnyClass>()
         for i in 1...comNumber{
             
@@ -50,7 +44,14 @@ class PanelContentView: CView {
                 
             }
         }
-
+        
+        table.register(classArray)
+        
+        
+        table.snp.makeConstraints { (make) in
+            make.left.right.top.bottom.equalTo(0)
+           
+        }
         
         let t =  ComponentsView()
         let tem =  PanelsView()
@@ -81,26 +82,43 @@ class PanelContentView: CView {
                 self.obArray.v_array?.remove(at: aIndex)
                 self.obArray.v_array?.insert(m, at: aIndex)
                 
+                if let array = self.obArray.v_array{
+                    self.obArray.v_array(false, v: { () -> Array<Cat>? in
+                        
+                        return array
+                    })
+                }
+                
+                
             }
             
             t.remove()
         }
         tem.obIndex.v_index { (index) in
             
-            if Router.currentController() is PanelVC || Router.currentController() is PanelDefaultVC{
-                
-                Router.push(PanelDefaultVC(), ["id":10], { (obj) in
-                    
-                    print(obj)
-                    
-                })
-            }else{
-                Router.push(PanelVC(), ["id":10], { (obj) in
-                    
-                    print(obj)
-                    
-                })
+            
+            let m = tem.obArray.v_array?[index]
+            var vc = CViewController()
+            if m is Panel001CellModel{
+                vc = Panel001VC()
+            }else if m is Panel002CellModel{
+                vc = Panel002VC()
+            }else if m is Panel003CellModel{
+                vc = Panel003VC()
+            }else if m is Panel004CellModel{
+                vc = Panel004VC()
+            }else if m is Panel005CellModel{
+                vc = Panel005VC()
             }
+            
+            
+            Router.push(vc, ["id":10], { (obj) in
+                
+                print(obj)
+                
+            })
+            
+          
             
             tem.remove()
             

@@ -13,6 +13,11 @@ let appName = "CatFast."
 let temNumber = 10
 let panelNumber = 5
 let comNumber = 10
+
+let comNavNumber = 10
+let comTabNumber = 10
+
+
 let navNumber = 5
 let tabNumber = 5
 

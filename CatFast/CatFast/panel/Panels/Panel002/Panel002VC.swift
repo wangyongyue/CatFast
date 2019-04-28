@@ -66,6 +66,8 @@ class Panel002VC: CViewController {
         
         tem.obIndex.v_index { (index) in
             
+            
+            
             self.content.loadData()
             
             tem.remove()

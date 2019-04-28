@@ -46,9 +46,9 @@ class PanelTabBarView: CView {
         }
         
         var classArray = Array<AnyClass>()
-        for i in 1...comNumber{
+        for i in 1...comTabNumber{
             
-            let classType = ClassType.getCellClass("Com", i)
+            let classType = ClassType.getCellClass("ComTab", i)
             if let type = classType{
                 
                 classArray.append(type)
@@ -57,8 +57,7 @@ class PanelTabBarView: CView {
         }
         
         
-        
-        let t =  TabBarsView()
+        let t =  ComTabView()
         let tem =  PanelsView()
         
         var aIndex = 0
@@ -85,14 +84,33 @@ class PanelTabBarView: CView {
                 
                 self.obArray.v_array?.remove(at: aIndex)
                 self.obArray.v_array?.insert(m, at: aIndex)
-                
+                if let array = self.obArray.v_array{
+                    self.obArray.v_array(false, v: { () -> Array<Cat>? in
+                        
+                        return array
+                    })
+                }
             }
             
             t.remove()
         }
         tem.obIndex.v_index { (index) in
             
-            Router.push(PanelDefaultVC(), ["id":10], { (obj) in
+            let m = tem.obArray.v_array?[index]
+            var vc = CViewController()
+            if m is Panel001CellModel{
+                vc = Panel001VC()
+            }else if m is Panel002CellModel{
+                vc = Panel002VC()
+            }else if m is Panel003CellModel{
+                vc = Panel003VC()
+            }else if m is Panel004CellModel{
+                vc = Panel004VC()
+            }else if m is Panel005CellModel{
+                vc = Panel005VC()
+            }
+            
+            Router.push(vc, ["id":10], { (obj) in
                 
                 print(obj)
                 

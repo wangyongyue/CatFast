@@ -117,6 +117,28 @@
 		4549F13D226F519B00A57F6D /* CTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F12A226F519A00A57F6D /* CTable.swift */; };
 		4549F13E226F519B00A57F6D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F12C226F519A00A57F6D /* Router.swift */; };
 		4549F146226F5AE800A57F6D /* NewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549F145226F5AE700A57F6D /* NewVC.swift */; };
+		456888AF2275E2D2003D3E70 /* ComNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888AE2275E2D2003D3E70 /* ComNavView.swift */; };
+		456888B12275E2EB003D3E70 /* ComTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888B02275E2EB003D3E70 /* ComTabView.swift */; };
+		456888C92275E3C2003D3E70 /* ComNav001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888C82275E3C2003D3E70 /* ComNav001Cell.swift */; };
+		456888CB2275E3CF003D3E70 /* ComNav002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888CA2275E3CF003D3E70 /* ComNav002Cell.swift */; };
+		456888CD2275E3D8003D3E70 /* ComNav003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888CC2275E3D8003D3E70 /* ComNav003Cell.swift */; };
+		456888CF2275E3E3003D3E70 /* ComNav004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888CE2275E3E3003D3E70 /* ComNav004Cell.swift */; };
+		456888D12275E3ED003D3E70 /* ComNav005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888D02275E3ED003D3E70 /* ComNav005Cell.swift */; };
+		456888D32275E3F8003D3E70 /* ComNav006Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888D22275E3F8003D3E70 /* ComNav006Cell.swift */; };
+		456888D52275E406003D3E70 /* ComNav007Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888D42275E406003D3E70 /* ComNav007Cell.swift */; };
+		456888D72275E40E003D3E70 /* ComNav008Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888D62275E40E003D3E70 /* ComNav008Cell.swift */; };
+		456888D92275E419003D3E70 /* ComNav009Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888D82275E419003D3E70 /* ComNav009Cell.swift */; };
+		456888DB2275E423003D3E70 /* ComNav010Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888DA2275E423003D3E70 /* ComNav010Cell.swift */; };
+		456888DD2275E434003D3E70 /* ComTab001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888DC2275E434003D3E70 /* ComTab001Cell.swift */; };
+		456888DF2275E43E003D3E70 /* ComTab002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888DE2275E43E003D3E70 /* ComTab002Cell.swift */; };
+		456888E12275E44A003D3E70 /* ComTab003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888E02275E44A003D3E70 /* ComTab003Cell.swift */; };
+		456888E32275E462003D3E70 /* ComTab004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888E22275E462003D3E70 /* ComTab004Cell.swift */; };
+		456888E52275E46D003D3E70 /* ComTab005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888E42275E46D003D3E70 /* ComTab005Cell.swift */; };
+		456888E72275E47A003D3E70 /* ComTab006Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888E62275E47A003D3E70 /* ComTab006Cell.swift */; };
+		456888E92275E485003D3E70 /* ComTab007Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888E82275E485003D3E70 /* ComTab007Cell.swift */; };
+		456888EB2275E490003D3E70 /* ComTab008Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888EA2275E490003D3E70 /* ComTab008Cell.swift */; };
+		456888ED2275E498003D3E70 /* ComTab009Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888EC2275E498003D3E70 /* ComTab009Cell.swift */; };
+		456888EF2275E4A8003D3E70 /* ComTab010Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456888EE2275E4A8003D3E70 /* ComTab010Cell.swift */; };
 		559E2A0B63226BD00B8B54AE /* Pods_CatFast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B87F4692BCC69D050A4929 /* Pods_CatFast.framework */; };
 		E10ED5529B2725D19B2413C2 /* Pods_CatFastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3B8BCC9D468C8B46744A4A /* Pods_CatFastUITests.framework */; };
 /* End PBXBuildFile section */
@@ -257,6 +279,28 @@
 		4549F12A226F519A00A57F6D /* CTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTable.swift; sourceTree = "<group>"; };
 		4549F12C226F519A00A57F6D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4549F145226F5AE700A57F6D /* NewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVC.swift; sourceTree = "<group>"; };
+		456888AE2275E2D2003D3E70 /* ComNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNavView.swift; sourceTree = "<group>"; };
+		456888B02275E2EB003D3E70 /* ComTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTabView.swift; sourceTree = "<group>"; };
+		456888C82275E3C2003D3E70 /* ComNav001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav001Cell.swift; sourceTree = "<group>"; };
+		456888CA2275E3CF003D3E70 /* ComNav002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav002Cell.swift; sourceTree = "<group>"; };
+		456888CC2275E3D8003D3E70 /* ComNav003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav003Cell.swift; sourceTree = "<group>"; };
+		456888CE2275E3E3003D3E70 /* ComNav004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav004Cell.swift; sourceTree = "<group>"; };
+		456888D02275E3ED003D3E70 /* ComNav005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav005Cell.swift; sourceTree = "<group>"; };
+		456888D22275E3F8003D3E70 /* ComNav006Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav006Cell.swift; sourceTree = "<group>"; };
+		456888D42275E406003D3E70 /* ComNav007Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav007Cell.swift; sourceTree = "<group>"; };
+		456888D62275E40E003D3E70 /* ComNav008Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav008Cell.swift; sourceTree = "<group>"; };
+		456888D82275E419003D3E70 /* ComNav009Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav009Cell.swift; sourceTree = "<group>"; };
+		456888DA2275E423003D3E70 /* ComNav010Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNav010Cell.swift; sourceTree = "<group>"; };
+		456888DC2275E434003D3E70 /* ComTab001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab001Cell.swift; sourceTree = "<group>"; };
+		456888DE2275E43E003D3E70 /* ComTab002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab002Cell.swift; sourceTree = "<group>"; };
+		456888E02275E44A003D3E70 /* ComTab003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab003Cell.swift; sourceTree = "<group>"; };
+		456888E22275E462003D3E70 /* ComTab004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab004Cell.swift; sourceTree = "<group>"; };
+		456888E42275E46D003D3E70 /* ComTab005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab005Cell.swift; sourceTree = "<group>"; };
+		456888E62275E47A003D3E70 /* ComTab006Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab006Cell.swift; sourceTree = "<group>"; };
+		456888E82275E485003D3E70 /* ComTab007Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab007Cell.swift; sourceTree = "<group>"; };
+		456888EA2275E490003D3E70 /* ComTab008Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab008Cell.swift; sourceTree = "<group>"; };
+		456888EC2275E498003D3E70 /* ComTab009Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab009Cell.swift; sourceTree = "<group>"; };
+		456888EE2275E4A8003D3E70 /* ComTab010Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTab010Cell.swift; sourceTree = "<group>"; };
 		4A5279376337AB71ADD8D886 /* Pods-CatFastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFastUITests.release.xcconfig"; path = "Target Support Files/Pods-CatFastUITests/Pods-CatFastUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5DBD9D8343BF442515D2DE80 /* Pods-CatFast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFast.release.xcconfig"; path = "Target Support Files/Pods-CatFast/Pods-CatFast.release.xcconfig"; sourceTree = "<group>"; };
 		675BEC93771DD855956CC91E /* Pods-CatFast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFast.debug.xcconfig"; path = "Target Support Files/Pods-CatFast/Pods-CatFast.debug.xcconfig"; sourceTree = "<group>"; };
@@ -456,6 +500,8 @@
 				18CC042322747987004291BD /* TabBars */,
 				18BC334122703C9600E79547 /* Templates */,
 				18BC334222703CA300E79547 /* components */,
+				456888AD2275E226003D3E70 /* componentsForNav */,
+				456888AC2275E222003D3E70 /* componentsForTab */,
 			);
 			path = panel;
 			sourceTree = "<group>";
@@ -1056,6 +1102,218 @@
 			path = new;
 			sourceTree = "<group>";
 		};
+		456888AC2275E222003D3E70 /* componentsForTab */ = {
+			isa = PBXGroup;
+			children = (
+				456888B02275E2EB003D3E70 /* ComTabView.swift */,
+				456888B32275E2F7003D3E70 /* ComTabs */,
+			);
+			path = componentsForTab;
+			sourceTree = "<group>";
+		};
+		456888AD2275E226003D3E70 /* componentsForNav */ = {
+			isa = PBXGroup;
+			children = (
+				456888AE2275E2D2003D3E70 /* ComNavView.swift */,
+				456888B22275E2F2003D3E70 /* ComNavs */,
+			);
+			path = componentsForNav;
+			sourceTree = "<group>";
+		};
+		456888B22275E2F2003D3E70 /* ComNavs */ = {
+			isa = PBXGroup;
+			children = (
+				456888BD2275E337003D3E70 /* ComNav010 */,
+				456888BC2275E334003D3E70 /* ComNav009 */,
+				456888BB2275E331003D3E70 /* ComNav008 */,
+				456888BA2275E32E003D3E70 /* ComNav007 */,
+				456888B92275E32B003D3E70 /* ComNav006 */,
+				456888B82275E328003D3E70 /* ComNav005 */,
+				456888B72275E325003D3E70 /* ComNav004 */,
+				456888B62275E322003D3E70 /* ComNav003 */,
+				456888B52275E320003D3E70 /* ComNav002 */,
+				456888B42275E31D003D3E70 /* ComNav001 */,
+			);
+			path = ComNavs;
+			sourceTree = "<group>";
+		};
+		456888B32275E2F7003D3E70 /* ComTabs */ = {
+			isa = PBXGroup;
+			children = (
+				456888C72275E354003D3E70 /* ComTab010 */,
+				456888C62275E351003D3E70 /* ComTab009 */,
+				456888C52275E34E003D3E70 /* ComTab008 */,
+				456888C42275E34B003D3E70 /* ComTab007 */,
+				456888C32275E348003D3E70 /* ComTab006 */,
+				456888C22275E346003D3E70 /* ComTab005 */,
+				456888C12275E343003D3E70 /* ComTab004 */,
+				456888C02275E341003D3E70 /* ComTab003 */,
+				456888BF2275E33E003D3E70 /* ComTab002 */,
+				456888BE2275E33C003D3E70 /* ComTab001 */,
+			);
+			path = ComTabs;
+			sourceTree = "<group>";
+		};
+		456888B42275E31D003D3E70 /* ComNav001 */ = {
+			isa = PBXGroup;
+			children = (
+				456888C82275E3C2003D3E70 /* ComNav001Cell.swift */,
+			);
+			path = ComNav001;
+			sourceTree = "<group>";
+		};
+		456888B52275E320003D3E70 /* ComNav002 */ = {
+			isa = PBXGroup;
+			children = (
+				456888CA2275E3CF003D3E70 /* ComNav002Cell.swift */,
+			);
+			path = ComNav002;
+			sourceTree = "<group>";
+		};
+		456888B62275E322003D3E70 /* ComNav003 */ = {
+			isa = PBXGroup;
+			children = (
+				456888CC2275E3D8003D3E70 /* ComNav003Cell.swift */,
+			);
+			path = ComNav003;
+			sourceTree = "<group>";
+		};
+		456888B72275E325003D3E70 /* ComNav004 */ = {
+			isa = PBXGroup;
+			children = (
+				456888CE2275E3E3003D3E70 /* ComNav004Cell.swift */,
+			);
+			path = ComNav004;
+			sourceTree = "<group>";
+		};
+		456888B82275E328003D3E70 /* ComNav005 */ = {
+			isa = PBXGroup;
+			children = (
+				456888D02275E3ED003D3E70 /* ComNav005Cell.swift */,
+			);
+			path = ComNav005;
+			sourceTree = "<group>";
+		};
+		456888B92275E32B003D3E70 /* ComNav006 */ = {
+			isa = PBXGroup;
+			children = (
+				456888D22275E3F8003D3E70 /* ComNav006Cell.swift */,
+			);
+			path = ComNav006;
+			sourceTree = "<group>";
+		};
+		456888BA2275E32E003D3E70 /* ComNav007 */ = {
+			isa = PBXGroup;
+			children = (
+				456888D42275E406003D3E70 /* ComNav007Cell.swift */,
+			);
+			path = ComNav007;
+			sourceTree = "<group>";
+		};
+		456888BB2275E331003D3E70 /* ComNav008 */ = {
+			isa = PBXGroup;
+			children = (
+				456888D62275E40E003D3E70 /* ComNav008Cell.swift */,
+			);
+			path = ComNav008;
+			sourceTree = "<group>";
+		};
+		456888BC2275E334003D3E70 /* ComNav009 */ = {
+			isa = PBXGroup;
+			children = (
+				456888D82275E419003D3E70 /* ComNav009Cell.swift */,
+			);
+			path = ComNav009;
+			sourceTree = "<group>";
+		};
+		456888BD2275E337003D3E70 /* ComNav010 */ = {
+			isa = PBXGroup;
+			children = (
+				456888DA2275E423003D3E70 /* ComNav010Cell.swift */,
+			);
+			path = ComNav010;
+			sourceTree = "<group>";
+		};
+		456888BE2275E33C003D3E70 /* ComTab001 */ = {
+			isa = PBXGroup;
+			children = (
+				456888DC2275E434003D3E70 /* ComTab001Cell.swift */,
+			);
+			path = ComTab001;
+			sourceTree = "<group>";
+		};
+		456888BF2275E33E003D3E70 /* ComTab002 */ = {
+			isa = PBXGroup;
+			children = (
+				456888DE2275E43E003D3E70 /* ComTab002Cell.swift */,
+			);
+			path = ComTab002;
+			sourceTree = "<group>";
+		};
+		456888C02275E341003D3E70 /* ComTab003 */ = {
+			isa = PBXGroup;
+			children = (
+				456888E02275E44A003D3E70 /* ComTab003Cell.swift */,
+			);
+			path = ComTab003;
+			sourceTree = "<group>";
+		};
+		456888C12275E343003D3E70 /* ComTab004 */ = {
+			isa = PBXGroup;
+			children = (
+				456888E22275E462003D3E70 /* ComTab004Cell.swift */,
+			);
+			path = ComTab004;
+			sourceTree = "<group>";
+		};
+		456888C22275E346003D3E70 /* ComTab005 */ = {
+			isa = PBXGroup;
+			children = (
+				456888E42275E46D003D3E70 /* ComTab005Cell.swift */,
+			);
+			path = ComTab005;
+			sourceTree = "<group>";
+		};
+		456888C32275E348003D3E70 /* ComTab006 */ = {
+			isa = PBXGroup;
+			children = (
+				456888E62275E47A003D3E70 /* ComTab006Cell.swift */,
+			);
+			path = ComTab006;
+			sourceTree = "<group>";
+		};
+		456888C42275E34B003D3E70 /* ComTab007 */ = {
+			isa = PBXGroup;
+			children = (
+				456888E82275E485003D3E70 /* ComTab007Cell.swift */,
+			);
+			path = ComTab007;
+			sourceTree = "<group>";
+		};
+		456888C52275E34E003D3E70 /* ComTab008 */ = {
+			isa = PBXGroup;
+			children = (
+				456888EA2275E490003D3E70 /* ComTab008Cell.swift */,
+			);
+			path = ComTab008;
+			sourceTree = "<group>";
+		};
+		456888C62275E351003D3E70 /* ComTab009 */ = {
+			isa = PBXGroup;
+			children = (
+				456888EC2275E498003D3E70 /* ComTab009Cell.swift */,
+			);
+			path = ComTab009;
+			sourceTree = "<group>";
+		};
+		456888C72275E354003D3E70 /* ComTab010 */ = {
+			isa = PBXGroup;
+			children = (
+				456888EE2275E4A8003D3E70 /* ComTab010Cell.swift */,
+			);
+			path = ComTab010;
+			sourceTree = "<group>";
+		};
 		77F6A1C1680BDA8193A2B218 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1308,6 +1566,7 @@
 			files = (
 				4549F13B226F519B00A57F6D /* CFlowLayout.swift in Sources */,
 				4549F12F226F519B00A57F6D /* Observe.swift in Sources */,
+				456888EF2275E4A8003D3E70 /* ComTab010Cell.swift in Sources */,
 				18BC33462270635D00E79547 /* TemplatesView.swift in Sources */,
 				18BC33D22272E7FB00E79547 /* Com007Cell.swift in Sources */,
 				18BC33802272D64A00E79547 /* Tem002Cell.swift in Sources */,
@@ -1315,6 +1574,7 @@
 				4549F146226F5AE800A57F6D /* NewVC.swift in Sources */,
 				1880859322757809005408AE /* Panel004Cell.swift in Sources */,
 				18BC33862272D6D100E79547 /* Tem005Cell.swift in Sources */,
+				456888CD2275E3D8003D3E70 /* ComNav003Cell.swift in Sources */,
 				18BC33882272D6F000E79547 /* Tem006Cell.swift in Sources */,
 				18CC043A22747B66004291BD /* Tab003Cell.swift in Sources */,
 				1880858D227577C0005408AE /* Panel001Cell.swift in Sources */,
@@ -1330,11 +1590,14 @@
 				4549F13A226F519B00A57F6D /* TableTemplate.swift in Sources */,
 				18CC041F2274710C004291BD /* PanelTabBarView.swift in Sources */,
 				18BC33652271942500E79547 /* CCustomLayout.swift in Sources */,
+				456888E52275E46D003D3E70 /* ComTab005Cell.swift in Sources */,
 				4549F137226F519B00A57F6D /* CViewController.swift in Sources */,
 				18CC043422747B41004291BD /* Nav004Cell.swift in Sources */,
 				18BC33B12272DA1F00E79547 /* Tem008Layout.swift in Sources */,
 				4549F136226F519B00A57F6D /* CText.swift in Sources */,
+				456888D12275E3ED003D3E70 /* ComNav005Cell.swift in Sources */,
 				18BC33AD2272D9D900E79547 /* Tem010Layout.swift in Sources */,
+				456888CB2275E3CF003D3E70 /* ComNav002Cell.swift in Sources */,
 				18BC33B32272DA2D00E79547 /* Tem007Layout.swift in Sources */,
 				18CC043622747B4D004291BD /* Nav005Cell.swift in Sources */,
 				18BC33712271B67D00E79547 /* Com001Cell.swift in Sources */,
@@ -1342,6 +1605,7 @@
 				1880859B2275788D005408AE /* Panel004VC.swift in Sources */,
 				18BC33482270636E00E79547 /* ComponentsView.swift in Sources */,
 				1880859522757815005408AE /* Panel005Cell.swift in Sources */,
+				456888D92275E419003D3E70 /* ComNav009Cell.swift in Sources */,
 				18BC33CA2272E74200E79547 /* Com003Cell.swift in Sources */,
 				18BC33362270039100E79547 /* Img.swift in Sources */,
 				18BC333C2270083F00E79547 /* NewCell.swift in Sources */,
@@ -1353,13 +1617,16 @@
 				18BC33D62272EB0D00E79547 /* Com009Cell.swift in Sources */,
 				4549F130226F519B00A57F6D /* CWindow.swift in Sources */,
 				1880857D227546CD005408AE /* Tab002Layout.swift in Sources */,
+				456888CF2275E3E3003D3E70 /* ComNav004Cell.swift in Sources */,
 				18CC043022747B2C004291BD /* Nav002Cell.swift in Sources */,
 				1880856F22754643005408AE /* Nav003Layout.swift in Sources */,
 				18808583227546F7005408AE /* Tab005Layout.swift in Sources */,
 				188085972275786F005408AE /* Panel002VC.swift in Sources */,
 				4549F131226F519B00A57F6D /* CView.swift in Sources */,
+				456888DB2275E423003D3E70 /* ComNav010Cell.swift in Sources */,
 				18CC041D227470D8004291BD /* PanelNavigationView.swift in Sources */,
 				18808581227546E6005408AE /* Tab004Layout.swift in Sources */,
+				456888ED2275E498003D3E70 /* ComTab009Cell.swift in Sources */,
 				18BC33BD2272DA7A00E79547 /* Tem002Layout.swift in Sources */,
 				18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */,
 				18CC043222747B35004291BD /* Nav003Cell.swift in Sources */,
@@ -1372,6 +1639,8 @@
 				1880857F227546DB005408AE /* Tab003Layout.swift in Sources */,
 				18BC33842272D6AB00E79547 /* Tem004Cell.swift in Sources */,
 				4549F13E226F519B00A57F6D /* Router.swift in Sources */,
+				456888AF2275E2D2003D3E70 /* ComNavView.swift in Sources */,
+				456888B12275E2EB003D3E70 /* ComTabView.swift in Sources */,
 				4549F139226F519B00A57F6D /* Holder.swift in Sources */,
 				18BC334D2270644900E79547 /* TopMenuCell.swift in Sources */,
 				18BC3332227000BC00E79547 /* CNavigationController.swift in Sources */,
@@ -1381,17 +1650,24 @@
 				18BC33D42272E85B00E79547 /* Com008Cell.swift in Sources */,
 				18BC338E2272D78B00E79547 /* Tem009Cell.swift in Sources */,
 				18CC042222747220004291BD /* PanelContentView.swift in Sources */,
+				456888D72275E40E003D3E70 /* ComNav008Cell.swift in Sources */,
 				18BC33402270341400E79547 /* NewLastCell.swift in Sources */,
 				18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */,
 				1880857B227546C2005408AE /* Tab001Layout.swift in Sources */,
+				456888E32275E462003D3E70 /* ComTab004Cell.swift in Sources */,
 				18BC33B52272DA3D00E79547 /* Tem006Layout.swift in Sources */,
 				4549F12D226F519B00A57F6D /* Style.swift in Sources */,
+				456888EB2275E490003D3E70 /* ComTab008Cell.swift in Sources */,
 				18BC33D82272EB2700E79547 /* Com010Cell.swift in Sources */,
+				456888C92275E3C2003D3E70 /* ComNav001Cell.swift in Sources */,
+				456888E12275E44A003D3E70 /* ComTab003Cell.swift in Sources */,
 				1880859F22757917005408AE /* PanelsView.swift in Sources */,
 				18CC043822747B5D004291BD /* Tab002Cell.swift in Sources */,
 				18BC33382270039D00E79547 /* Color.swift in Sources */,
 				4549F0DA226F50AD00A57F6D /* AppDelegate.swift in Sources */,
 				1880859D2275789D005408AE /* Panel005VC.swift in Sources */,
+				456888D32275E3F8003D3E70 /* ComNav006Cell.swift in Sources */,
+				456888E72275E47A003D3E70 /* ComTab006Cell.swift in Sources */,
 				18BC332C226FFBD700E79547 /* PanelVC.swift in Sources */,
 				18CC042E22747B02004291BD /* Tab001Cell.swift in Sources */,
 				18BC338A2272D70D00E79547 /* Tem007Cell.swift in Sources */,
@@ -1403,10 +1679,14 @@
 				1880856C2275462F005408AE /* Nav002Layout.swift in Sources */,
 				18BC33AF2272DA0700E79547 /* Tem009Layout.swift in Sources */,
 				1880859922757883005408AE /* Panel003VC.swift in Sources */,
+				456888D52275E406003D3E70 /* ComNav007Cell.swift in Sources */,
+				456888DF2275E43E003D3E70 /* ComTab002Cell.swift in Sources */,
+				456888DD2275E434003D3E70 /* ComTab001Cell.swift in Sources */,
 				1880858F227577F1005408AE /* Panel002Cell.swift in Sources */,
 				18808565227545E4005408AE /* Nav001Layout.swift in Sources */,
 				18BC333E2270340900E79547 /* NewFirstCell.swift in Sources */,
 				4549F135226F519B00A57F6D /* CLabel.swift in Sources */,
+				456888E92275E485003D3E70 /* ComTab007Cell.swift in Sources */,
 				18BC33822272D68300E79547 /* Tem003Cell.swift in Sources */,
 				4549F132226F519B00A57F6D /* CButton.swift in Sources */,
 			);

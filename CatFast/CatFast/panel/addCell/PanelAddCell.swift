@@ -14,8 +14,7 @@ class PanelAddCell: CollectionTemplate {
         super.init(frame: frame)
         
         
-        self.contentView.backgroundColor = Color.white()
-
+        self.contentView.backgroundColor = Color.backGray()
         
         let labelStyle = Style().text("添加").textColor(Color.black()).backgroundColor(Color.white())
         let headerLabel = CLabel(labelStyle)
