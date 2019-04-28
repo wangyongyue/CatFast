@@ -64,6 +64,16 @@ class Screen{
         return top
         
     }
+    static func topCellNavH() -> CGFloat{
+        let top = phoneH(iphone5: 64, iphone6: 64, iphoneS: 64, iphoneX: 64+24)
+        
+        return top/3
+    }
+    static func bottomCellNavH() -> CGFloat{
+        let top = phoneH(iphone5: 49, iphone6: 49, iphoneS: 49, iphoneX: 49+24)
+
+        return top/3
+    }
     
     static func phoneH(iphone5:CGFloat,iphone6:CGFloat,iphoneS:CGFloat,iphoneX:CGFloat)-> CGFloat{
         

@@ -11,42 +11,63 @@ import UIKit
 class PanelTabBarView: CView {
 
     var obArray = Observe()
+    let m = PanelTabBar()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setupContent()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    func loadData(){
+        
+        
+        m.loadData(ob: obArray)
+        
+    }
+    func loadSmallData(){
+        
+        m.loadSmallData(ob: obArray)
+    }
     func setupContent(){
         
-        let flow = Sec001TabBarLayout.init( .vertical)
+        let flow = Tab001Layout.init( .vertical)
         let table = CCollection.init( flow)
         self.addSubview(table)
-        table.backgroundColor = Color.backGray()
+        table.backgroundColor = Color.white()
         table.bounces = false
         table.v_array(ob: obArray)
-        table.register([Tem001Cell.classForCoder()])
         
         table.snp.makeConstraints { (make) in
             make.left.right.top.bottom.equalTo(0)
 
         }
         
+        var classArray = Array<AnyClass>()
+        for i in 1...comNumber{
+            
+            let classType = ClassType.getCellClass("Com", i)
+            if let type = classType{
+                
+                classArray.append(type)
+                
+            }
+        }
         
-        let m = PanelTabBar()
-        m.loadData(ob: self.obArray)
+        
         
         let t =  TabBarsView()
-        let tem =  SectionsView()
+        let tem =  PanelsView()
         
         var aIndex = 0
         table.v_didSelect { (index) in
             aIndex = index
             let model = self.obArray.v_array?[index]
             if let m = model{
-                if m is PanelAddCellModel{
-                    
+                if m is PanelAddCellModel || m is PanelAddSmallModel {
+
                     CWindow.init(true).addSubview(t)
                     
                 }else{
@@ -96,6 +117,22 @@ class PanelTabBar:NSObject{
         for i in 1...dataNumber{
             
             let m = PanelAddCellModel("PanelAddCell")
+            m.name = "wyy\(i)"
+            array.append(m)
+            
+        }
+        
+        ob?.v_array(true, v: { () -> Array<Cat>? in
+            
+            return array
+        })
+    }
+    func loadSmallData(ob:Observe?){
+        
+        var array = Array<Cat>()
+        for i in 1...dataNumber{
+            
+            let m = PanelAddSmallModel("PanelAddSmallCell")
             m.name = "wyy\(i)"
             array.append(m)
             

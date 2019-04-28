@@ -11,6 +11,7 @@ import UIKit
 class PanelContentView: CView {
 
     var obArray = Observe()
+    let m = Panel()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -18,6 +19,11 @@ class PanelContentView: CView {
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    func loadData(){
+        
+        m.loadData(ob: self.obArray)
+
     }
     func setupContent(){
         
@@ -28,19 +34,26 @@ class PanelContentView: CView {
         table.backgroundColor = Color.backGray()
         table.v_array(ob: obArray)
         
-        table.register([PanelAddCell.classForCoder()])
         
         table.snp.makeConstraints { (make) in
             make.left.right.top.bottom.equalTo(0)
            
         }
         
-        
-        let m = Panel()
-        m.loadData(ob: self.obArray)
+        var classArray = Array<AnyClass>()
+        for i in 1...comNumber{
+            
+            let classType = ClassType.getCellClass("Com", i)
+            if let type = classType{
+                
+                classArray.append(type)
+                
+            }
+        }
+
         
         let t =  ComponentsView()
-        let tem =  SectionsView()
+        let tem =  PanelsView()
         
         
         var aIndex = 0
@@ -48,7 +61,7 @@ class PanelContentView: CView {
             aIndex = index
             let model = self.obArray.v_array?[index]
             if let m = model{
-                if m is PanelAddCellModel{
+                if m is PanelAddCellModel || m is PanelAddSmallModel {
                     
                     CWindow.init(true).addSubview(t)
                     

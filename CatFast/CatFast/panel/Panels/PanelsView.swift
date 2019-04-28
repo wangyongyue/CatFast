@@ -1,14 +1,15 @@
 //
-//  NavigationsView.swift
+//  PanelsView.swift
 //  CatFast
 //
-//  Created by apple on 2019/4/27.
+//  Created by apple on 2019/4/28.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class NavigationsView: CView {
+class PanelsView: CView {
+
     var obArray = Observe()
     var obIndex = Observe()
     override init(frame: CGRect) {
@@ -28,9 +29,9 @@ class NavigationsView: CView {
         table.v_array(ob: obArray)
         
         var classArray = Array<AnyClass>()
-        for i in 1...navNumber{
+        for i in 1...panelNumber{
             
-            let classType = ClassType.getCellClass("Nav", i)
+            let classType = ClassType.getCellClass("Panel", i)
             if let type = classType{
                 
                 classArray.append(type)
@@ -48,12 +49,12 @@ class NavigationsView: CView {
             make.height.equalTo(Screen.height()/3 + 30)
         }
         
-        let m = Navigations()
+        let m = Panels()
         m.loadData(ob: self.obArray)
         
         table.v_index(ob: obIndex)
         
-     
+        
         
         
     }
@@ -70,19 +71,19 @@ class NavigationsView: CView {
     
     
 }
-class Navigations:NSObject{
+class Panels:NSObject{
     
     func loadData(ob:Observe?){
         
         
         var array = Array<Cat>()
-        for i in 1...navNumber{
+        for i in 1...panelNumber{
             
-            let m  = ClassType.getCatClass("Nav", i)
+            let m  = ClassType.getCatClass("Panel", i)
             if let a = m{
                 array.append(a)
             }
-         
+            
         }
         
         

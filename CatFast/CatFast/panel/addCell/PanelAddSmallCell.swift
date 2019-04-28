@@ -1,33 +1,33 @@
 //
-//  PanelAddCell.swift
+//  PanelAddSmallCell.swift
 //  CatFast
 //
-//  Created by apple on 2019/4/26.
+//  Created by apple on 2019/4/28.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class PanelAddCell: CollectionTemplate {
-    var holder = PanelAddCellHolder()
+class PanelAddSmallCell: CollectionTemplate {
+    var holder = PanelAddSmallHolder()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         
         self.contentView.backgroundColor = Color.white()
-
         
-        let labelStyle = Style().text("添加").textColor(Color.black()).backgroundColor(Color.white())
+        
+        let labelStyle = Style().text("添加").textColor(Color.black()).backgroundColor(Color.white()).font(UIFont.systemFont(ofSize: 8))
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
         headerLabel.v_text(ob: holder.textOb)
         
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(10)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
-            make.bottom.equalTo(-10)
+            make.top.equalTo(2)
+            make.left.equalTo(2)
+            make.right.equalTo(-2)
+            make.bottom.equalTo(-2)
         }
         
         
@@ -45,26 +45,26 @@ class PanelAddCell: CollectionTemplate {
     
     
 }
-class PanelAddCellModel: Cat {
+class PanelAddSmallModel: Cat {
     
     var name:String?
     var image:UIImage?
     
 }
-class PanelAddCellHolder: Holder {
+class PanelAddSmallHolder: Holder {
     var textOb = Observe()
     
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
-        if amodel is PanelAddCellModel{
-            let a = amodel as! PanelAddCellModel
+        if amodel is PanelAddSmallModel{
+            let a = amodel as! PanelAddSmallModel
             
-//            textOb.v_text { () -> String? in
-//                
-//                return a.name
-//            }
-//            
-        
+            //            textOb.v_text { () -> String? in
+            //
+            //                return a.name
+            //            }
+            //
+            
         }
     }
     

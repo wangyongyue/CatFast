@@ -20,7 +20,7 @@ class TabBarsView: CView {
         
         self.frame = CGRect.init(x: 0, y: 0, width: Screen.width(), height: Screen.height())
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/6, height: Screen.height()/6), .vertical)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.height()/3), .vertical)
         let table = CCollection.init( flow)
         self.addSubview(table)
         table.backgroundColor = Color.backGray()

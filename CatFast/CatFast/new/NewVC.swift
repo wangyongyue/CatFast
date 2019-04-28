@@ -11,7 +11,7 @@ import SnapKit
 
 let appName = "CatFast."
 let temNumber = 10
-let secNumber = 5
+let panelNumber = 5
 let comNumber = 10
 let navNumber = 5
 let tabNumber = 5
@@ -28,13 +28,8 @@ class NewVC: CViewController {
         
         
         CCollection.templates.append(PanelAddCell.classForCoder())
-        
-        
-        
-        
-        
-        
-        
+        CCollection.templates.append(PanelAddSmallCell.classForCoder())
+
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
@@ -57,12 +52,26 @@ class NewVC: CViewController {
         let m = Main()
         m.loadData(ob: self.obArray)
 
-        let t =  SectionsView()
+        let t =  PanelsView()
         t.obIndex.v_index { (index) in
             
-            print(index)
+            let m = t.obArray.v_array?[index]
+            var vc = CViewController()
             
-            Router.push(PanelVC(), ["id":10], { (obj) in
+            if m is Panel001CellModel{
+                vc = Panel001VC()
+            }else if m is Panel002CellModel{
+                vc = Panel002VC()
+            }else if m is Panel003CellModel{
+                vc = Panel003VC()
+            }else if m is Panel004CellModel{
+                vc = Panel004VC()
+            }else if m is Panel005CellModel{
+                vc = Panel005VC()
+            }
+          
+            
+            Router.push(vc, ["id":10], { (obj) in
                 
                 print(obj)
                 
@@ -74,13 +83,7 @@ class NewVC: CViewController {
 
             print(index)
             
-//            let className = "CatFast.PanelVC"
-//            if let classType = NSClassFromString(className) as? CViewController.Type {
-//
-//                let vc = classType.init()
-//                self.navigationController?.pushViewController(vc, animated: true)
-//
-//            }
+
             let m = self.obArray.v_array?[index]
             if m is NewCellModel{
                 

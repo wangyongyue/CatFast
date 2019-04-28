@@ -32,13 +32,13 @@ class PanelDefaultVC: CViewController {
         content.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.top.equalTo(Screen.top())
-            make.bottom.equalTo(0)
+            make.bottom.equalTo(Screen.bottom())
         }
-       
-        self.navigation.setupContent()
-
+        
+        
+        setupNavigation()
         setupAddContent()
-
+        
     }
     
     
@@ -59,7 +59,7 @@ class PanelDefaultVC: CViewController {
         
         tem.obIndex.v_index { (index) in
             
-            self.content.setupContent()
+            self.content.loadData()
             
             tem.remove()
             add.removeFromSuperview()
@@ -68,6 +68,36 @@ class PanelDefaultVC: CViewController {
         
         
     }
+    
+    func setupNavigation(){
+        
+        let style = Style().backgroundColor(Color.clear()).textColor(Color.gray()).textAlignment( .center).text("添加")
+        let add = CButton(style)
+        self.view.addSubview(add)
+        add.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0)
+            make.top.equalTo(0)
+            make.height.equalTo(Screen.top())
+            
+        }
+        let tem =  NavigationsView()
+        add.v_click {
+            
+            CWindow.init(true).addSubview(tem)
+        }
+        
+        tem.obIndex.v_index { (index) in
+            
+            self.navigation.loadData()
+            
+            tem.remove()
+            add.removeFromSuperview()
+            
+        }
+        
+        
+    }
+    
     
     
     
