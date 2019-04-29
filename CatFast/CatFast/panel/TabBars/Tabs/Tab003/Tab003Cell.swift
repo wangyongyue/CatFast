@@ -35,8 +35,8 @@ class Tab003Cell: CollectionTemplate {
             make.height.equalTo(Screen.bottomH())
             
         }
-        headerView.loadSmallData()
-        
+        let m = Tab003CellModel()
+        headerView.loadSmallData(m)
         
     }
     

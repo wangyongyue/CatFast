@@ -24,7 +24,9 @@ class ComNavView: CView {
         
         
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/6, height: Screen.width()/6), .vertical)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/5 - 2, height: Screen.width()/5 - 2), .vertical)
+        flow.minimumLineSpacing = 2
+        flow.minimumInteritemSpacing = 2
         let table = CCollection.init( flow)
         self.addSubview(table)
         table.backgroundColor = Color.backGray()
@@ -77,15 +79,18 @@ class ComNavs:NSObject{
         
         
         var array = Array<Cat>()
+        
+        let m = ComNavBackCellModel("ComNavBackCell")
+        array.append(m)
+                
+        
         for i in 1...comNavNumber{
             
             let m  = ClassType.getCatClass("ComNav", i)
             if let a = m{
                 array.append(a)
             }
-            //            let m = Com001CellModel()
-            //            m.name = "wyy\(i)"
-            //            array.append(m)
+           
             
         }
         

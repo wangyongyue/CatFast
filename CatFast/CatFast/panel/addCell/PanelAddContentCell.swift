@@ -1,20 +1,20 @@
 //
-//  PanelAddCell.swift
+//  PanelAddContentCell.swift
 //  CatFast
 //
-//  Created by apple on 2019/4/26.
+//  Created by apple on 2019/4/29.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class PanelAddCell: CollectionTemplate {
-    var holder = PanelAddCellHolder()
+class PanelAddContentCell: CollectionTemplate {
+    var holder = PanelAddContentHolder()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         
-        self.contentView.backgroundColor = Color.white()
+        self.contentView.backgroundColor = Color.backGray()
         
         let labelStyle = Style().text("添加").textColor(Color.black()).backgroundColor(Color.white())
         let headerLabel = CLabel(labelStyle)
@@ -44,26 +44,26 @@ class PanelAddCell: CollectionTemplate {
     
     
 }
-class PanelAddCellModel: Cat {
+class PanelAddContentModel: Cat {
     
     var name:String?
     var image:UIImage?
     
 }
-class PanelAddCellHolder: Holder {
+class PanelAddContentHolder: Holder {
     var textOb = Observe()
     
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
-        if amodel is PanelAddCellModel{
-            let a = amodel as! PanelAddCellModel
+        if amodel is PanelAddContentModel{
+            let a = amodel as! PanelAddContentModel
             
-//            textOb.v_text { () -> String? in
-//                
-//                return a.name
-//            }
-//            
-        
+            //            textOb.v_text { () -> String? in
+            //
+            //                return a.name
+            //            }
+            //
+            
         }
     }
     

@@ -13,34 +13,19 @@ class Tem009Cell: CollectionTemplate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let imgStyle = Style().backgroundColor(Color.yellow())
-        let headerImg = CImageView(imgStyle)
-        self.contentView.addSubview(headerImg)
+        let style = Style().backgroundColor(Color.white())
+        let headerView = PanelContentView(style)
+        self.contentView.addSubview(headerView)
         
-        
-        let labelStyle = Style().text("test").textColor(Color.black()).backgroundColor(Color.white())
-        let headerLabel = CLabel(labelStyle)
-        self.contentView.addSubview(headerLabel)
-        
-        headerImg.v_image(ob: holder.imageOb)
-        headerLabel.v_text(ob: holder.textOb)
-        
-        
-        
-        headerImg.snp.makeConstraints { (make) in
+        headerView.snp.makeConstraints { (make) in
+            make.bottom.equalTo(-10)
+            make.left.equalTo(5)
+            make.right.equalTo(-5)
             make.top.equalTo(10)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
-            make.bottom.equalTo(-30)
-            
         }
-        
-        headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
-            make.height.equalTo(30)
-        }
+        let m = Tem008CellModel()
+        headerView.loadSmallData(m)
+        headerView.isUserInteractionEnabled = false
         
         
     }

@@ -51,7 +51,9 @@ class ComponentsView: CView {
         }
         
         
-        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.width()/3/2), .vertical)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3 - 2, height: Screen.width()/3/2 - 2), .vertical)
+        flow.minimumLineSpacing = 2
+        flow.minimumInteritemSpacing = 2
         let table = CCollection.init( flow)
         self.addSubview(table)
         table.backgroundColor = Color.backGray()

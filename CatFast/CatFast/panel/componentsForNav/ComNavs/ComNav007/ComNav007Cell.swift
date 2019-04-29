@@ -12,7 +12,8 @@ class ComNav007Cell: CollectionTemplate {
     var holder = ComNav007CellHolder()
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        self.contentView.backgroundColor = Color.white()
+
         let imgStyle = Style().backgroundColor(Color.yellow())
         let headerImg = CImageView(imgStyle)
         self.contentView.addSubview(headerImg)
@@ -28,19 +29,19 @@ class ComNav007Cell: CollectionTemplate {
         
         
         headerImg.snp.makeConstraints { (make) in
-            make.top.equalTo(10)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
             make.bottom.equalTo(-30)
             
         }
         headerLabel.textAlignment = .center
         
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
             make.height.equalTo(30)
+            make.bottom.equalTo(0)
         }
         
         

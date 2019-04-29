@@ -27,7 +27,8 @@ class Panel001VC: CViewController {
             make.bottom.equalTo(0)
             make.height.equalTo(Screen.height()/3*2)
         }
-        self.content.loadData()
+        let m = Tem001CellModel()
+        self.content.loadData(m)
         
     }
     

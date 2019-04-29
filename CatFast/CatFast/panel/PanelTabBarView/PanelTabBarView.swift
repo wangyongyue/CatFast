@@ -11,30 +11,45 @@ import UIKit
 class PanelTabBarView: CView {
 
     var obArray = Observe()
-    let m = PanelTabBar()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setupContent()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    func loadData(){
+    func loadData(_ model:Cat?){
+        let flow = ClassType.getLayoutVerticalClass(model)
+
+        if let a = flow{
+            
+            setupContent(layout: a)
+            let m = PanelTabBar()
+            m.loadData(ob: obArray)
+        }
         
-        
-        m.loadData(ob: obArray)
         
     }
-    func loadSmallData(){
+    func loadSmallData(_ model:Cat?){
         
-        m.loadSmallData(ob: obArray)
+        
+       
+        
+        let flow = ClassType.getLayoutVerticalClass(model)
+
+        if let a = flow{
+            setupContent(layout: a)
+            let m = PanelTabBar()
+            m.loadSmallData(ob: obArray)
+        }
+        
+
     }
-    func setupContent(){
+    func setupContent(layout:CCustomLayout){
         
-        let flow = Tab001Layout.init( .vertical)
-        let table = CCollection.init( flow)
+        
+        let table = CCollection.init( layout)
         self.addSubview(table)
         table.backgroundColor = Color.white()
         table.bounces = false
@@ -47,15 +62,12 @@ class PanelTabBarView: CView {
         
         var classArray = Array<AnyClass>()
         for i in 1...comTabNumber{
-            
             let classType = ClassType.getCellClass("ComTab", i)
             if let type = classType{
-                
                 classArray.append(type)
-                
             }
         }
-        
+        table.register(classArray)
         
         let t =  ComTabView()
         let tem =  PanelsView()
@@ -65,7 +77,7 @@ class PanelTabBarView: CView {
             aIndex = index
             let model = self.obArray.v_array?[index]
             if let m = model{
-                if m is PanelAddCellModel || m is PanelAddSmallModel {
+                if m is PanelAddCellModel || m is PanelAddSmallModel || m is PanelAddContentModel{
 
                     CWindow.init(true).addSubview(t)
                     
@@ -123,7 +135,6 @@ class PanelTabBarView: CView {
             
             
         }
-        
         
     }
 }

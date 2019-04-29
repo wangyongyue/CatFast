@@ -28,20 +28,20 @@ class Com002Cell: CollectionTemplate {
         
         
         headerImg.snp.makeConstraints { (make) in
-            make.top.equalTo(10)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
             make.bottom.equalTo(-30)
             
         }
+        headerLabel.textAlignment = .center
         
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(headerImg.snp_bottomMargin).offset(0)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
             make.height.equalTo(30)
+            make.bottom.equalTo(0)
         }
-        
         
     }
     

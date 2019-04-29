@@ -60,4 +60,39 @@ class ClassType: NSObject {
         return CollectionTemplate.classForCoder()
         
     }
+    
+    static func getLayoutHorizontalClass(_ model:Cat?) -> CCustomLayout?{
+        
+        
+        if let m = model{
+            
+            let className = NSStringFromClass(m.classForCoder).replacingOccurrences(of: "CellModel", with: "Layout")
+            let classType = NSClassFromString(className)
+            if let type = NSClassFromString(className) as? CCustomLayout.Type {
+                
+                let m = type.init(scrollDirection: .horizontal)
+                return m
+            }
+        }
+        
+        return CCustomLayout(.horizontal)
+        
+    }
+    static func getLayoutVerticalClass(_ model:Cat?) -> CCustomLayout?{
+        
+        
+        if let m = model{
+            
+            let className = NSStringFromClass(m.classForCoder).replacingOccurrences(of: "CellModel", with: "Layout")
+            let classType = NSClassFromString(className)
+            if let type = NSClassFromString(className) as? CCustomLayout.Type {
+                
+                let m = type.init(scrollDirection: .vertical)
+                return m
+            }
+        }
+        
+        return CCustomLayout(.vertical)
+        
+    }
 }

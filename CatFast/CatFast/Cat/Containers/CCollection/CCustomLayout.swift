@@ -15,6 +15,17 @@ class CCustomLayout: UICollectionViewFlowLayout {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    required init(scrollDirection:UICollectionView.ScrollDirection){
+        super.init()
+        self.scrollDirection = scrollDirection
+        
+        self.minimumLineSpacing = 0
+        self.minimumInteritemSpacing = 0
+        self.sectionInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+        
+        self.estimatedItemSize = CGSize.init(width: 100, height: 100)
+        
+    }
     
     convenience init(_ scrollDirection:UICollectionView.ScrollDirection) {
         self.init()
@@ -25,7 +36,7 @@ class CCustomLayout: UICollectionViewFlowLayout {
         self.sectionInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
         
         self.estimatedItemSize = CGSize.init(width: 100, height: 100)
-        
+
     }
     
     // 内容区域总大小，不是可见区域

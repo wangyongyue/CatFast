@@ -37,11 +37,11 @@ class Tab004Layout: CCustomLayout {
             //当前单元格布局属性
             let attribute =  UICollectionViewLayoutAttributes(forCellWith:indexPath)
             
-            let w = collectionViewContentSize.width / 3
+            let w = collectionViewContentSize.width / 5
             let h = collectionViewContentSize.height
             let index = CGFloat(indexPath.row)
             
-            if index < 3{
+            if index < 5{
                 attribute.frame = CGRect(x: index * w, y:0, width:w,height:h)
                 
             }else{

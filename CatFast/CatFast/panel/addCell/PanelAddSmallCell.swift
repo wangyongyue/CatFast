@@ -24,10 +24,10 @@ class PanelAddSmallCell: CollectionTemplate {
         headerLabel.v_text(ob: holder.textOb)
         
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(2)
-            make.left.equalTo(2)
-            make.right.equalTo(-2)
-            make.bottom.equalTo(-2)
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.bottom.equalTo(0)
         }
         
         

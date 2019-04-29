@@ -13,8 +13,7 @@ class Tem002Layout: CCustomLayout {
     override var collectionViewContentSize: CGSize {
         let width = collectionView!.bounds.size.width - collectionView!.contentInset.left
             - collectionView!.contentInset.right
-        let height = CGFloat((collectionView!.numberOfItems(inSection: 0) + 1) / 3)
-            * (width / 3 * 2)
+        let height = CGFloat((collectionView!.numberOfItems(inSection: 0))) * (width / 4)
         return CGSize(width: width, height: height)
     }
     
@@ -34,53 +33,21 @@ class Tem002Layout: CCustomLayout {
     // 这个方法返回每个单元格的位置和大小
     override func layoutAttributesForItem(at indexPath: IndexPath)
         -> UICollectionViewLayoutAttributes? {
-            //当前单元格布局属性
             let attribute =  UICollectionViewLayoutAttributes(forCellWith:indexPath)
             
             //单元格边长
-            let largeCellSide = collectionViewContentSize.width / 3 * 2
-            let smallCellSide = collectionViewContentSize.width / 3
+            let widthCellSide = collectionViewContentSize.width
+            let heigthCellSide = collectionViewContentSize.width / 4
+            let index = CGFloat(indexPath.item)
+            let offset:CGFloat = 5
             
-            //当前行数，每行显示3个图片，1大2小
-            let line:Int =  indexPath.item / 3
-            //当前行的Y坐标
-            let lineOriginY =  largeCellSide * CGFloat(line)
-            //右侧单元格X坐标，这里按左右对齐，所以中间空隙大
-            let rightLargeX = collectionViewContentSize.width - largeCellSide
-            let rightSmallX = collectionViewContentSize.width - smallCellSide
-            
-            // 每行2个图片，2行循环一次，一共6种位置
-            if (indexPath.item % 6 == 0) {
-                attribute.frame = CGRect(x:0, y:lineOriginY, width:largeCellSide,
-                                         height:largeCellSide)
-            } else if (indexPath.item % 6 == 1) {
-                attribute.frame = CGRect(x:rightSmallX, y:lineOriginY, width:smallCellSide,
-                                         height:smallCellSide)
-            } else if (indexPath.item % 6 == 2) {
-                attribute.frame = CGRect(x:rightSmallX,
-                                         y:lineOriginY + smallCellSide,
-                                         width:smallCellSide, height:smallCellSide)
-            } else if (indexPath.item % 6 == 3) {
-                attribute.frame = CGRect(x:0, y:lineOriginY, width:smallCellSide,
-                                         height:smallCellSide )
-            } else if (indexPath.item % 6 == 4) {
-                attribute.frame = CGRect(x:0,
-                                         y:lineOriginY + smallCellSide,
-                                         width:smallCellSide, height:smallCellSide)
-            } else if (indexPath.item % 6 == 5) {
-                attribute.frame = CGRect(x:rightLargeX, y:lineOriginY,
-                                         width:largeCellSide,
-                                         height:largeCellSide)
-            }
-            
+            let x:CGFloat = 0.0
+            let y = index * heigthCellSide
+            let w = widthCellSide
+            let h = heigthCellSide - offset
+            attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
             return attribute
     }
     
-    /*
-     //如果有页眉、页脚或者背景，可以用下面的方法实现更多效果
-     func layoutAttributesForSupplementaryViewOfKind(elementKind: String!,
-     atIndexPath indexPath: NSIndexPath!) -> UICollectionViewLayoutAttributes!
-     func layoutAttributesForDecorationViewOfKind(elementKind: String!,
-     atIndexPath indexPath: NSIndexPath!) -> UICollectionViewLayoutAttributes!
-     */
+   
 }

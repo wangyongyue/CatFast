@@ -10,30 +10,44 @@ import UIKit
 
 class PanelNavigationView: CView {
     var obArray = Observe()
-    let m = PanelNavigation()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setupContent()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    func loadData(){
+    
+    func loadData(_ model:Cat?){
         
-        
-        m.loadData(ob: obArray)
+        let flow = ClassType.getLayoutVerticalClass(model)
 
-    }
-    func loadSmallData(){
+        if let a = flow{
+            setupContent(layout: a)
+            let m = PanelNavigation()
+            m.loadData(ob: obArray)
+        }
         
-        m.loadSmallData(ob: obArray)
-    }
-    func setupContent(){
         
-        let flow = Nav001Layout.init( .vertical)
-        let table = CCollection.init( flow)
+    }
+    func loadSmallData(_ model:Cat?){
+        
+        let flow = ClassType.getLayoutVerticalClass(model)
+
+        
+        if let a = flow{
+            setupContent(layout: a)
+            let m = PanelNavigation()
+            m.loadSmallData(ob: obArray)
+        }
+        
+        
+        
+    }
+    func setupContent(layout:CCustomLayout){
+        
+        let table = CCollection.init( layout)
         self.addSubview(table)
         table.backgroundColor = Color.white()
         table.bounces = false
@@ -65,19 +79,17 @@ class PanelNavigationView: CView {
         var aIndex = 0
         table.v_didSelect { (index) in
             aIndex = index
-            
-            
-            if index == 0 && !(Router.currentController() is Panel002VC){
+          
+            let model = self.obArray.v_array?[index]
+            if model is ComNavBackCellModel && index == 0{
                 
                 Router.pop(nil)
                 return
             }
             
             
-            
-            let model = self.obArray.v_array?[index]
             if let m = model{
-                if m is PanelAddCellModel || m is PanelAddSmallModel {
+                if m is PanelAddCellModel || m is PanelAddSmallModel || m is PanelAddContentModel{
 
                     CWindow.init(true).addSubview(t)
                     

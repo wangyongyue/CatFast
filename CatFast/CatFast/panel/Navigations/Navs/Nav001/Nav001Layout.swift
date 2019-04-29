@@ -47,10 +47,10 @@ class Nav001Layout: CCustomLayout {
                 attribute.frame = CGRect(x: 2 * h, y:0, width:w - 4 * h,height:h)
                 
             }else if indexPath.row == 2{
-                attribute.frame = CGRect(x:w - h, y:0, width:h,height:h)
+                attribute.frame = CGRect(x:w - 2 * h, y:0, width:h,height:h)
                 
             }else if indexPath.row == 3{
-                attribute.frame = CGRect(x:w, y:0, width:h,height:h)
+                attribute.frame = CGRect(x:w - h, y:0, width:h,height:h)
                 
             }else{
                 attribute.frame = CGRect(x:0, y:0, width:0,height:0)

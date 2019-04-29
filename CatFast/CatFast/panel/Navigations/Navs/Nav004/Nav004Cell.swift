@@ -36,8 +36,8 @@ class Nav004Cell: CollectionTemplate {
             make.height.equalTo(Screen.topCellNavH())
             
         }
-        headerView.loadSmallData()
-        
+        let m = Nav004CellModel()
+        headerView.loadSmallData(m)
     }
     
     override func setModel(_ amodel: Cat) {

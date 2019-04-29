@@ -35,8 +35,8 @@ class Tab002Cell: CollectionTemplate {
             make.height.equalTo(Screen.bottomH())
             
         }
-        headerView.loadSmallData()
-        
+        let m = Tab002CellModel()
+        headerView.loadSmallData(m)
     }
     
     override func setModel(_ amodel: Cat) {

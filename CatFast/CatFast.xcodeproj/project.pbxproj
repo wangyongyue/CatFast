@@ -29,6 +29,8 @@
 		1880859D2275789D005408AE /* Panel005VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880859C2275789D005408AE /* Panel005VC.swift */; };
 		1880859F22757917005408AE /* PanelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880859E22757917005408AE /* PanelsView.swift */; };
 		188085A122759923005408AE /* PanelAddSmallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188085A022759923005408AE /* PanelAddSmallCell.swift */; };
+		188085A3227690CA005408AE /* PanelAddContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188085A2227690CA005408AE /* PanelAddContentCell.swift */; };
+		188085A82276CC64005408AE /* ComNavBackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188085A72276CC64005408AE /* ComNavBackCell.swift */; };
 		18BC332C226FFBD700E79547 /* PanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC332B226FFBD700E79547 /* PanelVC.swift */; };
 		18BC3332227000BC00E79547 /* CNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC3331227000BC00E79547 /* CNavigationController.swift */; };
 		18BC33362270039100E79547 /* Img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33352270039100E79547 /* Img.swift */; };
@@ -74,7 +76,6 @@
 		18BC33DB2272FF6700E79547 /* ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DA2272FF6700E79547 /* ClassType.swift */; };
 		18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DC22730FAF00E79547 /* Tem005Layout.swift */; };
 		18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC33DF2273127800E79547 /* PanelAddCell.swift */; };
-		18BC3411227440B500E79547 /* PanelDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC3410227440B500E79547 /* PanelDefaultVC.swift */; };
 		18CC041D227470D8004291BD /* PanelNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC041C227470D8004291BD /* PanelNavigationView.swift */; };
 		18CC041F2274710C004291BD /* PanelTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC041E2274710C004291BD /* PanelTabBarView.swift */; };
 		18CC042222747220004291BD /* PanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC042122747220004291BD /* PanelContentView.swift */; };
@@ -183,6 +184,8 @@
 		1880859C2275789D005408AE /* Panel005VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel005VC.swift; sourceTree = "<group>"; };
 		1880859E22757917005408AE /* PanelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsView.swift; sourceTree = "<group>"; };
 		188085A022759923005408AE /* PanelAddSmallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAddSmallCell.swift; sourceTree = "<group>"; };
+		188085A2227690CA005408AE /* PanelAddContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAddContentCell.swift; sourceTree = "<group>"; };
+		188085A72276CC64005408AE /* ComNavBackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComNavBackCell.swift; sourceTree = "<group>"; };
 		18BC332B226FFBD700E79547 /* PanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelVC.swift; sourceTree = "<group>"; };
 		18BC3331227000BC00E79547 /* CNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationController.swift; sourceTree = "<group>"; };
 		18BC33352270039100E79547 /* Img.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Img.swift; sourceTree = "<group>"; };
@@ -228,7 +231,6 @@
 		18BC33DA2272FF6700E79547 /* ClassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassType.swift; sourceTree = "<group>"; };
 		18BC33DC22730FAF00E79547 /* Tem005Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tem005Layout.swift; sourceTree = "<group>"; };
 		18BC33DF2273127800E79547 /* PanelAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAddCell.swift; sourceTree = "<group>"; };
-		18BC3410227440B500E79547 /* PanelDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelDefaultVC.swift; sourceTree = "<group>"; };
 		18CC041C227470D8004291BD /* PanelNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelNavigationView.swift; sourceTree = "<group>"; };
 		18CC041E2274710C004291BD /* PanelTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelTabBarView.swift; sourceTree = "<group>"; };
 		18CC042122747220004291BD /* PanelContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelContentView.swift; sourceTree = "<group>"; };
@@ -485,11 +487,18 @@
 			path = Panel005;
 			sourceTree = "<group>";
 		};
+		188085A42276CBFC005408AE /* ComNavBack */ = {
+			isa = PBXGroup;
+			children = (
+				188085A72276CC64005408AE /* ComNavBackCell.swift */,
+			);
+			path = ComNavBack;
+			sourceTree = "<group>";
+		};
 		18BC332A226FFBBA00E79547 /* panel */ = {
 			isa = PBXGroup;
 			children = (
 				18BC332B226FFBD700E79547 /* PanelVC.swift */,
-				18BC3410227440B500E79547 /* PanelDefaultVC.swift */,
 				188085842275772E005408AE /* Panels */,
 				18CC04202274720A004291BD /* PanelContentView */,
 				18CC041B227470A6004291BD /* PanelNavigationView */,
@@ -785,6 +794,7 @@
 			isa = PBXGroup;
 			children = (
 				18BC33DF2273127800E79547 /* PanelAddCell.swift */,
+				188085A2227690CA005408AE /* PanelAddContentCell.swift */,
 				188085A022759923005408AE /* PanelAddSmallCell.swift */,
 			);
 			path = addCell;
@@ -1114,6 +1124,7 @@
 		456888AD2275E226003D3E70 /* componentsForNav */ = {
 			isa = PBXGroup;
 			children = (
+				188085A42276CBFC005408AE /* ComNavBack */,
 				456888AE2275E2D2003D3E70 /* ComNavView.swift */,
 				456888B22275E2F2003D3E70 /* ComNavs */,
 			);
@@ -1566,6 +1577,7 @@
 			files = (
 				4549F13B226F519B00A57F6D /* CFlowLayout.swift in Sources */,
 				4549F12F226F519B00A57F6D /* Observe.swift in Sources */,
+				188085A3227690CA005408AE /* PanelAddContentCell.swift in Sources */,
 				456888EF2275E4A8003D3E70 /* ComTab010Cell.swift in Sources */,
 				18BC33462270635D00E79547 /* TemplatesView.swift in Sources */,
 				18BC33D22272E7FB00E79547 /* Com007Cell.swift in Sources */,
@@ -1599,6 +1611,7 @@
 				18BC33AD2272D9D900E79547 /* Tem010Layout.swift in Sources */,
 				456888CB2275E3CF003D3E70 /* ComNav002Cell.swift in Sources */,
 				18BC33B32272DA2D00E79547 /* Tem007Layout.swift in Sources */,
+				188085A82276CC64005408AE /* ComNavBackCell.swift in Sources */,
 				18CC043622747B4D004291BD /* Nav005Cell.swift in Sources */,
 				18BC33712271B67D00E79547 /* Com001Cell.swift in Sources */,
 				4549F13D226F519B00A57F6D /* CTable.swift in Sources */,
@@ -1644,7 +1657,6 @@
 				4549F139226F519B00A57F6D /* Holder.swift in Sources */,
 				18BC334D2270644900E79547 /* TopMenuCell.swift in Sources */,
 				18BC3332227000BC00E79547 /* CNavigationController.swift in Sources */,
-				18BC3411227440B500E79547 /* PanelDefaultVC.swift in Sources */,
 				18BC33CE2272E77F00E79547 /* Com005Cell.swift in Sources */,
 				18BC336E2271B4A800E79547 /* Tem001Cell.swift in Sources */,
 				18BC33D42272E85B00E79547 /* Com008Cell.swift in Sources */,

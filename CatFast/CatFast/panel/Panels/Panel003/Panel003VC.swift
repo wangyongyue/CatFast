@@ -59,8 +59,8 @@ class Panel003VC: CViewController {
         
         tem.obIndex.v_index { (index) in
             
-            self.content.loadData()
-            
+            let m = tem.obArray.v_array?[index]
+            self.content.loadData(m)
             tem.remove()
             add.removeFromSuperview()
             
@@ -88,7 +88,8 @@ class Panel003VC: CViewController {
         
         tem.obIndex.v_index { (index) in
             
-            self.navigation.loadData()
+            let m = tem.obArray.v_array?[index]
+            self.navigation.loadData(m)
             
             tem.remove()
             add.removeFromSuperview()

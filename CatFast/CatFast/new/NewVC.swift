@@ -34,12 +34,16 @@ class NewVC: CViewController {
         
         CCollection.templates.append(PanelAddCell.classForCoder())
         CCollection.templates.append(PanelAddSmallCell.classForCoder())
+        CCollection.templates.append(PanelAddContentCell.classForCoder())
+        CCollection.templates.append(ComNavBackCell.classForCoder())
 
+        
+        
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
         
-        let flow = CFlowLayout.init(CGSize.init(width: 200, height: 200), .horizontal)
+        let flow = CFlowLayout.init(CGSize.init(width: Screen.width()/3, height: Screen.height()/3), .horizontal)
         let table = CCollection.init(flow)
         self.view.addSubview(table)
         table.backgroundColor = Color.backGray()
@@ -51,7 +55,7 @@ class NewVC: CViewController {
         table.snp.makeConstraints { (make) in
             make.width.equalToSuperview()
             make.center.equalToSuperview()
-            make.height.equalTo(200)
+            make.height.equalTo(Screen.height()/3)
         }
         
         let m = Main()
@@ -118,14 +122,14 @@ class Main:NSObject{
         
         
         var array = Array<Cat>()
-        for i in 1...6{
+        for i in 1...3{
             
             if i == 1{
                 let m = NewFirstCellModel("NewFirstCell")
                 m.name = "wyy\(i)"
                 array.append(m)
                 
-            }else if i == 6{
+            }else if i == 3{
                 let m = NewLastCellModel("NewLastCell")
                 m.name = "wyy\(i)"
                 array.append(m)

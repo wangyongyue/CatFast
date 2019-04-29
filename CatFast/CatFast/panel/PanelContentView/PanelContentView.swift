@@ -15,21 +15,46 @@ class PanelContentView: CView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setupContent()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    func loadData(){
+  
+    
+    func loadData(_ model:Cat?){
         
-        m.loadData(ob: self.obArray)
-
+        
+        
+        let flow = ClassType.getLayoutHorizontalClass(model)
+        if let a = flow{
+            
+            setupContent(layout: a)
+            let m = Panel()
+            m.loadData(ob: obArray)
+        }
+        
+     
     }
-    func setupContent(){
+    func loadSmallData(_ model:Cat?){
+        
+       
+        
+        let flow = ClassType.getLayoutHorizontalClass(model)
+        if let a = flow{
+            
+            setupContent(layout: a)
+            let m = Panel()
+            m.loadSmallData(ob: obArray)
+        }
         
         
-        let flow = Tem001Layout.init( .horizontal)
-        let table = CCollection.init( flow)
+        
+    }
+   
+    func setupContent(layout:CCustomLayout){
+        
+        
+        let table = CCollection.init( layout)
         self.addSubview(table)
         table.backgroundColor = Color.backGray()
         table.v_array(ob: obArray)
@@ -62,7 +87,7 @@ class PanelContentView: CView {
             aIndex = index
             let model = self.obArray.v_array?[index]
             if let m = model{
-                if m is PanelAddCellModel || m is PanelAddSmallModel {
+                if m is PanelAddCellModel || m is PanelAddSmallModel || m is PanelAddContentModel{
                     
                     CWindow.init(true).addSubview(t)
                     
@@ -137,7 +162,7 @@ class Panel:NSObject{
         var array = Array<Cat>()
         for i in 1...dataNumber{
             
-            let m = PanelAddCellModel("PanelAddCell")
+            let m = PanelAddContentModel("PanelAddContentCell")
             m.name = "wyy\(i)"
             array.append(m)
             
@@ -151,6 +176,21 @@ class Panel:NSObject{
         
     }
    
-    
+    func loadSmallData(ob:Observe?){
+        
+        var array = Array<Cat>()
+        for i in 1...dataNumber{
+            
+            let m = PanelAddSmallModel("PanelAddSmallCell")
+            m.name = "wyy\(i)"
+            array.append(m)
+            
+        }
+        
+        ob?.v_array(true, v: { () -> Array<Cat>? in
+            
+            return array
+        })
+    }
     
 }
