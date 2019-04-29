@@ -13,8 +13,7 @@ class Tem007Layout: CCustomLayout {
     override var collectionViewContentSize: CGSize {
         let width = collectionView!.bounds.size.width - collectionView!.contentInset.left
             - collectionView!.contentInset.right
-        let height = CGFloat((collectionView!.numberOfItems(inSection: 0) + 1) / 3)
-            * (width / 3 * 2)
+        let height = CGFloat((collectionView!.numberOfItems(inSection: 0))) / 6 * (width / 3  * 4) + 100
         return CGSize(width: width, height: height)
     }
     
@@ -48,39 +47,57 @@ class Tem007Layout: CCustomLayout {
             //右侧单元格X坐标，这里按左右对齐，所以中间空隙大
             let rightLargeX = collectionViewContentSize.width - largeCellSide
             let rightSmallX = collectionViewContentSize.width - smallCellSide
-            
+            let offset:CGFloat = 5
+
             // 每行2个图片，2行循环一次，一共6种位置
             if (indexPath.item % 6 == 0) {
-                attribute.frame = CGRect(x:0, y:lineOriginY, width:largeCellSide,
-                                         height:largeCellSide)
+                let x:CGFloat = offset
+                let y = offset + lineOriginY
+                let w = largeCellSide - 2 * offset
+                let h = largeCellSide - 2 * offset
+                
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+                
             } else if (indexPath.item % 6 == 1) {
-                attribute.frame = CGRect(x:rightSmallX, y:lineOriginY, width:smallCellSide,
-                                         height:smallCellSide)
+                
+                let x:CGFloat = offset +  rightSmallX
+                let y = offset + lineOriginY
+                let w = smallCellSide - 2 * offset
+                let h = smallCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+
             } else if (indexPath.item % 6 == 2) {
-                attribute.frame = CGRect(x:rightSmallX,
-                                         y:lineOriginY + smallCellSide,
-                                         width:smallCellSide, height:smallCellSide)
+                let x:CGFloat = offset +  rightSmallX
+                let y = offset + lineOriginY + smallCellSide
+                let w = smallCellSide - 2 * offset
+                let h = smallCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+               
             } else if (indexPath.item % 6 == 3) {
-                attribute.frame = CGRect(x:0, y:lineOriginY, width:smallCellSide,
-                                         height:smallCellSide )
+                
+                let x:CGFloat = offset
+                let y = offset + lineOriginY
+                let w = smallCellSide - 2 * offset
+                let h = smallCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+                
             } else if (indexPath.item % 6 == 4) {
-                attribute.frame = CGRect(x:0,
-                                         y:lineOriginY + smallCellSide,
-                                         width:smallCellSide, height:smallCellSide)
+                let x:CGFloat = offset
+                let y = offset + lineOriginY + smallCellSide
+                let w = smallCellSide - 2 * offset
+                let h = smallCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+
             } else if (indexPath.item % 6 == 5) {
-                attribute.frame = CGRect(x:rightLargeX, y:lineOriginY,
-                                         width:largeCellSide,
-                                         height:largeCellSide)
+                let x:CGFloat = offset + rightLargeX
+                let y = offset + lineOriginY
+                let w = largeCellSide - 2 * offset
+                let h = largeCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
             }
             
             return attribute
     }
     
-    /*
-     //如果有页眉、页脚或者背景，可以用下面的方法实现更多效果
-     func layoutAttributesForSupplementaryViewOfKind(elementKind: String!,
-     atIndexPath indexPath: NSIndexPath!) -> UICollectionViewLayoutAttributes!
-     func layoutAttributesForDecorationViewOfKind(elementKind: String!,
-     atIndexPath indexPath: NSIndexPath!) -> UICollectionViewLayoutAttributes!
-     */
+   
 }

@@ -64,7 +64,6 @@ class PanelNavigationView: CView {
             
             let classType = ClassType.getCellClass("ComNav", i)
             if let type = classType{
-                
                 classArray.append(type)
                 
             }
@@ -141,11 +140,9 @@ class PanelNavigationView: CView {
                 
             })
             tem.remove()
-            
         }
         
         table.v_didEvent { (model) in
-            
             
         }
         
@@ -157,6 +154,8 @@ class PanelNavigation:NSObject{
     func loadData(ob:Observe?){
         
         var array = Array<Cat>()
+        let m = ComNavBackCellModel("ComNavBackCell")
+        array.append(m)
         for i in 1...dataNumber{
             
             let m = PanelAddCellModel("PanelAddCell")

@@ -13,8 +13,7 @@ class Tem006Layout: CCustomLayout {
     override var collectionViewContentSize: CGSize {
         let width = collectionView!.bounds.size.width - collectionView!.contentInset.left
             - collectionView!.contentInset.right
-        let height = CGFloat((collectionView!.numberOfItems(inSection: 0) + 1) / 3)
-            * (width / 3 * 2)
+        let height = CGFloat((collectionView!.numberOfItems(inSection: 0)/5 + 1)) * 3 * (width / 2)
         return CGSize(width: width, height: height)
     }
     
@@ -48,7 +47,7 @@ class Tem006Layout: CCustomLayout {
             let offset:CGFloat = 5
 
             //当前行的Y坐标
-            let lineOriginY =  largeCellSide * CGFloat(lineItem)
+            let lineOriginY =  heightCellSide * 3 * CGFloat(lineSection)
             //右侧单元格X坐标，这里按左右对齐，所以中间空隙大
             let rightLargeX = collectionViewContentSize.width - largeCellSide
             let rightSmallX = collectionViewContentSize.width - smallCellSide
@@ -56,16 +55,34 @@ class Tem006Layout: CCustomLayout {
             // 每行2个图片，3行循环一次，一共6种位置
             if (indexPath.item % 5 == 0) {
                 let x:CGFloat = offset
-                let y = offset + CGFloat(lineSection) * (heightCellSide * 3)
+                let y = offset + lineOriginY
                 let w = largeCellSide - 2 * offset
                 let h = heightCellSide - 2 * offset
                 attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
                 
-            } else if (indexPath.item % 5 == 1) {
+            }else if (indexPath.item % 5 == 1) {
                 let x:CGFloat = offset
-                let y = offset + CGFloat(lineSection) * (heightCellSide)
-                let w = widthFirstCellSide - 2 * offset
-                let h = heigthCellSide - 2 * offset
+                let y = offset +  heightCellSide + lineOriginY
+                let w = smallCellSide - 2 * offset
+                let h = heightCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+            }else if (indexPath.item % 5 == 2) {
+                let x:CGFloat = offset + smallCellSide
+                let y = offset +  heightCellSide + lineOriginY
+                let w = smallCellSide - 2 * offset
+                let h = heightCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+            }else if (indexPath.item % 5 == 3) {
+                let x:CGFloat = offset
+                let y = offset +  heightCellSide * 2 + lineOriginY
+                let w = smallCellSide - 2 * offset
+                let h = heightCellSide - 2 * offset
+                attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
+            }else if (indexPath.item % 5 == 4) {
+                let x:CGFloat = offset + smallCellSide
+                let y = offset +  heightCellSide * 2 + lineOriginY
+                let w = smallCellSide - 2 * offset
+                let h = heightCellSide - 2 * offset
                 attribute.frame = CGRect.init(x: x, y: y, width: w, height: h)
             }
             
