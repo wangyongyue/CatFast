@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18742B16227E82A300DDAFF8 /* ComBot001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B15227E82A300DDAFF8 /* ComBot001Cell.swift */; };
+		18742B18227E82B600DDAFF8 /* ComBot002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B17227E82B600DDAFF8 /* ComBot002Cell.swift */; };
+		18742B1A227E82C000DDAFF8 /* ComBot003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B19227E82C000DDAFF8 /* ComBot003Cell.swift */; };
+		18742B1C227E82CE00DDAFF8 /* ComBot004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B1B227E82CE00DDAFF8 /* ComBot004Cell.swift */; };
+		18742B1E227E82D700DDAFF8 /* ComBot005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B1D227E82D700DDAFF8 /* ComBot005Cell.swift */; };
+		18742B20227E82E100DDAFF8 /* ComBot006Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B1F227E82E100DDAFF8 /* ComBot006Cell.swift */; };
+		18742B22227E82ED00DDAFF8 /* ComBot007Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B21227E82ED00DDAFF8 /* ComBot007Cell.swift */; };
+		18742B24227E82F800DDAFF8 /* ComBot008Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B23227E82F800DDAFF8 /* ComBot008Cell.swift */; };
+		18742B26227E830200DDAFF8 /* ComBot009Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B25227E830200DDAFF8 /* ComBot009Cell.swift */; };
+		18742B28227E830C00DDAFF8 /* ComBot010Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B27227E830C00DDAFF8 /* ComBot010Cell.swift */; };
+		18742B2A227E83B500DDAFF8 /* ComBotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B29227E83B500DDAFF8 /* ComBotView.swift */; };
+		18742B2C227E841500DDAFF8 /* PanelBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B2B227E841500DDAFF8 /* PanelBottomView.swift */; };
+		18742B38227E859D00DDAFF8 /* Bot001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B37227E859D00DDAFF8 /* Bot001Cell.swift */; };
+		18742B3A227E85B000DDAFF8 /* Bot002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B39227E85B000DDAFF8 /* Bot002Cell.swift */; };
+		18742B3C227E85BA00DDAFF8 /* Bot003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B3B227E85BA00DDAFF8 /* Bot003Cell.swift */; };
+		18742B3E227E85C500DDAFF8 /* Bot004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B3D227E85C500DDAFF8 /* Bot004Cell.swift */; };
+		18742B40227E85D000DDAFF8 /* Bot005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B3F227E85D000DDAFF8 /* Bot005Cell.swift */; };
+		18742B42227E85F300DDAFF8 /* Bot001Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B41227E85F300DDAFF8 /* Bot001Layout.swift */; };
+		18742B44227E860100DDAFF8 /* Bot002Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B43227E860100DDAFF8 /* Bot002Layout.swift */; };
+		18742B46227E860A00DDAFF8 /* Bot003Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B45227E860A00DDAFF8 /* Bot003Layout.swift */; };
+		18742B48227E861600DDAFF8 /* Bot004Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B47227E861600DDAFF8 /* Bot004Layout.swift */; };
+		18742B4A227E862300DDAFF8 /* Bot005Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B49227E862300DDAFF8 /* Bot005Layout.swift */; };
+		18742B4C227E87C600DDAFF8 /* BottomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B4B227E87C600DDAFF8 /* BottomsView.swift */; };
+		18742B4E227E881D00DDAFF8 /* RootsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B4D227E881D00DDAFF8 /* RootsView.swift */; };
+		18742B55227E885E00DDAFF8 /* Root001Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B54227E885E00DDAFF8 /* Root001Cell.swift */; };
+		18742B57227E888B00DDAFF8 /* Root002Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B56227E888B00DDAFF8 /* Root002Cell.swift */; };
+		18742B59227E889A00DDAFF8 /* Root003Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B58227E889A00DDAFF8 /* Root003Cell.swift */; };
+		18742B5B227E88A400DDAFF8 /* Root004Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B5A227E88A400DDAFF8 /* Root004Cell.swift */; };
+		18742B5D227E88AF00DDAFF8 /* Root005Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B5C227E88AF00DDAFF8 /* Root005Cell.swift */; };
+		18742B5F227E88D000DDAFF8 /* Root001VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B5E227E88D000DDAFF8 /* Root001VC.swift */; };
+		18742B61227E88DC00DDAFF8 /* Root002VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B60227E88DC00DDAFF8 /* Root002VC.swift */; };
+		18742B63227E88EB00DDAFF8 /* Root003VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B62227E88EB00DDAFF8 /* Root003VC.swift */; };
+		18742B65227E88F500DDAFF8 /* Root004VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B64227E88F500DDAFF8 /* Root004VC.swift */; };
+		18742B67227E890400DDAFF8 /* Root005VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B66227E890400DDAFF8 /* Root005VC.swift */; };
+		18742B6A227E8DA600DDAFF8 /* CTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B69227E8DA600DDAFF8 /* CTabBarController.swift */; };
+		18742B6C227EAC7800DDAFF8 /* CTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6B227EAC7800DDAFF8 /* CTabBar.swift */; };
+		18742B6E227EACB100DDAFF8 /* PanelDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */; };
+		18742B70227EE27E00DDAFF8 /* PanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6F227EE27E00DDAFF8 /* PanelModel.swift */; };
 		18808565227545E4005408AE /* Nav001Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18808564227545E4005408AE /* Nav001Layout.swift */; };
 		1880856C2275462F005408AE /* Nav002Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880856B2275462F005408AE /* Nav002Layout.swift */; };
 		1880856F22754643005408AE /* Nav003Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880856E22754643005408AE /* Nav003Layout.swift */; };
@@ -162,6 +200,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18742B15227E82A300DDAFF8 /* ComBot001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot001Cell.swift; sourceTree = "<group>"; };
+		18742B17227E82B600DDAFF8 /* ComBot002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot002Cell.swift; sourceTree = "<group>"; };
+		18742B19227E82C000DDAFF8 /* ComBot003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot003Cell.swift; sourceTree = "<group>"; };
+		18742B1B227E82CE00DDAFF8 /* ComBot004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot004Cell.swift; sourceTree = "<group>"; };
+		18742B1D227E82D700DDAFF8 /* ComBot005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot005Cell.swift; sourceTree = "<group>"; };
+		18742B1F227E82E100DDAFF8 /* ComBot006Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot006Cell.swift; sourceTree = "<group>"; };
+		18742B21227E82ED00DDAFF8 /* ComBot007Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot007Cell.swift; sourceTree = "<group>"; };
+		18742B23227E82F800DDAFF8 /* ComBot008Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot008Cell.swift; sourceTree = "<group>"; };
+		18742B25227E830200DDAFF8 /* ComBot009Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot009Cell.swift; sourceTree = "<group>"; };
+		18742B27227E830C00DDAFF8 /* ComBot010Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBot010Cell.swift; sourceTree = "<group>"; };
+		18742B29227E83B500DDAFF8 /* ComBotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComBotView.swift; sourceTree = "<group>"; };
+		18742B2B227E841500DDAFF8 /* PanelBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelBottomView.swift; sourceTree = "<group>"; };
+		18742B37227E859D00DDAFF8 /* Bot001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot001Cell.swift; sourceTree = "<group>"; };
+		18742B39227E85B000DDAFF8 /* Bot002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot002Cell.swift; sourceTree = "<group>"; };
+		18742B3B227E85BA00DDAFF8 /* Bot003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot003Cell.swift; sourceTree = "<group>"; };
+		18742B3D227E85C500DDAFF8 /* Bot004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot004Cell.swift; sourceTree = "<group>"; };
+		18742B3F227E85D000DDAFF8 /* Bot005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot005Cell.swift; sourceTree = "<group>"; };
+		18742B41227E85F300DDAFF8 /* Bot001Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot001Layout.swift; sourceTree = "<group>"; };
+		18742B43227E860100DDAFF8 /* Bot002Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot002Layout.swift; sourceTree = "<group>"; };
+		18742B45227E860A00DDAFF8 /* Bot003Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot003Layout.swift; sourceTree = "<group>"; };
+		18742B47227E861600DDAFF8 /* Bot004Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot004Layout.swift; sourceTree = "<group>"; };
+		18742B49227E862300DDAFF8 /* Bot005Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot005Layout.swift; sourceTree = "<group>"; };
+		18742B4B227E87C600DDAFF8 /* BottomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomsView.swift; sourceTree = "<group>"; };
+		18742B4D227E881D00DDAFF8 /* RootsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootsView.swift; sourceTree = "<group>"; };
+		18742B54227E885E00DDAFF8 /* Root001Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root001Cell.swift; sourceTree = "<group>"; };
+		18742B56227E888B00DDAFF8 /* Root002Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root002Cell.swift; sourceTree = "<group>"; };
+		18742B58227E889A00DDAFF8 /* Root003Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root003Cell.swift; sourceTree = "<group>"; };
+		18742B5A227E88A400DDAFF8 /* Root004Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root004Cell.swift; sourceTree = "<group>"; };
+		18742B5C227E88AF00DDAFF8 /* Root005Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root005Cell.swift; sourceTree = "<group>"; };
+		18742B5E227E88D000DDAFF8 /* Root001VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root001VC.swift; sourceTree = "<group>"; };
+		18742B60227E88DC00DDAFF8 /* Root002VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root002VC.swift; sourceTree = "<group>"; };
+		18742B62227E88EB00DDAFF8 /* Root003VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root003VC.swift; sourceTree = "<group>"; };
+		18742B64227E88F500DDAFF8 /* Root004VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root004VC.swift; sourceTree = "<group>"; };
+		18742B66227E890400DDAFF8 /* Root005VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root005VC.swift; sourceTree = "<group>"; };
+		18742B69227E8DA600DDAFF8 /* CTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTabBarController.swift; sourceTree = "<group>"; };
+		18742B6B227EAC7800DDAFF8 /* CTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTabBar.swift; sourceTree = "<group>"; };
+		18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelDefaultVC.swift; sourceTree = "<group>"; };
+		18742B6F227EE27E00DDAFF8 /* PanelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelModel.swift; sourceTree = "<group>"; };
 		18808564227545E4005408AE /* Nav001Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav001Layout.swift; sourceTree = "<group>"; };
 		1880856B2275462F005408AE /* Nav002Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav002Layout.swift; sourceTree = "<group>"; };
 		1880856E22754643005408AE /* Nav003Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav003Layout.swift; sourceTree = "<group>"; };
@@ -339,6 +415,253 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18742B07227E79D000DDAFF8 /* Roots */ = {
+			isa = PBXGroup;
+			children = (
+				18742B4D227E881D00DDAFF8 /* RootsView.swift */,
+				18742B53227E882C00DDAFF8 /* Root005 */,
+				18742B52227E882900DDAFF8 /* Root004 */,
+				18742B51227E882800DDAFF8 /* Root003 */,
+				18742B50227E882500DDAFF8 /* Root002 */,
+				18742B4F227E882300DDAFF8 /* Root001 */,
+			);
+			path = Roots;
+			sourceTree = "<group>";
+		};
+		18742B08227E7E8E00DDAFF8 /* componentsForBottom */ = {
+			isa = PBXGroup;
+			children = (
+				18742B29227E83B500DDAFF8 /* ComBotView.swift */,
+				18742B0A227E823700DDAFF8 /* ComBots */,
+			);
+			path = componentsForBottom;
+			sourceTree = "<group>";
+		};
+		18742B09227E7E9000DDAFF8 /* PanelBottomView */ = {
+			isa = PBXGroup;
+			children = (
+				18742B2B227E841500DDAFF8 /* PanelBottomView.swift */,
+			);
+			path = PanelBottomView;
+			sourceTree = "<group>";
+		};
+		18742B0A227E823700DDAFF8 /* ComBots */ = {
+			isa = PBXGroup;
+			children = (
+				18742B14227E825500DDAFF8 /* ComBot010 */,
+				18742B13227E825300DDAFF8 /* ComBot009 */,
+				18742B12227E825100DDAFF8 /* ComBot008 */,
+				18742B11227E824E00DDAFF8 /* ComBot007 */,
+				18742B10227E824D00DDAFF8 /* ComBot006 */,
+				18742B0F227E824B00DDAFF8 /* ComBot005 */,
+				18742B0E227E824900DDAFF8 /* ComBot004 */,
+				18742B0D227E824700DDAFF8 /* ComBot003 */,
+				18742B0C227E824400DDAFF8 /* ComBot002 */,
+				18742B0B227E824300DDAFF8 /* ComBot001 */,
+			);
+			path = ComBots;
+			sourceTree = "<group>";
+		};
+		18742B0B227E824300DDAFF8 /* ComBot001 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B15227E82A300DDAFF8 /* ComBot001Cell.swift */,
+			);
+			path = ComBot001;
+			sourceTree = "<group>";
+		};
+		18742B0C227E824400DDAFF8 /* ComBot002 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B17227E82B600DDAFF8 /* ComBot002Cell.swift */,
+			);
+			path = ComBot002;
+			sourceTree = "<group>";
+		};
+		18742B0D227E824700DDAFF8 /* ComBot003 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B19227E82C000DDAFF8 /* ComBot003Cell.swift */,
+			);
+			path = ComBot003;
+			sourceTree = "<group>";
+		};
+		18742B0E227E824900DDAFF8 /* ComBot004 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B1B227E82CE00DDAFF8 /* ComBot004Cell.swift */,
+			);
+			path = ComBot004;
+			sourceTree = "<group>";
+		};
+		18742B0F227E824B00DDAFF8 /* ComBot005 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B1D227E82D700DDAFF8 /* ComBot005Cell.swift */,
+			);
+			path = ComBot005;
+			sourceTree = "<group>";
+		};
+		18742B10227E824D00DDAFF8 /* ComBot006 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B1F227E82E100DDAFF8 /* ComBot006Cell.swift */,
+			);
+			path = ComBot006;
+			sourceTree = "<group>";
+		};
+		18742B11227E824E00DDAFF8 /* ComBot007 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B21227E82ED00DDAFF8 /* ComBot007Cell.swift */,
+			);
+			path = ComBot007;
+			sourceTree = "<group>";
+		};
+		18742B12227E825100DDAFF8 /* ComBot008 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B23227E82F800DDAFF8 /* ComBot008Cell.swift */,
+			);
+			path = ComBot008;
+			sourceTree = "<group>";
+		};
+		18742B13227E825300DDAFF8 /* ComBot009 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B25227E830200DDAFF8 /* ComBot009Cell.swift */,
+			);
+			path = ComBot009;
+			sourceTree = "<group>";
+		};
+		18742B14227E825500DDAFF8 /* ComBot010 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B27227E830C00DDAFF8 /* ComBot010Cell.swift */,
+			);
+			path = ComBot010;
+			sourceTree = "<group>";
+		};
+		18742B2D227E853600DDAFF8 /* Bottoms */ = {
+			isa = PBXGroup;
+			children = (
+				18742B4B227E87C600DDAFF8 /* BottomsView.swift */,
+				18742B30227E855500DDAFF8 /* Bots */,
+			);
+			path = Bottoms;
+			sourceTree = "<group>";
+		};
+		18742B30227E855500DDAFF8 /* Bots */ = {
+			isa = PBXGroup;
+			children = (
+				18742B36227E857100DDAFF8 /* Bot005 */,
+				18742B35227E856F00DDAFF8 /* Bot004 */,
+				18742B33227E856400DDAFF8 /* Bot003 */,
+				18742B32227E856100DDAFF8 /* Bot002 */,
+				18742B31227E856000DDAFF8 /* Bot001 */,
+			);
+			path = Bots;
+			sourceTree = "<group>";
+		};
+		18742B31227E856000DDAFF8 /* Bot001 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B37227E859D00DDAFF8 /* Bot001Cell.swift */,
+				18742B41227E85F300DDAFF8 /* Bot001Layout.swift */,
+			);
+			path = Bot001;
+			sourceTree = "<group>";
+		};
+		18742B32227E856100DDAFF8 /* Bot002 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B39227E85B000DDAFF8 /* Bot002Cell.swift */,
+				18742B43227E860100DDAFF8 /* Bot002Layout.swift */,
+			);
+			path = Bot002;
+			sourceTree = "<group>";
+		};
+		18742B33227E856400DDAFF8 /* Bot003 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B3B227E85BA00DDAFF8 /* Bot003Cell.swift */,
+				18742B45227E860A00DDAFF8 /* Bot003Layout.swift */,
+			);
+			path = Bot003;
+			sourceTree = "<group>";
+		};
+		18742B35227E856F00DDAFF8 /* Bot004 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B3D227E85C500DDAFF8 /* Bot004Cell.swift */,
+				18742B47227E861600DDAFF8 /* Bot004Layout.swift */,
+			);
+			path = Bot004;
+			sourceTree = "<group>";
+		};
+		18742B36227E857100DDAFF8 /* Bot005 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B3F227E85D000DDAFF8 /* Bot005Cell.swift */,
+				18742B49227E862300DDAFF8 /* Bot005Layout.swift */,
+			);
+			path = Bot005;
+			sourceTree = "<group>";
+		};
+		18742B4F227E882300DDAFF8 /* Root001 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B54227E885E00DDAFF8 /* Root001Cell.swift */,
+				18742B5E227E88D000DDAFF8 /* Root001VC.swift */,
+			);
+			path = Root001;
+			sourceTree = "<group>";
+		};
+		18742B50227E882500DDAFF8 /* Root002 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B56227E888B00DDAFF8 /* Root002Cell.swift */,
+				18742B60227E88DC00DDAFF8 /* Root002VC.swift */,
+			);
+			path = Root002;
+			sourceTree = "<group>";
+		};
+		18742B51227E882800DDAFF8 /* Root003 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B58227E889A00DDAFF8 /* Root003Cell.swift */,
+				18742B62227E88EB00DDAFF8 /* Root003VC.swift */,
+			);
+			path = Root003;
+			sourceTree = "<group>";
+		};
+		18742B52227E882900DDAFF8 /* Root004 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B5A227E88A400DDAFF8 /* Root004Cell.swift */,
+				18742B64227E88F500DDAFF8 /* Root004VC.swift */,
+			);
+			path = Root004;
+			sourceTree = "<group>";
+		};
+		18742B53227E882C00DDAFF8 /* Root005 */ = {
+			isa = PBXGroup;
+			children = (
+				18742B5C227E88AF00DDAFF8 /* Root005Cell.swift */,
+				18742B66227E890400DDAFF8 /* Root005VC.swift */,
+			);
+			path = Root005;
+			sourceTree = "<group>";
+		};
+		18742B68227E8D4500DDAFF8 /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				18742B69227E8DA600DDAFF8 /* CTabBarController.swift */,
+				18742B6B227EAC7800DDAFF8 /* CTabBar.swift */,
+			);
+			path = tabBar;
+			sourceTree = "<group>";
+		};
 		18808566227545EC005408AE /* Nav001 */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,19 +821,25 @@
 		18BC332A226FFBBA00E79547 /* panel */ = {
 			isa = PBXGroup;
 			children = (
+				18742B6F227EE27E00DDAFF8 /* PanelModel.swift */,
 				18BC332B226FFBD700E79547 /* PanelVC.swift */,
+				18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */,
+				18742B07227E79D000DDAFF8 /* Roots */,
 				188085842275772E005408AE /* Panels */,
 				18CC04202274720A004291BD /* PanelContentView */,
 				18CC041B227470A6004291BD /* PanelNavigationView */,
 				18CC041A227470A3004291BD /* PanelTabBarView */,
+				18742B09227E7E9000DDAFF8 /* PanelBottomView */,
 				18BC33DE2273125800E79547 /* addCell */,
 				18BC3349227063FF00E79547 /* topMenu */,
 				18CC042422747989004291BD /* Navigations */,
 				18CC042322747987004291BD /* TabBars */,
+				18742B2D227E853600DDAFF8 /* Bottoms */,
 				18BC334122703C9600E79547 /* Templates */,
 				18BC334222703CA300E79547 /* components */,
 				456888AD2275E226003D3E70 /* componentsForNav */,
 				456888AC2275E222003D3E70 /* componentsForTab */,
+				18742B08227E7E8E00DDAFF8 /* componentsForBottom */,
 			);
 			path = panel;
 			sourceTree = "<group>";
@@ -522,6 +851,7 @@
 				18BC33342270036D00E79547 /* color */,
 				18BC33332270036A00E79547 /* img */,
 				18BC3330227000A800E79547 /* navigation */,
+				18742B68227E8D4500DDAFF8 /* tabBar */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -1582,12 +1912,17 @@
 				18BC33462270635D00E79547 /* TemplatesView.swift in Sources */,
 				18BC33D22272E7FB00E79547 /* Com007Cell.swift in Sources */,
 				18BC33802272D64A00E79547 /* Tem002Cell.swift in Sources */,
+				18742B59227E889A00DDAFF8 /* Root003Cell.swift in Sources */,
 				4549F12E226F519B00A57F6D /* Cat.swift in Sources */,
+				18742B3A227E85B000DDAFF8 /* Bot002Cell.swift in Sources */,
 				4549F146226F5AE800A57F6D /* NewVC.swift in Sources */,
 				1880859322757809005408AE /* Panel004Cell.swift in Sources */,
 				18BC33862272D6D100E79547 /* Tem005Cell.swift in Sources */,
+				18742B28227E830C00DDAFF8 /* ComBot010Cell.swift in Sources */,
 				456888CD2275E3D8003D3E70 /* ComNav003Cell.swift in Sources */,
+				18742B55227E885E00DDAFF8 /* Root001Cell.swift in Sources */,
 				18BC33882272D6F000E79547 /* Tem006Cell.swift in Sources */,
+				18742B26227E830200DDAFF8 /* ComBot009Cell.swift in Sources */,
 				18CC043A22747B66004291BD /* Tab003Cell.swift in Sources */,
 				1880858D227577C0005408AE /* Panel001Cell.swift in Sources */,
 				188085A122759923005408AE /* PanelAddSmallCell.swift in Sources */,
@@ -1595,15 +1930,21 @@
 				18BC334B2270642600E79547 /* TopMenuView.swift in Sources */,
 				18BC338C2272D72B00E79547 /* Tem008Cell.swift in Sources */,
 				18808591227577FF005408AE /* Panel003Cell.swift in Sources */,
+				18742B2C227E841500DDAFF8 /* PanelBottomView.swift in Sources */,
+				18742B20227E82E100DDAFF8 /* ComBot006Cell.swift in Sources */,
 				18BC33B92272DA5E00E79547 /* Tem004Layout.swift in Sources */,
 				4549F13C226F519B00A57F6D /* CCollection.swift in Sources */,
 				1880857322754662005408AE /* Nav005Layout.swift in Sources */,
 				18CC0426227479CC004291BD /* NavigationsView.swift in Sources */,
+				18742B1C227E82CE00DDAFF8 /* ComBot004Cell.swift in Sources */,
 				4549F13A226F519B00A57F6D /* TableTemplate.swift in Sources */,
 				18CC041F2274710C004291BD /* PanelTabBarView.swift in Sources */,
 				18BC33652271942500E79547 /* CCustomLayout.swift in Sources */,
 				456888E52275E46D003D3E70 /* ComTab005Cell.swift in Sources */,
 				4549F137226F519B00A57F6D /* CViewController.swift in Sources */,
+				18742B65227E88F500DDAFF8 /* Root004VC.swift in Sources */,
+				18742B1A227E82C000DDAFF8 /* ComBot003Cell.swift in Sources */,
+				18742B6C227EAC7800DDAFF8 /* CTabBar.swift in Sources */,
 				18CC043422747B41004291BD /* Nav004Cell.swift in Sources */,
 				18BC33B12272DA1F00E79547 /* Tem008Layout.swift in Sources */,
 				4549F136226F519B00A57F6D /* CText.swift in Sources */,
@@ -1621,11 +1962,14 @@
 				456888D92275E419003D3E70 /* ComNav009Cell.swift in Sources */,
 				18BC33CA2272E74200E79547 /* Com003Cell.swift in Sources */,
 				18BC33362270039100E79547 /* Img.swift in Sources */,
+				18742B40227E85D000DDAFF8 /* Bot005Cell.swift in Sources */,
 				18BC333C2270083F00E79547 /* NewCell.swift in Sources */,
+				18742B24227E82F800DDAFF8 /* ComBot008Cell.swift in Sources */,
 				18CC043E22747B82004291BD /* Tab005Cell.swift in Sources */,
 				18CC0428227479DB004291BD /* TabBarsView.swift in Sources */,
 				4549F0DC226F50AD00A57F6D /* ViewController.swift in Sources */,
 				18BC33BB2272DA6D00E79547 /* Tem003Layout.swift in Sources */,
+				18742B70227EE27E00DDAFF8 /* PanelModel.swift in Sources */,
 				18BC33C82272E71D00E79547 /* Com002Cell.swift in Sources */,
 				18BC33D62272EB0D00E79547 /* Com009Cell.swift in Sources */,
 				4549F130226F519B00A57F6D /* CWindow.swift in Sources */,
@@ -1634,15 +1978,24 @@
 				18CC043022747B2C004291BD /* Nav002Cell.swift in Sources */,
 				1880856F22754643005408AE /* Nav003Layout.swift in Sources */,
 				18808583227546F7005408AE /* Tab005Layout.swift in Sources */,
+				18742B48227E861600DDAFF8 /* Bot004Layout.swift in Sources */,
 				188085972275786F005408AE /* Panel002VC.swift in Sources */,
 				4549F131226F519B00A57F6D /* CView.swift in Sources */,
+				18742B6A227E8DA600DDAFF8 /* CTabBarController.swift in Sources */,
 				456888DB2275E423003D3E70 /* ComNav010Cell.swift in Sources */,
 				18CC041D227470D8004291BD /* PanelNavigationView.swift in Sources */,
 				18808581227546E6005408AE /* Tab004Layout.swift in Sources */,
+				18742B5F227E88D000DDAFF8 /* Root001VC.swift in Sources */,
+				18742B5D227E88AF00DDAFF8 /* Root005Cell.swift in Sources */,
 				456888ED2275E498003D3E70 /* ComTab009Cell.swift in Sources */,
+				18742B46227E860A00DDAFF8 /* Bot003Layout.swift in Sources */,
 				18BC33BD2272DA7A00E79547 /* Tem002Layout.swift in Sources */,
+				18742B38227E859D00DDAFF8 /* Bot001Cell.swift in Sources */,
 				18BC33DD22730FAF00E79547 /* Tem005Layout.swift in Sources */,
+				18742B4A227E862300DDAFF8 /* Bot005Layout.swift in Sources */,
 				18CC043222747B35004291BD /* Nav003Cell.swift in Sources */,
+				18742B61227E88DC00DDAFF8 /* Root002VC.swift in Sources */,
+				18742B18227E82B600DDAFF8 /* ComBot002Cell.swift in Sources */,
 				18BC33D02272E7E500E79547 /* Com006Cell.swift in Sources */,
 				4549F133226F519B00A57F6D /* CField.swift in Sources */,
 				18BC33CC2272E75E00E79547 /* Com004Cell.swift in Sources */,
@@ -1661,12 +2014,15 @@
 				18BC336E2271B4A800E79547 /* Tem001Cell.swift in Sources */,
 				18BC33D42272E85B00E79547 /* Com008Cell.swift in Sources */,
 				18BC338E2272D78B00E79547 /* Tem009Cell.swift in Sources */,
+				18742B4E227E881D00DDAFF8 /* RootsView.swift in Sources */,
 				18CC042222747220004291BD /* PanelContentView.swift in Sources */,
 				456888D72275E40E003D3E70 /* ComNav008Cell.swift in Sources */,
 				18BC33402270341400E79547 /* NewLastCell.swift in Sources */,
+				18742B3E227E85C500DDAFF8 /* Bot004Cell.swift in Sources */,
 				18BC33E02273127800E79547 /* PanelAddCell.swift in Sources */,
 				1880857B227546C2005408AE /* Tab001Layout.swift in Sources */,
 				456888E32275E462003D3E70 /* ComTab004Cell.swift in Sources */,
+				18742B6E227EACB100DDAFF8 /* PanelDefaultVC.swift in Sources */,
 				18BC33B52272DA3D00E79547 /* Tem006Layout.swift in Sources */,
 				4549F12D226F519B00A57F6D /* Style.swift in Sources */,
 				456888EB2275E490003D3E70 /* ComTab008Cell.swift in Sources */,
@@ -1674,6 +2030,7 @@
 				456888C92275E3C2003D3E70 /* ComNav001Cell.swift in Sources */,
 				456888E12275E44A003D3E70 /* ComTab003Cell.swift in Sources */,
 				1880859F22757917005408AE /* PanelsView.swift in Sources */,
+				18742B63227E88EB00DDAFF8 /* Root003VC.swift in Sources */,
 				18CC043822747B5D004291BD /* Tab002Cell.swift in Sources */,
 				18BC33382270039D00E79547 /* Color.swift in Sources */,
 				4549F0DA226F50AD00A57F6D /* AppDelegate.swift in Sources */,
@@ -1684,20 +2041,31 @@
 				18CC042E22747B02004291BD /* Tab001Cell.swift in Sources */,
 				18BC338A2272D70D00E79547 /* Tem007Cell.swift in Sources */,
 				4549F134226F519B00A57F6D /* CImageView.swift in Sources */,
+				18742B44227E860100DDAFF8 /* Bot002Layout.swift in Sources */,
+				18742B4C227E87C600DDAFF8 /* BottomsView.swift in Sources */,
 				18BC33752272D4E400E79547 /* Tem001Layout.swift in Sources */,
 				18BC33DB2272FF6700E79547 /* ClassType.swift in Sources */,
 				18CC043C22747B71004291BD /* Tab004Cell.swift in Sources */,
+				18742B16227E82A300DDAFF8 /* ComBot001Cell.swift in Sources */,
 				4549F138226F519B00A57F6D /* CollectionTemplate.swift in Sources */,
 				1880856C2275462F005408AE /* Nav002Layout.swift in Sources */,
 				18BC33AF2272DA0700E79547 /* Tem009Layout.swift in Sources */,
 				1880859922757883005408AE /* Panel003VC.swift in Sources */,
+				18742B42227E85F300DDAFF8 /* Bot001Layout.swift in Sources */,
+				18742B22227E82ED00DDAFF8 /* ComBot007Cell.swift in Sources */,
 				456888D52275E406003D3E70 /* ComNav007Cell.swift in Sources */,
+				18742B2A227E83B500DDAFF8 /* ComBotView.swift in Sources */,
 				456888DF2275E43E003D3E70 /* ComTab002Cell.swift in Sources */,
 				456888DD2275E434003D3E70 /* ComTab001Cell.swift in Sources */,
+				18742B3C227E85BA00DDAFF8 /* Bot003Cell.swift in Sources */,
 				1880858F227577F1005408AE /* Panel002Cell.swift in Sources */,
 				18808565227545E4005408AE /* Nav001Layout.swift in Sources */,
+				18742B5B227E88A400DDAFF8 /* Root004Cell.swift in Sources */,
+				18742B1E227E82D700DDAFF8 /* ComBot005Cell.swift in Sources */,
+				18742B57227E888B00DDAFF8 /* Root002Cell.swift in Sources */,
 				18BC333E2270340900E79547 /* NewFirstCell.swift in Sources */,
 				4549F135226F519B00A57F6D /* CLabel.swift in Sources */,
+				18742B67227E890400DDAFF8 /* Root005VC.swift in Sources */,
 				456888E92275E485003D3E70 /* ComTab007Cell.swift in Sources */,
 				18BC33822272D68300E79547 /* Tem003Cell.swift in Sources */,
 				4549F132226F519B00A57F6D /* CButton.swift in Sources */,

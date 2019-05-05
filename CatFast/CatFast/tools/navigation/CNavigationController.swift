@@ -17,15 +17,11 @@ class CNavigationController: UINavigationController ,UINavigationControllerDeleg
         self.delegate = self
         
         //样式
-        
         self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.clear,NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18)]
-        
         
     }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        
-        
         
     }
     

@@ -75,7 +75,6 @@ class PanelVC: CViewController {
             
         }
         
-        
     }
     
     func setupNavigation(){
@@ -126,7 +125,6 @@ class PanelVC: CViewController {
         
         tem.obIndex.v_index { (index) in
             
-
             let m = tem.obArray.v_array?[index]
             self.tabBar.loadData(m)
             tem.remove()
@@ -134,18 +132,13 @@ class PanelVC: CViewController {
             
         }
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
 
@@ -168,3 +161,13 @@ class PanelVC: CViewController {
 //    }]
 //    }]
 //}
+
+
+// subId:1
+// currentId:10000
+// content:{model,model}
+// nav:{model,model}
+// tabbar:{id,id}
+// bottom:{model,model}
+//
+//

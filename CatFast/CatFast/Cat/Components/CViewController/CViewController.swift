@@ -12,6 +12,7 @@ class CViewController: UIViewController {
     var params:[String:Any]?
     
     var call:popCallBack?
+    var model = PanelModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 

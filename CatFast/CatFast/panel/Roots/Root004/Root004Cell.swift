@@ -1,15 +1,15 @@
 //
-//  Panel005Cell.swift
+//  Root004Cell.swift
 //  CatFast
 //
-//  Created by apple on 2019/4/28.
+//  Created by apple on 2019/5/5.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class Panel005Cell: CollectionTemplate {
-    var holder = Panel005CellHolder()
+class Root004Cell: CollectionTemplate {
+    var holder = Root004CellHolder()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -22,7 +22,7 @@ class Panel005Cell: CollectionTemplate {
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
-        let tabBarStyle = Style().text("bottom").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
+        let tabBarStyle = Style().text("tabBar").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
         let tabBarLabel = CLabel(tabBarStyle)
         self.contentView.addSubview(tabBarLabel)
         
@@ -63,20 +63,20 @@ class Panel005Cell: CollectionTemplate {
     
     
 }
-class Panel005CellModel: Cat {
+class Root004CellModel: Cat {
     
     var name:String?
     var image:UIImage?
-
+    
 }
-class Panel005CellHolder: Holder {
+class Root004CellHolder: Holder {
     var textOb = Observe()
     var imageOb = Observe()
     
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
-        if amodel is Panel005CellModel{
-            let a = amodel as! Panel005CellModel
+        if amodel is Root004CellModel{
+            let a = amodel as! Root004CellModel
             
             textOb.v_text { () -> String? in
                 
