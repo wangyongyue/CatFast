@@ -22,7 +22,7 @@ class Panel005Cell: CollectionTemplate {
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
-        let tabBarStyle = Style().text("tabBar").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
+        let tabBarStyle = Style().text("bottom").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
         let tabBarLabel = CLabel(tabBarStyle)
         self.contentView.addSubview(tabBarLabel)
         

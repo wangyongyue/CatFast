@@ -13,6 +13,7 @@ let appName = "CatFast."
 let temNumber = 10
 let panelNumber = 5
 let comNumber = 10
+let rootNumber = 5
 
 let comNavNumber = 10
 let comTabNumber = 10
@@ -20,6 +21,7 @@ let comTabNumber = 10
 
 let navNumber = 5
 let tabNumber = 5
+let botNumber = 5
 
 let dataNumber = 16
 
@@ -61,25 +63,24 @@ class NewVC: CViewController {
         let m = Main()
         m.loadData(ob: self.obArray)
 
-        let t =  PanelsView()
+        let t =  RootsView()
         t.obIndex.v_index { (index) in
             
             let m = t.obArray.v_array?[index]
-            var vc = CViewController()
+            var vc = UITabBarController()
             
-            if m is Panel001CellModel{
-                vc = Panel001VC()
-            }else if m is Panel002CellModel{
-                vc = Panel002VC()
-            }else if m is Panel003CellModel{
-                vc = Panel003VC()
-            }else if m is Panel004CellModel{
-                vc = Panel004VC()
-            }else if m is Panel005CellModel{
-                vc = Panel005VC()
+            if m is Root001CellModel{
+                vc = Root001VC()
+            }else if m is Root002CellModel{
+                vc = Root002VC()
+            }else if m is Root003CellModel{
+                vc = Root003VC()
+            }else if m is Root004CellModel{
+                vc = Root004VC()
+            }else if m is Root005CellModel{
+                vc = Root005VC()
             }
           
-            
             Router.push(vc, ["id":10], { (obj) in
                 
                 print(obj)

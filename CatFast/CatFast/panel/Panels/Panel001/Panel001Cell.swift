@@ -13,7 +13,7 @@ class Panel001Cell: CollectionTemplate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-       
+
         let navigationStyle = Style().text("navigation").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
         let navigationLabel = CLabel(navigationStyle)
         self.contentView.addSubview(navigationLabel)
@@ -23,7 +23,8 @@ class Panel001Cell: CollectionTemplate {
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         
-        let tabBarStyle = Style().text("tabBar").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
+ 
+        let tabBarStyle = Style().text("bottom").textColor(Color.black()).backgroundColor(Color.white()).textAlignment(.center)
         let tabBarLabel = CLabel(tabBarStyle)
         self.contentView.addSubview(tabBarLabel)
         
