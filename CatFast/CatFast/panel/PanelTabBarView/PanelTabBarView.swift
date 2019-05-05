@@ -84,10 +84,14 @@ class PanelTabBarView: CView {
                 }else{
                     
                     CWindow.init(true).addSubview(tem)
+                    
                 }
             }
             
         }
+        
+        
+        
         t.obIndex.v_index { (index) in
             
             print(index)
