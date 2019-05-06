@@ -26,7 +26,6 @@ class Nav001Cell: CollectionTemplate {
             make.left.equalTo(10)
             make.right.equalTo(-10)
             make.bottom.equalTo(0)
-            
         }
         
         headerView.snp.makeConstraints { (make) in

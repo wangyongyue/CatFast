@@ -23,6 +23,7 @@ class Panel001VC: CViewController {
         
         self.view.addSubview(navigation)
         self.view.addSubview(content)
+
         self.view.addSubview(bottom)
         
         navigation.snp.makeConstraints { (make) in
@@ -36,6 +37,7 @@ class Panel001VC: CViewController {
             make.top.equalTo(Screen.top())
             make.bottom.equalTo(Screen.bottom())
         }
+
         bottom.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.bottom.equalTo(0)
@@ -44,6 +46,7 @@ class Panel001VC: CViewController {
         
         setupNavigation()
         setupAddContent()
+
         setupBottom()
         
     }
@@ -111,6 +114,7 @@ class Panel001VC: CViewController {
         
     }
     
+
     func setupBottom(){
         
         let style = Style().backgroundColor(Color.clear()).textColor(Color.gray()).textAlignment( .center).text("添加")
@@ -122,6 +126,7 @@ class Panel001VC: CViewController {
             make.height.equalTo(Screen.bottomH())
             
         }
+
         let tem =  BottomsView()
         add.v_click {
             
@@ -131,6 +136,7 @@ class Panel001VC: CViewController {
         tem.obIndex.v_index { (index) in
             
             let m = tem.obArray.v_array?[index]
+
             self.bottom.loadData(m)
             
             //保存
