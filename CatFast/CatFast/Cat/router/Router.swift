@@ -40,8 +40,31 @@ class Router: NSObject {
     class func currentController() -> CViewController{
         
         let controller = navigationController()
+        if let vc = controller?.viewControllers.last {
+            if vc is CViewController{
+                
+                return vc as! CViewController
+                
+            }else if vc is CTabBarController{
+                
+                 let bar = vc as! CTabBarController
+                let index = bar.selectedIndex
+                let currentVC = bar.viewControllers?[index]
+                if currentVC is CNavigationController{
+                    let nav  = currentVC as! CNavigationController
+                    if let v = nav.viewControllers.last {
+                        if v is CViewController{
+                            
+                            return v as! CViewController
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        return CViewController()
         
-        return controller?.viewControllers.last as! CViewController
     }
     class func params() -> [String:Any]?{
         

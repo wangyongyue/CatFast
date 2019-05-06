@@ -63,6 +63,9 @@ class PanelDefaultVC: CViewController {
             let m = tem.obArray.v_array?[index]
             self.content.loadData(m)
             
+            //保存
+            self.model.contentLayout = m
+            
             tem.remove()
             add.removeFromSuperview()
             
@@ -91,6 +94,9 @@ class PanelDefaultVC: CViewController {
             
             let m = tem.obArray.v_array?[index]
             self.navigation.loadData(m)
+            
+            //保存
+            self.model.navigationLayout = m
             tem.remove()
             add.removeFromSuperview()
             
@@ -99,20 +105,26 @@ class PanelDefaultVC: CViewController {
         
     }
     
-   
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+
+        
+    }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        model.navigation = ["ds"]
-        model.content = ["ds"]
-        
-        
-        
-        model.navigationLayout = "sdf"
-        model.contentLayout = "sdf"
+        print("\(model.subId)--\(model.currentId)")
 
+       
+        model.navigation = self.navigation.obArray.v_array
+        model.content = self.content.obArray.v_array
         
+        print("navigation__\(model.navigation)")
+        print("content__\(model.content)")
+        print("navigation__\(model.navigationLayout)")
+        print("content__\(model.contentLayout)")
+
     }
     
 }

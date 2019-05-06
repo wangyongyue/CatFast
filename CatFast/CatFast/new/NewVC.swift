@@ -80,6 +80,23 @@ class NewVC: CViewController {
             }else if m is Root005CellModel{
                 vc = Root005VC()
             }
+            
+            let number = 10000
+            if let array = vc.viewControllers{
+                for (index,value) in array.enumerated(){
+                    
+                    if value is CNavigationController{
+                        let nav = value as! CNavigationController
+                        let v = nav.viewControllers.last as! CViewController
+                        v.model.currentId = number + (index + 1) * 1000
+                        
+                        Global.share.array.append(v.model)
+
+                    }
+                }
+            }
+           
+
           
             Router.push(vc, ["id":10], { (obj) in
                 

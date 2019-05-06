@@ -14,15 +14,15 @@ class PanelModel: NSObject {
     var subId:Int?
     var currentId:Int?
     
-    var content:[String]?
-    var navigation:[String]?
-    var tabBar:[String]?
-    var bottom:[String]?
+    var content:[Cat]?
+    var navigation:[Cat]?
+    var tabBar:[Cat]?
+    var bottom:[Cat]?
     
-    var navigationLayout:String?
-    var contentLayout:String?
-    var tabBarLayout:String?
-    var bottomLayout:String?
+    var navigationLayout:Cat?
+    var contentLayout:Cat?
+    var tabBarLayout:Cat?
+    var bottomLayout:Cat?
 
     
     

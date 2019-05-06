@@ -18,10 +18,17 @@ class Root002VC: CTabBarController {
         // Do any additional setup after loading the view.
 
         
-        addChildVC(childVC: PanelDefaultVC(),title: "df",img: Img.back(),selectedImage: Img.back())
-        addChildVC(childVC: PanelDefaultVC(),title: "df",img: Img.back(),selectedImage: Img.back())
-        addChildVC(childVC: PanelDefaultVC(),title: "df",img: Img.back(),selectedImage: Img.back())
+        let vc1 = PanelDefaultVC()
+        vc1.model.currentId = 11000
+        let vc2 = PanelDefaultVC()
+        vc2.model.currentId = 12000
         
+        let vc3 = PanelDefaultVC()
+        vc3.model.currentId = 13000
+        
+        addChildVC(childVC: vc1,title: "df",img: Img.back(),selectedImage: Img.back())
+        addChildVC(childVC: vc2,title: "df",img: Img.back(),selectedImage: Img.back())
+        addChildVC(childVC: vc3,title: "df",img: Img.back(),selectedImage: Img.back())
         
     }
     

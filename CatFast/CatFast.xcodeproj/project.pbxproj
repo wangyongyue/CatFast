@@ -45,6 +45,7 @@
 		18742B6C227EAC7800DDAFF8 /* CTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6B227EAC7800DDAFF8 /* CTabBar.swift */; };
 		18742B6E227EACB100DDAFF8 /* PanelDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */; };
 		18742B70227EE27E00DDAFF8 /* PanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6F227EE27E00DDAFF8 /* PanelModel.swift */; };
+		18742B7B228010E400DDAFF8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B7A228010E300DDAFF8 /* Global.swift */; };
 		18808565227545E4005408AE /* Nav001Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18808564227545E4005408AE /* Nav001Layout.swift */; };
 		1880856C2275462F005408AE /* Nav002Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880856B2275462F005408AE /* Nav002Layout.swift */; };
 		1880856F22754643005408AE /* Nav003Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880856E22754643005408AE /* Nav003Layout.swift */; };
@@ -238,6 +239,7 @@
 		18742B6B227EAC7800DDAFF8 /* CTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTabBar.swift; sourceTree = "<group>"; };
 		18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelDefaultVC.swift; sourceTree = "<group>"; };
 		18742B6F227EE27E00DDAFF8 /* PanelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelModel.swift; sourceTree = "<group>"; };
+		18742B7A228010E300DDAFF8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		18808564227545E4005408AE /* Nav001Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav001Layout.swift; sourceTree = "<group>"; };
 		1880856B2275462F005408AE /* Nav002Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav002Layout.swift; sourceTree = "<group>"; };
 		1880856E22754643005408AE /* Nav003Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav003Layout.swift; sourceTree = "<group>"; };
@@ -660,6 +662,14 @@
 				18742B6B227EAC7800DDAFF8 /* CTabBar.swift */,
 			);
 			path = tabBar;
+			sourceTree = "<group>";
+		};
+		18742B792280108E00DDAFF8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				18742B7A228010E300DDAFF8 /* Global.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		18808566227545EC005408AE /* Nav001 */ = {
@@ -1223,6 +1233,7 @@
 			children = (
 				4549F0D9226F50AD00A57F6D /* AppDelegate.swift */,
 				4549F0DB226F50AD00A57F6D /* ViewController.swift */,
+				18742B792280108E00DDAFF8 /* Global */,
 				4549F144226F51F300A57F6D /* new */,
 				18BC332A226FFBBA00E79547 /* panel */,
 				18BC332F2270009000E79547 /* tools */,
@@ -1988,6 +1999,7 @@
 				18742B5F227E88D000DDAFF8 /* Root001VC.swift in Sources */,
 				18742B5D227E88AF00DDAFF8 /* Root005Cell.swift in Sources */,
 				456888ED2275E498003D3E70 /* ComTab009Cell.swift in Sources */,
+				18742B7B228010E400DDAFF8 /* Global.swift in Sources */,
 				18742B46227E860A00DDAFF8 /* Bot003Layout.swift in Sources */,
 				18BC33BD2272DA7A00E79547 /* Tem002Layout.swift in Sources */,
 				18742B38227E859D00DDAFF8 /* Bot001Cell.swift in Sources */,

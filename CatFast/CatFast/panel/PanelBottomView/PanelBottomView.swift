@@ -121,6 +121,13 @@ class PanelBottomView: CView {
             }else if m is Panel005CellModel{
                 vc = Panel005VC()
             }
+            let currentId = Router.currentController().model.currentId
+            if let a = currentId{
+                vc.model.currentId = a + 1
+                Router.currentController().model.subId = a + 1
+                Global.share.array.append(vc.model)
+
+            }
             
             Router.push(vc, ["id":10], { (obj) in
                 

@@ -19,6 +19,13 @@ class CViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("\(model.subId)--\(model.currentId)")
+        
+        print(Global.share.array)
+    }
     
     
 
