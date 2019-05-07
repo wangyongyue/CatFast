@@ -14,7 +14,7 @@ class Cache: NSObject {
    
 
 }
-class App:NSObject,JRPersistent{
+class App:NSObject{
     
   
     
