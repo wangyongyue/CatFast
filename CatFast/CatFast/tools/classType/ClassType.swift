@@ -95,4 +95,6 @@ class ClassType: NSObject {
         return CCustomLayout(.vertical)
         
     }
+    
+    
 }

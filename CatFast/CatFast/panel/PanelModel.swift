@@ -24,7 +24,9 @@ class PanelModel: NSObject {
     var tabBarLayout:Cat?
     var bottomLayout:Cat?
 
-    
+    var rootVC:CViewController?
+    var panelVC:CViewController?
+
     
     // subId:1
     // currentId:10000

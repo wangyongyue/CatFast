@@ -1,16 +1,26 @@
 PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - JRDB (2.1.1):
+    - FMDB
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - JRDB
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FMDB
+    - JRDB
     - SnapKit
 
 SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  JRDB: 3d39482c7314ee58e4c0a8617f131324ccabc214
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: f3b7e8f8255dbf1c0edad63d2a748e2a5a547e0b
+PODFILE CHECKSUM: a38e7e5d15e32b74f1127370638c4360eabe3c22
 
 COCOAPODS: 1.6.1

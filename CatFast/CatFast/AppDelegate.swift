@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import JRDB
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+//        JRDBMgr.shareInstance().registerClazz(App.classForCoder())
+        
+        
+//         [[JRDBMgr shareInstance] registerClazz:[UserModel class]];
+        
         let vc = NewVC()
         let nav = CNavigationController.init(rootViewController: vc)
         self.window?.rootViewController = nav;

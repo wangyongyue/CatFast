@@ -60,6 +60,9 @@ class PanelDefaultVC: CViewController {
         }
         
         tem.obIndex.v_index { (index) in
+            
+                       
+            
             let m = tem.obArray.v_array?[index]
             self.content.loadData(m)
             

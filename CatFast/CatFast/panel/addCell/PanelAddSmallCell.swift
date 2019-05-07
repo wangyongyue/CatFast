@@ -16,8 +16,7 @@ class PanelAddSmallCell: CollectionTemplate {
         
         self.contentView.backgroundColor = Color.white()
         
-        
-        let labelStyle = Style().text("添加").textColor(Color.black()).backgroundColor(Color.white()).font(UIFont.systemFont(ofSize: 8))
+        let labelStyle = Style().text("添加").textColor(Color.black()).backgroundColor(Color.white()).font(UIFont.systemFont(ofSize: 8)).textAlignment(.center)
         let headerLabel = CLabel(labelStyle)
         self.contentView.addSubview(headerLabel)
         

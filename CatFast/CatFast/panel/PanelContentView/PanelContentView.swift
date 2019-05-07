@@ -93,6 +93,30 @@ class PanelContentView: CView {
                     
                 }else{
                     
+                    
+                    let array = Global.share.array
+                    if array.count > 0{
+                        
+                        for value in array{
+                            if value.currentId == Router.currentController().model.subId{
+                                
+                                if let vc = value.panelVC{
+                                    
+                                    Router.push(vc, ["id":10], { (obj) in
+                                        
+                                        print(obj)
+                                        
+                                    })
+                                    return
+                                }
+                            }
+                        }
+                        
+                        
+                    }
+                   
+                    
+                    
                     CWindow.init(true).addSubview(tem)
                 }
             }
@@ -100,7 +124,6 @@ class PanelContentView: CView {
         }
         t.obIndex.v_index { (index) in
             
-            print(index)
             let model = t.obArray.v_array?[index]
             if let m = model{
                 
@@ -150,8 +173,6 @@ class PanelContentView: CView {
                 print(obj)
                 
             })
-            
-          
             
             tem.remove()
             

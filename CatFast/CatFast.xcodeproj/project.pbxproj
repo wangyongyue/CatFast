@@ -46,6 +46,7 @@
 		18742B6E227EACB100DDAFF8 /* PanelDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */; };
 		18742B70227EE27E00DDAFF8 /* PanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B6F227EE27E00DDAFF8 /* PanelModel.swift */; };
 		18742B7B228010E400DDAFF8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B7A228010E300DDAFF8 /* Global.swift */; };
+		18742B7E22816ADB00DDAFF8 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18742B7D22816ADB00DDAFF8 /* Cache.swift */; };
 		18808565227545E4005408AE /* Nav001Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18808564227545E4005408AE /* Nav001Layout.swift */; };
 		1880856C2275462F005408AE /* Nav002Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880856B2275462F005408AE /* Nav002Layout.swift */; };
 		1880856F22754643005408AE /* Nav003Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880856E22754643005408AE /* Nav003Layout.swift */; };
@@ -240,6 +241,7 @@
 		18742B6D227EACB100DDAFF8 /* PanelDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelDefaultVC.swift; sourceTree = "<group>"; };
 		18742B6F227EE27E00DDAFF8 /* PanelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelModel.swift; sourceTree = "<group>"; };
 		18742B7A228010E300DDAFF8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		18742B7D22816ADB00DDAFF8 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		18808564227545E4005408AE /* Nav001Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav001Layout.swift; sourceTree = "<group>"; };
 		1880856B2275462F005408AE /* Nav002Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav002Layout.swift; sourceTree = "<group>"; };
 		1880856E22754643005408AE /* Nav003Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav003Layout.swift; sourceTree = "<group>"; };
@@ -670,6 +672,14 @@
 				18742B7A228010E300DDAFF8 /* Global.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		18742B7C22816A8A00DDAFF8 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				18742B7D22816ADB00DDAFF8 /* Cache.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 		18808566227545EC005408AE /* Nav001 */ = {
@@ -1233,6 +1243,7 @@
 			children = (
 				4549F0D9226F50AD00A57F6D /* AppDelegate.swift */,
 				4549F0DB226F50AD00A57F6D /* ViewController.swift */,
+				18742B7C22816A8A00DDAFF8 /* DataBase */,
 				18742B792280108E00DDAFF8 /* Global */,
 				4549F144226F51F300A57F6D /* new */,
 				18BC332A226FFBBA00E79547 /* panel */,
@@ -1830,12 +1841,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CatFast/Pods-CatFast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/JRDB/JRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JRDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1986,6 +2001,7 @@
 				4549F130226F519B00A57F6D /* CWindow.swift in Sources */,
 				1880857D227546CD005408AE /* Tab002Layout.swift in Sources */,
 				456888CF2275E3E3003D3E70 /* ComNav004Cell.swift in Sources */,
+				18742B7E22816ADB00DDAFF8 /* Cache.swift in Sources */,
 				18CC043022747B2C004291BD /* Nav002Cell.swift in Sources */,
 				1880856F22754643005408AE /* Nav003Layout.swift in Sources */,
 				18808583227546F7005408AE /* Tab005Layout.swift in Sources */,

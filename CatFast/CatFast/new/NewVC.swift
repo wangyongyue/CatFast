@@ -23,7 +23,7 @@ let navNumber = 5
 let tabNumber = 5
 let botNumber = 5
 
-let dataNumber = 16
+let dataNumber = 10
 
 
 class NewVC: CViewController {
@@ -96,8 +96,7 @@ class NewVC: CViewController {
                 }
             }
            
-
-          
+            
             Router.push(vc, ["id":10], { (obj) in
                 
                 print(obj)
@@ -114,6 +113,13 @@ class NewVC: CViewController {
             let m = self.obArray.v_array?[index]
             if m is NewCellModel{
                 
+                let vc = Root001VC()
+                
+                Router.push(vc, ["id":10], { (obj) in
+                    
+                    print(obj)
+                    
+                })
 
             }else if m is NewLastCellModel{
                 
